@@ -1,0 +1,293 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+d:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 2L
+-n 3 -fastpaths -xml Exp_Framework.twx Exp_Framework.ncd -o Exp_Framework.twr
+Exp_Framework.pcf
+
+Design file:              Exp_Framework.ncd
+Physical constraint file: Exp_Framework.pcf
+Device,package,speed:     xc7k160t,ffg676,C,-2L (PRODUCTION 1.10 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: TS_CLK_100M = PERIOD TIMEGRP "TM_CLK" 10 ns HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 14023 paths analyzed, 1469 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   5.628ns.
+--------------------------------------------------------------------------------
+
+Paths for end point M61/GPIOf0_5 (SLICE_X1Y37.BX), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     2.186ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               M2/SW_OK_5 (FF)
+  Destination:          M61/GPIOf0_5 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      2.886ns (Levels of Logic = 0)
+  Clock Path Skew:      0.107ns (1.268 - 1.161)
+  Source Clock:         clk_100mhz_BUFGP rising at 0.000ns
+  Destination Clock:    clk_100mhz_BUFGP falling at 5.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: M2/SW_OK_5 to M61/GPIOf0_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X82Y55.CQ      Tcko                  0.259   SW_OK<6>
+                                                       M2/SW_OK_5
+    SLICE_X1Y37.BX       net (fanout=49)       2.600   SW_OK<5>
+    SLICE_X1Y37.CLK      Tdick                 0.027   M61/GPIOf0<7>
+                                                       M61/GPIOf0_5
+    -------------------------------------------------  ---------------------------
+    Total                                      2.886ns (0.286ns logic, 2.600ns route)
+                                                       (9.9% logic, 90.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point M61/GPIOf0_6 (SLICE_X1Y37.CX), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     2.539ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               M2/SW_OK_6 (FF)
+  Destination:          M61/GPIOf0_6 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      2.533ns (Levels of Logic = 0)
+  Clock Path Skew:      0.107ns (1.268 - 1.161)
+  Source Clock:         clk_100mhz_BUFGP rising at 0.000ns
+  Destination Clock:    clk_100mhz_BUFGP falling at 5.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: M2/SW_OK_6 to M61/GPIOf0_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X82Y55.DQ      Tcko                  0.259   SW_OK<6>
+                                                       M2/SW_OK_6
+    SLICE_X1Y37.CX       net (fanout=59)       2.259   SW_OK<6>
+    SLICE_X1Y37.CLK      Tdick                 0.015   M61/GPIOf0<7>
+                                                       M61/GPIOf0_6
+    -------------------------------------------------  ---------------------------
+    Total                                      2.533ns (0.274ns logic, 2.259ns route)
+                                                       (10.8% logic, 89.2% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point M61/GPIOf0_7 (SLICE_X1Y37.DX), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     2.574ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               M2/SW_OK_7 (FF)
+  Destination:          M61/GPIOf0_7 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      2.499ns (Levels of Logic = 0)
+  Clock Path Skew:      0.108ns (1.268 - 1.160)
+  Source Clock:         clk_100mhz_BUFGP rising at 0.000ns
+  Destination Clock:    clk_100mhz_BUFGP falling at 5.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: M2/SW_OK_7 to M61/GPIOf0_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X83Y56.AQ      Tcko                  0.223   SW_OK<10>
+                                                       M2/SW_OK_7
+    SLICE_X1Y37.DX       net (fanout=62)       2.261   SW_OK<7>
+    SLICE_X1Y37.CLK      Tdick                 0.015   M61/GPIOf0<7>
+                                                       M61/GPIOf0_7
+    -------------------------------------------------  ---------------------------
+    Total                                      2.499ns (0.238ns logic, 2.261ns route)
+                                                       (9.5% logic, 90.5% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_CLK_100M = PERIOD TIMEGRP "TM_CLK" 10 ns HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point M3/M2/buffer_0 (SLICE_X34Y45.C5), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.063ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               M3/M2/buffer_1 (FF)
+  Destination:          M3/M2/buffer_0 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.328ns (Levels of Logic = 1)
+  Clock Path Skew:      0.265ns (0.756 - 0.491)
+  Source Clock:         clk_100mhz_BUFGP rising at 10.000ns
+  Destination Clock:    clk_100mhz_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: M3/M2/buffer_1 to M3/M2/buffer_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X43Y50.AQ      Tcko                  0.100   M3/M2/buffer<2>
+                                                       M3/M2/buffer_1
+    SLICE_X34Y45.C5      net (fanout=2)        0.261   M3/M2/buffer<1>
+    SLICE_X34Y45.CLK     Tah         (-Th)     0.033   SEGDT_OBUF
+                                                       M3/M2/buffer_0_rstpot
+                                                       M3/M2/buffer_0
+    -------------------------------------------------  ---------------------------
+    Total                                      0.328ns (0.067ns logic, 0.261ns route)
+                                                       (20.4% logic, 79.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point M3/M2/buffer_23 (SLICE_X38Y42.A6), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.095ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               M3/M2/buffer_24 (FF)
+  Destination:          M3/M2/buffer_23 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.106ns (Levels of Logic = 1)
+  Clock Path Skew:      0.011ns (0.063 - 0.052)
+  Source Clock:         clk_100mhz_BUFGP rising at 10.000ns
+  Destination Clock:    clk_100mhz_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: M3/M2/buffer_24 to M3/M2/buffer_23
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X39Y42.CQ      Tcko                  0.100   M3/M2/buffer<24>
+                                                       M3/M2/buffer_24
+    SLICE_X38Y42.A6      net (fanout=2)        0.065   M3/M2/buffer<24>
+    SLICE_X38Y42.CLK     Tah         (-Th)     0.059   M3/M2/buffer<25>
+                                                       M3/M2/buffer_23_rstpot
+                                                       M3/M2/buffer_23
+    -------------------------------------------------  ---------------------------
+    Total                                      0.106ns (0.041ns logic, 0.065ns route)
+                                                       (38.7% logic, 61.3% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point M3/M2/buffer_47 (SLICE_X40Y44.A5), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.120ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               M3/M2/buffer_48 (FF)
+  Destination:          M3/M2/buffer_47 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.131ns (Levels of Logic = 1)
+  Clock Path Skew:      0.011ns (0.063 - 0.052)
+  Source Clock:         clk_100mhz_BUFGP rising at 10.000ns
+  Destination Clock:    clk_100mhz_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: M3/M2/buffer_48 to M3/M2/buffer_47
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X41Y44.AQ      Tcko                  0.100   M3/M2/buffer<16>
+                                                       M3/M2/buffer_48
+    SLICE_X40Y44.A5      net (fanout=2)        0.090   M3/M2/buffer<48>
+    SLICE_X40Y44.CLK     Tah         (-Th)     0.059   M3/M2/buffer<47>
+                                                       M3/M2/buffer_47_rstpot
+                                                       M3/M2/buffer_47
+    -------------------------------------------------  ---------------------------
+    Total                                      0.131ns (0.041ns logic, 0.090ns route)
+                                                       (31.3% logic, 68.7% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_CLK_100M = PERIOD TIMEGRP "TM_CLK" 10 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 8.591ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 1.409ns (709.723MHz) (Tbcper_I(Fmax))
+  Physical resource: clk_100mhz_BUFGP/BUFG/I0
+  Logical resource: clk_100mhz_BUFGP/BUFG/I0
+  Location pin: BUFGCTRL_X0Y0.I0
+  Clock network: clk_100mhz_BUFGP/IBUFG
+--------------------------------------------------------------------------------
+Slack: 9.200ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 10.000ns
+  High pulse: 5.000ns
+  High pulse limit: 0.400ns (Trpw)
+  Physical resource: M1/clkdiv<3>/SR
+  Logical resource: M1/clkdiv_0/SR
+  Location pin: SLICE_X42Y37.SR
+  Clock network: rst
+--------------------------------------------------------------------------------
+Slack: 9.200ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 10.000ns
+  High pulse: 5.000ns
+  High pulse limit: 0.400ns (Trpw)
+  Physical resource: M1/clkdiv<3>/SR
+  Logical resource: M1/clkdiv_1/SR
+  Location pin: SLICE_X42Y37.SR
+  Clock network: rst
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock clk_100mhz
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_100mhz     |    5.096|    1.572|    2.814|         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 14023 paths, 0 nets, and 3103 connections
+
+Design statistics:
+   Minimum period:   5.628ns{1}   (Maximum frequency: 177.683MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Mon Jul 03 15:05:39 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 770 MB
+
+
+

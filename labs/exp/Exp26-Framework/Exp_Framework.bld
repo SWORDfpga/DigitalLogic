@@ -1,0 +1,47 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: d:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -sd Code -nt timestamp -uc Code/Disp_32.ucf -p
+xc7k160t-ffg676-2L Exp_Framework.ngc Exp_Framework.ngd
+
+Reading NGO file "D:/FPGA_work/SWord-DLD/Exp26-Framework/Exp_Framework.ngc" ...
+Loading design module "Code/SAnti_jitter.ngc"...
+Loading design module "Code/SEnter_2_32.ngc"...
+Loading design module "Code/P2S.ngc"...
+Loading design module "Code/LED_P2S.ngc"...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "Code/Disp_32.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "clk_100mhz" LOC = T9>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:NgdBuild:1012 - The constraint <NET "clk_100mhz" LOC = T9> is overridden
+   on the design object clk_100mhz by the constraint <NET "clk_100mhz"		LOC =
+   AC18      |> [Code/Disp_32.ucf(3)].
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   2
+
+Total memory usage is 271056 kilobytes
+
+Writing NGD file "Exp_Framework.ngd" ...
+Total REAL time to NGDBUILD completion:  8 sec
+Total CPU time to NGDBUILD completion:   8 sec
+
+Writing NGDBUILD log file "Exp_Framework.bld"...

@@ -1,0 +1,4 @@
+sch2hdl,-sympath,D:/FPGA_work/SWord-DLD/Exp26-Framework/Code,-intstyle,ise,-family,kintex7,-verilog,D:/FPGA_work/SWord-DLD/Exp26-Framework/Seg7_Dev.vf,-w,D:/FPGA_work/SWord-DLD/Exp26-Framework/Code/Seg7_Dev.sch
+sch2hdl,-sympath,D:/FPGA_work/SWord-DLD/Exp26-Framework/Code,-intstyle,ise,-family,kintex7,-verilog,D:/FPGA_work/SWord-DLD/Exp26-Framework/Display.vf,-w,D:/FPGA_work/SWord-DLD/Exp26-Framework/Code/Display.sch
+sch2hdl,-sympath,D:/FPGA_work/SWord-DLD/Exp26-Framework/Code,-intstyle,ise,-family,kintex7,-verilog,D:/FPGA_work/SWord-DLD/Exp26-Framework/Exp_Framework.vf,-w,D:/FPGA_work/SWord-DLD/Exp26-Framework/Code/Exp_Framework.sch
+sch2hdl,-sympath,D:/FPGA_work/SWord-DLD/Exp26-Framework/Code,-intstyle,ise,-family,kintex7,-verilog,D:/FPGA_work/SWord-DLD/Exp26-Framework/Exp_Framework.vf,-w,D:/FPGA_work/SWord-DLD/Exp26-Framework/Code/Exp_Framework.sch
