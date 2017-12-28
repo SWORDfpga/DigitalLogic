@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/FPGA_work/SWord-DLD/Exp24-I2Disp/Anti_Jitter_Test_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="Anti_Jitter_Test" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="13" />
+   <wvobject fp_name="/Anti_Jitter_Test/RSTN" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RSTN</obj_property>
+      <obj_property name="ObjectShortName">RSTN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Anti_Jitter_Test/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Anti_Jitter_Test/uut/counter" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">counter[31:0]</obj_property>
+      <obj_property name="ObjectShortName">counter[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Anti_Jitter_Test/SW_OK" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">SW_OK[15:0]</obj_property>
+      <obj_property name="ObjectShortName">SW_OK[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Anti_Jitter_Test/K_ROW" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">K_ROW[4:0]</obj_property>
+      <obj_property name="ObjectShortName">K_ROW[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Anti_Jitter_Test/K_COL" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">K_COL[3:0]</obj_property>
+      <obj_property name="ObjectShortName">K_COL[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Anti_Jitter_Test/uut/btn_temp" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">btn_temp[4:0]</obj_property>
+      <obj_property name="ObjectShortName">btn_temp[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Anti_Jitter_Test/button_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">button_out[3:0]</obj_property>
+      <obj_property name="ObjectShortName">button_out[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Anti_Jitter_Test/button_pulse" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">button_pulse[3:0]</obj_property>
+      <obj_property name="ObjectShortName">button_pulse[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Anti_Jitter_Test/CR" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">CR</obj_property>
+      <obj_property name="ObjectShortName">CR</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Anti_Jitter_Test/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Anti_Jitter_Test/SW" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">SW[15:0]</obj_property>
+      <obj_property name="ObjectShortName">SW[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Anti_Jitter_Test/i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

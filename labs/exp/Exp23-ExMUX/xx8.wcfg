@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/FPGA_work/SWord-DLD/Exp23-ExMUX/MUX8T1_32_MUX8T1_32_sch_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="MUX8T1_32_MUX8T1_32_sch_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="11" />
+   <wvobject fp_name="/MUX8T1_32_MUX8T1_32_sch_tb/s" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">s[2:0]</obj_property>
+      <obj_property name="ObjectShortName">s[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MUX8T1_32_MUX8T1_32_sch_tb/I0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">I0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">I0[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MUX8T1_32_MUX8T1_32_sch_tb/I1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">I1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">I1[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MUX8T1_32_MUX8T1_32_sch_tb/I2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">I2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">I2[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MUX8T1_32_MUX8T1_32_sch_tb/I3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">I3[31:0]</obj_property>
+      <obj_property name="ObjectShortName">I3[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MUX8T1_32_MUX8T1_32_sch_tb/I4" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">I4[31:0]</obj_property>
+      <obj_property name="ObjectShortName">I4[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MUX8T1_32_MUX8T1_32_sch_tb/I5" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">I5[31:0]</obj_property>
+      <obj_property name="ObjectShortName">I5[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MUX8T1_32_MUX8T1_32_sch_tb/I6" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">I6[31:0]</obj_property>
+      <obj_property name="ObjectShortName">I6[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MUX8T1_32_MUX8T1_32_sch_tb/I7" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">I7[31:0]</obj_property>
+      <obj_property name="ObjectShortName">I7[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MUX8T1_32_MUX8T1_32_sch_tb/o" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">o[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MUX8T1_32_MUX8T1_32_sch_tb/i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

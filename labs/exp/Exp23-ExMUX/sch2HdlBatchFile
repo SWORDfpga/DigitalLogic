@@ -1,0 +1,3 @@
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,D:/FPGA_work/SWord-DLD/Exp23-ExMUX/MUX8T1_8.vf,-w,D:/FPGA_work/SWord-DLD/Exp23-ExMUX/Code/MUX8T1_8.sch
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,D:/FPGA_work/SWord-DLD/Exp23-ExMUX/MUX4T1_4.vf,-w,D:/FPGA_work/SWord-DLD/Exp23-ExMUX/Code/MUX4T1_4.sch
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,D:/FPGA_work/SWord-DLD/Exp23-ExMUX/MUX8T1_32.vf,-w,D:/FPGA_work/SWord-DLD/Exp23-ExMUX/Code/MUX8T1_32.sch

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/FPGA_work/SWord-DLD/Exp22-MUX441/MUX4T1_4_MUX4T1_4_sch_tb_isim_beh1.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="MUX4T1_4_MUX4T1_4_sch_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="6" />
+   <wvobject fp_name="/MUX4T1_4_MUX4T1_4_sch_tb/s" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">s[1:0]</obj_property>
+      <obj_property name="ObjectShortName">s[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MUX4T1_4_MUX4T1_4_sch_tb/I0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">I0[3:0]</obj_property>
+      <obj_property name="ObjectShortName">I0[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MUX4T1_4_MUX4T1_4_sch_tb/I1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">I1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">I1[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MUX4T1_4_MUX4T1_4_sch_tb/I2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">I2[3:0]</obj_property>
+      <obj_property name="ObjectShortName">I2[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MUX4T1_4_MUX4T1_4_sch_tb/I3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">I3[3:0]</obj_property>
+      <obj_property name="ObjectShortName">I3[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MUX4T1_4_MUX4T1_4_sch_tb/o" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">o[3:0]</obj_property>
+      <obj_property name="ObjectShortName">o[3:0]</obj_property>
+   </wvobject>
+</wave_config>

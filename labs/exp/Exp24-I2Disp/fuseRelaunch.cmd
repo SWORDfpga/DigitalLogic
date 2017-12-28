@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/FPGA_work/SWord-DLD/Exp24-I2Disp/Anti_Jitter_Test_isim_beh.exe" -prj "D:/FPGA_work/SWord-DLD/Exp24-I2Disp/Anti_Jitter_Test_beh.prj" "work.Anti_Jitter_Test" "work.glbl" 

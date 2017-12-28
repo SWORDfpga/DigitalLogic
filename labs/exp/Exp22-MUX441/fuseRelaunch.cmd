@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/FPGA_work/SWord-DLD/Exp22-MUX441/MUX4T1_4_MUX4T1_4_sch_tb_isim_beh.exe" -prj "D:/FPGA_work/SWord-DLD/Exp22-MUX441/MUX4T1_4_MUX4T1_4_sch_tb_beh.prj" "work.MUX4T1_4_MUX4T1_4_sch_tb" "work.glbl" 
