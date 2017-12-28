@@ -1,0 +1,8 @@
+verilog work "MB_DFF.vf"
+verilog work "Code/register_8bit.v"
+verilog work "Decoder_38.vf"
+verilog work "Code/register_32bit.v"
+verilog work "HCT138.vf"
+verilog work "Code/register_file_8_32.v"
+verilog work "Code/Regs_Test.v"
+verilog work "d:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

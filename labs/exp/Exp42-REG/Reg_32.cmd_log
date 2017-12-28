@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "D:/FPGA_work/SWord-DLD/Exp42-REG/Reg_32.xst" -ofn "D:/FPGA_work/SWord-DLD/Exp42-REG/Reg_32.syr" 
+xst -intstyle ise -ifn "D:/FPGA_work/SWord-DLD/Exp42-REG/Reg_32.xst" -ofn "D:/FPGA_work/SWord-DLD/Exp42-REG/Reg_32.syr" 
+xst -intstyle ise -ifn "D:/FPGA_work/SWord-DLD/Exp42-REG/Reg_32.xst" -ofn "D:/FPGA_work/SWord-DLD/Exp42-REG/Reg_32.syr" 
+xst -intstyle ise -ifn "D:/FPGA_work/SWord-DLD/Exp42-REG/Reg_32.xst" -ofn "D:/FPGA_work/SWord-DLD/Exp42-REG/Reg_32.syr" 
+xst -intstyle ise -ifn "E:/FPGA_work/SWord-DLD/Exp42-REG/Reg_32.xst" -ofn "E:/FPGA_work/SWord-DLD/Exp42-REG/Reg_32.syr" 

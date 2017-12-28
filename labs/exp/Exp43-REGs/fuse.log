@@ -1,0 +1,17 @@
+Running: d:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/FPGA_work/SWord-DLD/Exp43-REGs/Regs_Test_isim_beh.exe -prj D:/FPGA_work/SWord-DLD/Exp43-REGs/Regs_Test_beh.prj work.Regs_Test work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/FPGA_work/SWord-DLD/Exp43-REGs/MB_DFF.vf" into library work
+Analyzing Verilog file "D:/FPGA_work/SWord-DLD/Exp43-REGs/Code/register_8bit.v" into library work
+Analyzing Verilog file "D:/FPGA_work/SWord-DLD/Exp43-REGs/Decoder_38.vf" into library work
+Analyzing Verilog file "D:/FPGA_work/SWord-DLD/Exp43-REGs/Code/register_32bit.v" into library work
+Analyzing Verilog file "D:/FPGA_work/SWord-DLD/Exp43-REGs/HCT138.vf" into library work
+Analyzing Verilog file "D:/FPGA_work/SWord-DLD/Exp43-REGs/Code/register_file_8_32.v" into library work
+Analyzing Verilog file "D:/FPGA_work/SWord-DLD/Exp43-REGs/Code/Regs_Test.v" into library work
+Analyzing Verilog file "d:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:267 - "D:/FPGA_work/SWord-DLD/Exp43-REGs/Code/register_file_8_32.v" Line 49: Cannot find port Y0 on this module
+ERROR:HDLCompiler:1654 - "D:/FPGA_work/SWord-DLD/Exp43-REGs/Code/register_file_8_32.v" Line 51: Instantiating <MUX_REGA> from unknown module <MUX8T1_32>
+ERROR:Simulator:778 - Static elaboration of top level Verilog design unit(s) in library work failed

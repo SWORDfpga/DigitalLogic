@@ -1,0 +1,23 @@
+// Verilog instantiation template created from schematic D:\FPGA_work\SWord-DLD\Exp41-Timer\Code\CT74LS161.sch - Fri May 26 15:49:55 2017
+//
+// Notes: 
+// To use this template to instantiate this component,cut-and-paste and then edit
+//
+// Instantiate the UUT
+   CT74LS161 UUT (
+		.CR(    ), 
+		.Q3(    ), 
+		.Q2(    ), 
+		.SR(    ), 
+		.D3(    ), 
+		.D2(    ), 
+		.D1(    ), 
+		.D0(    ), 
+		.Q1(    ), 
+		.CP(    ), 
+		.Q0(    ), 
+		.CO(    ), 
+		.CT_P(    ), 
+		.CT_T(    ), 
+		.LD(    )
+   );

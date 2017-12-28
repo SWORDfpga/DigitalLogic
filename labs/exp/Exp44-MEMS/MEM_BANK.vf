@@ -1,0 +1,138 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : MEM_BANK.vf
+// /___/   /\     Timestamp : 08/06/2017 23:54:34
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -sympath D:/FPGA_work/SWord-DLD/Exp44-MEMS/Code -sympath D:/FPGA_work/SWord-DLD/Exp44-MEMS/ipcore_dir -intstyle ise -family kintex7 -verilog D:/FPGA_work/SWord-DLD/Exp44-MEMS/MEM_BANK.vf -w D:/FPGA_work/SWord-DLD/Exp44-MEMS/Code/MEM_BANK.sch
+//Design Name: MEM_BANK
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Decoder_24_MUSER_MEM_BANK(A, 
+                                 B, 
+                                 D0, 
+                                 D1, 
+                                 D2, 
+                                 D3);
+
+    input A;
+    input B;
+   output D0;
+   output D1;
+   output D2;
+   output D3;
+   
+   wire XLXN_79;
+   wire XLXN_80;
+   
+   AND2  XLXI_1 (.I0(XLXN_79), 
+                .I1(A), 
+                .O(D1));
+   INV  XLXI_2 (.I(B), 
+               .O(XLXN_79));
+   AND2  XLXI_4 (.I0(XLXN_79), 
+                .I1(XLXN_80), 
+                .O(D0));
+   INV  XLXI_5 (.I(A), 
+               .O(XLXN_80));
+   AND2  XLXI_7 (.I0(B), 
+                .I1(XLXN_80), 
+                .O(D2));
+   AND2  XLXI_8 (.I0(B), 
+                .I1(A), 
+                .O(D3));
+endmodule
+`timescale 1ns / 1ps
+
+module MEM_BANK(A, 
+                clk, 
+                DiH, 
+                DiL, 
+                we, 
+                DoH, 
+                DoL);
+
+    input [4:0] A;
+    input clk;
+    input [15:0] DiH;
+    input [15:0] DiL;
+    input we;
+   output [15:0] DoH;
+   output [15:0] DoL;
+   
+   wire XLXN_3;
+   wire XLXN_6;
+   wire XLXN_8;
+   wire XLXN_194;
+   wire [15:0] DoH_DUMMY;
+   wire [15:0] DoL_DUMMY;
+   
+   assign DoH[15:0] = DoH_DUMMY[15:0];
+   assign DoL[15:0] = DoL_DUMMY[15:0];
+   RAM8X16  MM00 (.A(A[2:0]), 
+                 .clk(clk), 
+                 .Din(DiL[15:0]), 
+                 .EN(XLXN_3), 
+                 .WE(we), 
+                 .Dout(DoL_DUMMY[15:0]));
+   RAM8X16  MM01 (.A(A[2:0]), 
+                 .clk(clk), 
+                 .Din(DiH[15:0]), 
+                 .EN(XLXN_3), 
+                 .WE(we), 
+                 .Dout(DoH_DUMMY[15:0]));
+   RAM8X16  MM10 (.A(A[2:0]), 
+                 .clk(clk), 
+                 .Din(DiL[15:0]), 
+                 .EN(XLXN_6), 
+                 .WE(we), 
+                 .Dout(DoL_DUMMY[15:0]));
+   RAM8X16  MM11 (.A(A[2:0]), 
+                 .clk(clk), 
+                 .Din(DiH[15:0]), 
+                 .EN(XLXN_6), 
+                 .WE(we), 
+                 .Dout(DoH_DUMMY[15:0]));
+   RAM8X16  MM20 (.A(A[2:0]), 
+                 .clk(clk), 
+                 .Din(DiL[15:0]), 
+                 .EN(XLXN_8), 
+                 .WE(we), 
+                 .Dout(DoL_DUMMY[15:0]));
+   RAM8X16  MM21 (.A(A[2:0]), 
+                 .clk(clk), 
+                 .Din(DiH[15:0]), 
+                 .EN(XLXN_8), 
+                 .WE(we), 
+                 .Dout(DoH_DUMMY[15:0]));
+   RAM8X16  MM30 (.A(A[2:0]), 
+                 .clk(clk), 
+                 .Din(DiL[15:0]), 
+                 .EN(XLXN_194), 
+                 .WE(we), 
+                 .Dout(DoL_DUMMY[15:0]));
+   RAM8X16  MM31 (.A(A[2:0]), 
+                 .clk(clk), 
+                 .Din(DiH[15:0]), 
+                 .EN(XLXN_194), 
+                 .WE(we), 
+                 .Dout(DoH_DUMMY[15:0]));
+   Decoder_24_MUSER_MEM_BANK  U1 (.A(A[3]), 
+                                 .B(A[4]), 
+                                 .D0(XLXN_3), 
+                                 .D1(XLXN_6), 
+                                 .D2(XLXN_194), 
+                                 .D3(XLXN_8));
+endmodule

@@ -1,0 +1,3 @@
+verilog work "MB_DFF.vf"
+verilog work "Code/register_8bit.v"
+verilog work "Code/register_32bit.v"

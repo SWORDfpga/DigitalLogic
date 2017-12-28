@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/FPGA_work/SWord-DLD/Exp41-Timer/ms_ms_sch_tb_isim_beh.exe" -prj "D:/FPGA_work/SWord-DLD/Exp41-Timer/ms_ms_sch_tb_beh.prj" "work.ms_ms_sch_tb" "work.glbl" 

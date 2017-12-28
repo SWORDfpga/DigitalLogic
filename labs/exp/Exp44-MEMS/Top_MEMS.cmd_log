@@ -1,0 +1,47 @@
+xst -intstyle ise -ifn "D:/FPGA_work/SWord-DLD/Exp44-MEMS/Top_MEMS.xst" -ofn "D:/FPGA_work/SWord-DLD/Exp44-MEMS/Top_MEMS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd Code -sd ipcore_dir -nt timestamp -uc Code/MEMS.ucf -p xc7k160t-ffg676-1 Top_MEMS.ngc Top_MEMS.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_MEMS_map.ncd Top_MEMS.ngd Top_MEMS.pcf 
+par -w -intstyle ise -ol high -mt off Top_MEMS_map.ncd Top_MEMS.ncd Top_MEMS.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_MEMS.twx Top_MEMS.ncd -o Top_MEMS.twr Top_MEMS.pcf 
+bitgen -intstyle ise -f Top_MEMS.ut Top_MEMS.ncd 
+xst -intstyle ise -ifn "D:/FPGA_work/SWord-DLD/Exp44-MEMS/Top_MEMS.xst" -ofn "D:/FPGA_work/SWord-DLD/Exp44-MEMS/Top_MEMS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd Code -sd ipcore_dir -nt timestamp -uc Code/MEMS.ucf -p xc7k160t-ffg676-1 Top_MEMS.ngc Top_MEMS.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_MEMS_map.ncd Top_MEMS.ngd Top_MEMS.pcf 
+par -w -intstyle ise -ol high -mt off Top_MEMS_map.ncd Top_MEMS.ncd Top_MEMS.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_MEMS.twx Top_MEMS.ncd -o Top_MEMS.twr Top_MEMS.pcf 
+bitgen -intstyle ise -f Top_MEMS.ut Top_MEMS.ncd 
+xst -intstyle ise -ifn "D:/FPGA_work/SWord-DLD/Exp44-MEMS/Top_MEMS.xst" -ofn "D:/FPGA_work/SWord-DLD/Exp44-MEMS/Top_MEMS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd Code -sd ipcore_dir -nt timestamp -uc Code/MEMS.ucf -p xc7k160t-ffg676-1 Top_MEMS.ngc Top_MEMS.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_MEMS_map.ncd Top_MEMS.ngd Top_MEMS.pcf 
+par -w -intstyle ise -ol high -mt off Top_MEMS_map.ncd Top_MEMS.ncd Top_MEMS.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_MEMS.twx Top_MEMS.ncd -o Top_MEMS.twr Top_MEMS.pcf 
+bitgen -intstyle ise -f Top_MEMS.ut Top_MEMS.ncd 
+xst -intstyle ise -ifn "D:/FPGA_work/SWord-DLD/Exp44-MEMS/Top_MEMS.xst" -ofn "D:/FPGA_work/SWord-DLD/Exp44-MEMS/Top_MEMS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd Code -sd ipcore_dir -nt timestamp -uc Code/MEMS.ucf -p xc7k160t-ffg676-1 Top_MEMS.ngc Top_MEMS.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_MEMS_map.ncd Top_MEMS.ngd Top_MEMS.pcf 
+par -w -intstyle ise -ol high -mt off Top_MEMS_map.ncd Top_MEMS.ncd Top_MEMS.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_MEMS.twx Top_MEMS.ncd -o Top_MEMS.twr Top_MEMS.pcf 
+bitgen -intstyle ise -f Top_MEMS.ut Top_MEMS.ncd 
+xst -intstyle ise -ifn "D:/FPGA_work/SWord-DLD/Exp44-MEMS/Top_MEMS.xst" -ofn "D:/FPGA_work/SWord-DLD/Exp44-MEMS/Top_MEMS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd Code -sd ipcore_dir -nt timestamp -uc Code/MEMS.ucf -p xc7k160t-ffg676-1 Top_MEMS.ngc Top_MEMS.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_MEMS_map.ncd Top_MEMS.ngd Top_MEMS.pcf 
+par -w -intstyle ise -ol high -mt off Top_MEMS_map.ncd Top_MEMS.ncd Top_MEMS.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_MEMS.twx Top_MEMS.ncd -o Top_MEMS.twr Top_MEMS.pcf 
+bitgen -intstyle ise -f Top_MEMS.ut Top_MEMS.ncd 
+xst -intstyle ise -ifn "D:/FPGA_work/SWord-DLD/Exp44-MEMS/Top_MEMS.xst" -ofn "D:/FPGA_work/SWord-DLD/Exp44-MEMS/Top_MEMS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd Code -sd ipcore_dir -nt timestamp -uc Code/MEMS.ucf -p xc7k160t-ffg676-1 Top_MEMS.ngc Top_MEMS.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_MEMS_map.ncd Top_MEMS.ngd Top_MEMS.pcf 
+par -w -intstyle ise -ol high -mt off Top_MEMS_map.ncd Top_MEMS.ncd Top_MEMS.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_MEMS.twx Top_MEMS.ncd -o Top_MEMS.twr Top_MEMS.pcf 
+bitgen -intstyle ise -f Top_MEMS.ut Top_MEMS.ncd 
+xst -intstyle ise -ifn "D:/FPGA_work/SWord-DLD/Exp44-MEMS/Top_MEMS.xst" -ofn "D:/FPGA_work/SWord-DLD/Exp44-MEMS/Top_MEMS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd Code -sd ipcore_dir -nt timestamp -uc Code/MEMS.ucf -p xc7k160t-ffg676-1 Top_MEMS.ngc Top_MEMS.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_MEMS_map.ncd Top_MEMS.ngd Top_MEMS.pcf 
+par -w -intstyle ise -ol high -mt off Top_MEMS_map.ncd Top_MEMS.ncd Top_MEMS.pcf 
+bitgen -intstyle ise -f Top_MEMS.ut Top_MEMS.ncd 
+xst -intstyle ise -ifn "D:/FPGA_work/SWord-DLD/Exp44-MEMS/Top_MEMS.xst" -ofn "D:/FPGA_work/SWord-DLD/Exp44-MEMS/Top_MEMS.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd Code -sd ipcore_dir -nt timestamp -uc Code/MEMS.ucf -p xc7k160t-ffg676-1 Top_MEMS.ngc Top_MEMS.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_MEMS_map.ncd Top_MEMS.ngd Top_MEMS.pcf 
+par -w -intstyle ise -ol high -mt off Top_MEMS_map.ncd Top_MEMS.ncd Top_MEMS.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_MEMS.twx Top_MEMS.ncd -o Top_MEMS.twr Top_MEMS.pcf 
+bitgen -intstyle ise -f Top_MEMS.ut Top_MEMS.ncd 

@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=E:\FPGA_work\SWord-DLD\Exp41-Timer\impact.xsl
+OUTFILE=E:\FPGA_work\SWord-DLD\Exp41-Timer\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=E:\FPGA_work\SWord-DLD\Exp41-Timer
+LICENSE=iMPACT
+USER_INFO=iMPACT

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="ROM_32_32">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2017-8-6T16:35:10</timestamp>
+    <pin polarity="Input" x="0" y="96" name="a(4:0)" />
+    <pin polarity="Output" x="288" y="96" name="spo(31:0)" />
+    <graph>
+        <rect style="linecolor:rgb(0,0,0);fillcolor:rgb(255,216,252);fillstyle:Solid" width="224" x="32" y="16" height="156" />
+        <line x2="32" y1="96" y2="96" style="linewidth:W" x1="0" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="36" y="96" type="pin a(4:0)" />
+        <line x2="256" y1="96" y2="96" style="linewidth:W" x1="288" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="252" y="96" type="pin spo(31:0)" />
+        <text style="fontsize:38;fontname:Arial;textcolor:rgb(255,0,0)" x="36" y="144">ROM_32_32</text>
+    </graph>
+</symbol>

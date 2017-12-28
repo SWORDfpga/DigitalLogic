@@ -1,0 +1,14 @@
+xst -intstyle ise -ifn "D:/FPGA_work/SWord-DLD/Exp43-REGs/Top_REGs.xst" -ofn "D:/FPGA_work/SWord-DLD/Exp43-REGs/Top_REGs.syr" 
+xst -intstyle ise -ifn "D:/FPGA_work/SWord-DLD/Exp43-REGs/Top_REGs.xst" -ofn "D:/FPGA_work/SWord-DLD/Exp43-REGs/Top_REGs.syr" 
+xst -intstyle ise -ifn "D:/FPGA_work/SWord-DLD/Exp43-REGs/Top_REGs.xst" -ofn "D:/FPGA_work/SWord-DLD/Exp43-REGs/Top_REGs.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd Code -nt timestamp -uc Code/REGs.ucf -p xc7k160t-ffg676-2L Top_REGs.ngc Top_REGs.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_REGs_map.ncd Top_REGs.ngd Top_REGs.pcf 
+par -w -intstyle ise -ol high -mt off Top_REGs_map.ncd Top_REGs.ncd Top_REGs.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Top_REGs.twx Top_REGs.ncd -o Top_REGs.twr Top_REGs.pcf 
+bitgen -intstyle ise -f Top_REGs.ut Top_REGs.ncd 
+xst -intstyle ise -ifn "D:/FPGA_work/SWord-DLD/Exp43-REGs/Top_REGs.xst" -ofn "D:/FPGA_work/SWord-DLD/Exp43-REGs/Top_REGs.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd Code -nt timestamp -uc Code/REGs.ucf -p xc7k160t-ffg676-2L Top_REGs.ngc Top_REGs.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_REGs_map.ncd Top_REGs.ngd Top_REGs.pcf 
+par -w -intstyle ise -ol high -mt off Top_REGs_map.ncd Top_REGs.ncd Top_REGs.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Top_REGs.twx Top_REGs.ncd -o Top_REGs.twr Top_REGs.pcf 
+bitgen -intstyle ise -f Top_REGs.ut Top_REGs.ncd 

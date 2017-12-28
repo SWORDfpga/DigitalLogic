@@ -1,0 +1,25 @@
+Running: d:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/FPGA_work/SWord-DLD/Exp42-REG/Reg32_Test_isim_beh.exe -prj D:/FPGA_work/SWord-DLD/Exp42-REG/Reg32_Test_beh.prj work.Reg32_Test work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/FPGA_work/SWord-DLD/Exp42-REG/MB_DFF.vf" into library work
+Analyzing Verilog file "D:/FPGA_work/SWord-DLD/Exp42-REG/Code/register_8bit.v" into library work
+Analyzing Verilog file "D:/FPGA_work/SWord-DLD/Exp42-REG/Code/register_32bit.v" into library work
+Analyzing Verilog file "D:/FPGA_work/SWord-DLD/Exp42-REG/Code/Reg32_Test.v" into library work
+Analyzing Verilog file "d:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module BUFG
+Compiling module NAND3
+Compiling module MB_DFF
+Compiling module Reg_8bit
+Compiling module Reg_32
+Compiling module Reg32_Test
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 7 Verilog Units
+Built simulation executable D:/FPGA_work/SWord-DLD/Exp42-REG/Reg32_Test_isim_beh.exe
+Fuse Memory Usage: 27672 KB
+Fuse CPU Usage: 421 ms

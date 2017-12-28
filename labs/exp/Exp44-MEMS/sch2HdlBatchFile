@@ -1,0 +1,1 @@
+sch2hdl,-sympath,D:/FPGA_work/SWord-DLD/Exp44-MEMS/Code,-sympath,D:/FPGA_work/SWord-DLD/Exp44-MEMS/ipcore_dir,-intstyle,ise,-family,kintex7,-verilog,D:/FPGA_work/SWord-DLD/Exp44-MEMS/Top_MEMS.vf,-w,D:/FPGA_work/SWord-DLD/Exp44-MEMS/Code/Top_MEMS.sch

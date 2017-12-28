@@ -1,0 +1,2 @@
+sch2hdl,-sympath,D:/FPGA_work/SWord-DLD/Exp43-REGs/Code,-intstyle,ise,-family,kintex7,-verilog,D:/FPGA_work/SWord-DLD/Exp43-REGs/ms1.vf,-w,D:/FPGA_work/SWord-DLD/Exp43-REGs/Code/ms1.sch
+sch2hdl,-sympath,D:/FPGA_work/SWord-DLD/Exp43-REGs/Code,-intstyle,ise,-family,kintex7,-verilog,D:/FPGA_work/SWord-DLD/Exp43-REGs/Top_REGs.vf,-w,D:/FPGA_work/SWord-DLD/Exp43-REGs/Code/Top_REGs.sch

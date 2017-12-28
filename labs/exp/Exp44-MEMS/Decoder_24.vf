@@ -1,0 +1,56 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Decoder_24.vf
+// /___/   /\     Timestamp : 08/06/2017 23:08:59
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -sympath D:/FPGA_work/SWord-DLD/Exp44-MEMS/Code -sympath D:/FPGA_work/SWord-DLD/Exp44-MEMS/ipcore_dir -intstyle ise -family kintex7 -verilog D:/FPGA_work/SWord-DLD/Exp44-MEMS/Decoder_24.vf -w D:/FPGA_work/SWord-DLD/Exp44-MEMS/Code/Decoder_24.sch
+//Design Name: Decoder_24
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Decoder_24(A, 
+                  B, 
+                  D0, 
+                  D1, 
+                  D2, 
+                  D3);
+
+    input A;
+    input B;
+   output D0;
+   output D1;
+   output D2;
+   output D3;
+   
+   wire XLXN_79;
+   wire XLXN_80;
+   
+   AND2  XLXI_1 (.I0(XLXN_79), 
+                .I1(A), 
+                .O(D1));
+   INV  XLXI_2 (.I(B), 
+               .O(XLXN_79));
+   AND2  XLXI_4 (.I0(XLXN_79), 
+                .I1(XLXN_80), 
+                .O(D0));
+   INV  XLXI_5 (.I(A), 
+               .O(XLXN_80));
+   AND2  XLXI_7 (.I0(B), 
+                .I1(XLXN_80), 
+                .O(D2));
+   AND2  XLXI_8 (.I0(B), 
+                .I1(A), 
+                .O(D3));
+endmodule

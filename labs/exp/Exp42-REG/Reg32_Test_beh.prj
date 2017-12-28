@@ -1,0 +1,5 @@
+verilog work "MB_DFF.vf"
+verilog work "Code/register_8bit.v"
+verilog work "Code/register_32bit.v"
+verilog work "Code/Reg32_Test.v"
+verilog work "d:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"
