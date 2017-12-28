@@ -1,0 +1,11 @@
+sch2hdl,-sympath,D:/FPGA_work/SWord-DLD/Exp29-ADD32/Code,-intstyle,ise,-family,kintex7,-verilog,D:/FPGA_work/SWord-DLD/Exp29-ADD32/Display.vf,-w,D:/FPGA_work/SWord-DLD/Exp29-ADD32/Code/Display.sch
+sch2hdl,-sympath,D:/FPGA_work/SWord-DLD/Exp29-ADD32/Code,-intstyle,ise,-family,kintex7,-verilog,D:/FPGA_work/SWord-DLD/Exp29-ADD32/MUX8T1_32.vf,-w,D:/FPGA_work/SWord-DLD/Exp29-ADD32/Code/MUX8T1_32.sch
+sch2hdl,-sympath,D:/FPGA_work/SWord-DLD/Exp29-ADD32/Code,-intstyle,ise,-family,kintex7,-verilog,D:/FPGA_work/SWord-DLD/Exp29-ADD32/MUX8T1_8.vf,-w,D:/FPGA_work/SWord-DLD/Exp29-ADD32/Code/MUX8T1_8.sch
+sch2hdl,-sympath,D:/FPGA_work/SWord-DLD/Exp29-ADD32/Code,-intstyle,ise,-family,kintex7,-verilog,D:/FPGA_work/SWord-DLD/Exp29-ADD32/MC14495_ZJU.vf,-w,D:/FPGA_work/SWord-DLD/Exp29-ADD32/Code/MC14495_ZJU.sch
+sch2hdl,-sympath,D:/FPGA_work/SWord-DLD/Exp29-ADD32/Code,-intstyle,ise,-family,kintex7,-verilog,D:/FPGA_work/SWord-DLD/Exp29-ADD32/MUX4T1_4.vf,-w,D:/FPGA_work/SWord-DLD/Exp29-ADD32/Code/MUX4T1_4.sch
+sch2hdl,-sympath,D:/FPGA_work/SWord-DLD/Exp29-ADD32/Code,-intstyle,ise,-family,kintex7,-verilog,D:/FPGA_work/SWord-DLD/Exp29-ADD32/Seg7_Dev.vf,-w,D:/FPGA_work/SWord-DLD/Exp29-ADD32/Code/Seg7_Dev.sch
+sch2hdl,-sympath,D:/FPGA_work/SWord-DLD/Exp29-ADD32/Code,-intstyle,ise,-family,kintex7,-verilog,D:/FPGA_work/SWord-DLD/Exp29-ADD32/Top_ADD32.vf,-w,D:/FPGA_work/SWord-DLD/Exp29-ADD32/Code/Top_ADD32.sch
+sch2hdl,-sympath,D:/FPGA_work/SWord-DLD/Exp29-ADD32/Code,-intstyle,ise,-family,kintex7,-verilog,D:/FPGA_work/SWord-DLD/Exp29-ADD32/ACLA4.vf,-w,D:/FPGA_work/SWord-DLD/Exp29-ADD32/Code/ACLA4.sch
+sch2hdl,-sympath,D:/FPGA_work/SWord-DLD/Exp29-ADD32/Code,-intstyle,ise,-family,kintex7,-verilog,D:/FPGA_work/SWord-DLD/Exp29-ADD32/CLA.vf,-w,D:/FPGA_work/SWord-DLD/Exp29-ADD32/Code/CLA.sch
+sch2hdl,-sympath,D:/FPGA_work/SWord-DLD/Exp29-ADD32/Code,-intstyle,ise,-family,kintex7,-verilog,D:/FPGA_work/SWord-DLD/Exp29-ADD32/ADC32.vf,-w,D:/FPGA_work/SWord-DLD/Exp29-ADD32/Code/ADC32.sch
+sch2hdl,-sympath,D:/FPGA_work/SWord-DLD/Exp29-ADD32/Code,-intstyle,ise,-family,kintex7,-verilog,D:/FPGA_work/SWord-DLD/Exp29-ADD32/add.vf,-w,D:/FPGA_work/SWord-DLD/Exp29-ADD32/Code/add.sch

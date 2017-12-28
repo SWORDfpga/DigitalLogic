@@ -1,0 +1,1325 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: Top_Counter32_Rev.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Top_Counter32_Rev.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Top_Counter32_Rev"
+Output Format                      : NGC
+Target Device                      : xc7k160t-2L-ffg676
+
+---- Source Options
+Top Module Name                    : Top_Counter32_Rev
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"Code"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\MUX4T1_4.vf" into library work
+Parsing module <MUX4T1_4>.
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\CLA.vf" into library work
+Parsing module <CLA>.
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\add.vf" into library work
+Parsing module <add>.
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\MUX8T1_8.vf" into library work
+Parsing module <MUX4T1_4_MUSER_MUX8T1_8>.
+Parsing module <MUX8T1_8>.
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\MC14495_ZJU.vf" into library work
+Parsing module <MC14495_ZJU>.
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\ACLA4.vf" into library work
+Parsing module <add_MUSER_ACLA4>.
+Parsing module <CLA_MUSER_ACLA4>.
+Parsing module <ACLA4>.
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Code\SSeg_map.v" into library work
+Parsing module <SSeg_map>.
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Code\Seg_map.v" into library work
+Parsing module <Seg_map>.
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Code\ScanSync.v" into library work
+Parsing module <ScanSync>.
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Code\P2S_IO.v" into library work
+Parsing module <P2S>.
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\MUX8T1_32.vf" into library work
+Parsing module <MUX4T1_4_MUSER_MUX8T1_32>.
+Parsing module <MUX8T1_8_MUSER_MUX8T1_32>.
+Parsing module <MUX8T1_32>.
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Code\MUX2T1_8.v" into library work
+Parsing module <MUX2T1_8>.
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Code\MUX2T1_64.v" into library work
+Parsing module <MUX2T1_64>.
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Code\LED_P2S_IO.v" into library work
+Parsing module <LED_P2S>.
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Code\HexTo8SEG.v" into library work
+Parsing module <HexTo8SEG>.
+Parsing module <Hex2Seg>.
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Code\common\xor32.v" into library work
+Parsing module <xor32>.
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Code\common\srl32.v" into library work
+Parsing module <srl32>.
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Code\common\SignalExt_32.v" into library work
+Parsing module <SignalExt_32>.
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Code\common\or_bit_32 .v" into library work
+Parsing module <or_bit_32>.
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Code\common\or32.v" into library work
+Parsing module <or32>.
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Code\common\nor32.v" into library work
+Parsing module <nor32>.
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Code\common\and32.v" into library work
+Parsing module <and32>.
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\ADC32.vf" into library work
+Parsing module <add_MUSER_ADC32>.
+Parsing module <CLA_MUSER_ADC32>.
+Parsing module <ACLA4_MUSER_ADC32>.
+Parsing module <ADC32>.
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Code\SPIO.v" into library work
+Parsing module <GPIO>.
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Code\SEnter_2_32_IO.v" into library work
+Parsing module <SEnter_2_32>.
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Seg7_Dev.vf" into library work
+Parsing module <MC14495_ZJU_MUSER_Seg7_Dev>.
+Parsing module <Seg7_Dev>.
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Code\SAnti_jitter_IO.v" into library work
+Parsing module <SAnti_jitter>.
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Code\PIO.v" into library work
+Parsing module <PIO>.
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Code\Multi_8CH32.v" into library work
+Parsing module <Multi_8CH32>.
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Display.vf" into library work
+Parsing module <Display>.
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Counter_4bit.vf" into library work
+Parsing module <Counter_4bit>.
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Code\counter_32bit_rev.v" into library work
+Parsing module <counter_32bit_rev>.
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Code\clkdiv.v" into library work
+Parsing module <clkdiv>.
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\ALU.vf" into library work
+Parsing module <add_MUSER_ALU>.
+Parsing module <CLA_MUSER_ALU>.
+Parsing module <ACLA4_MUSER_ALU>.
+Parsing module <ADC32_MUSER_ALU>.
+Parsing module <MUX4T1_4_MUSER_ALU>.
+Parsing module <MUX8T1_8_MUSER_ALU>.
+Parsing module <MUX8T1_32_MUSER_ALU>.
+Parsing module <ALU>.
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Top_Counter32_Rev.vf" into library work
+Parsing module <Counter_4bit_MUSER_Top_Counter32_Rev>.
+Parsing module <add_MUSER_Top_Counter32_Rev>.
+Parsing module <CLA_MUSER_Top_Counter32_Rev>.
+Parsing module <ACLA4_MUSER_Top_Counter32_Rev>.
+Parsing module <ADC32_MUSER_Top_Counter32_Rev>.
+Parsing module <MUX4T1_4_MUSER_Top_Counter32_Rev>.
+Parsing module <MUX8T1_8_MUSER_Top_Counter32_Rev>.
+Parsing module <MUX8T1_32_MUSER_Top_Counter32_Rev>.
+Parsing module <ALU_MUSER_Top_Counter32_Rev>.
+Parsing module <MC14495_ZJU_MUSER_Top_Counter32_Rev>.
+Parsing module <Seg7_Dev_MUSER_Top_Counter32_Rev>.
+Parsing module <Display_MUSER_Top_Counter32_Rev>.
+Parsing module <Top_Counter32_Rev>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <Top_Counter32_Rev>.
+
+Elaborating module <clkdiv>.
+
+Elaborating module <SAnti_jitter>.
+WARNING:HDLCompiler:1499 - "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Code\SAnti_jitter_IO.v" Line 21: Empty module <SAnti_jitter> remains a black box.
+WARNING:HDLCompiler:1127 - "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Top_Counter32_Rev.vf" Line 1271: Assignment to Pulse ignored, since the identifier is never used
+
+Elaborating module <Display_MUSER_Top_Counter32_Rev>.
+
+Elaborating module <MUX2T1_64>.
+
+Elaborating module <P2S>.
+WARNING:HDLCompiler:1499 - "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Code\P2S_IO.v" Line 21: Empty module <P2S> remains a black box.
+
+Elaborating module <HexTo8SEG>.
+
+Elaborating module <Hex2Seg>.
+
+Elaborating module <MC14495_ZJU>.
+
+Elaborating module <INV>.
+
+Elaborating module <AND4>.
+
+Elaborating module <OR4>.
+
+Elaborating module <AND3>.
+
+Elaborating module <OR3>.
+
+Elaborating module <AND2>.
+
+Elaborating module <OR2>.
+
+Elaborating module <SSeg_map>.
+
+Elaborating module <SEnter_2_32>.
+WARNING:HDLCompiler:1499 - "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Code\SEnter_2_32_IO.v" Line 21: Empty module <SEnter_2_32> remains a black box.
+
+Elaborating module <Multi_8CH32>.
+
+Elaborating module <MUX8T1_32>.
+
+Elaborating module <MUX8T1_8_MUSER_MUX8T1_32>.
+
+Elaborating module <MUX4T1_4_MUSER_MUX8T1_32>.
+
+Elaborating module <MUX8T1_8>.
+
+Elaborating module <MUX4T1_4_MUSER_MUX8T1_8>.
+
+Elaborating module <GPIO>.
+WARNING:HDLCompiler:413 - "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Code\SPIO.v" Line 35: Result of 16-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:1127 - "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Code\SPIO.v" Line 35: Assignment to LED_out ignored, since the identifier is never used
+
+Elaborating module <LED_P2S(DATA_BITS=16,DATA_COUNT_BITS=4)>.
+WARNING:HDLCompiler:1499 - "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Code\LED_P2S_IO.v" Line 21: Empty module <LED_P2S(DATA_BITS=16,DATA_COUNT_BITS=4)> remains a black box.
+
+Elaborating module <ALU_MUSER_Top_Counter32_Rev>.
+
+Elaborating module <ADC32_MUSER_Top_Counter32_Rev>.
+
+Elaborating module <CLA_MUSER_Top_Counter32_Rev>.
+
+Elaborating module <ACLA4_MUSER_Top_Counter32_Rev>.
+
+Elaborating module <add_MUSER_Top_Counter32_Rev>.
+
+Elaborating module <XOR2>.
+
+Elaborating module <and32>.
+
+Elaborating module <or32>.
+
+Elaborating module <xor32>.
+
+Elaborating module <nor32>.
+
+Elaborating module <srl32>.
+
+Elaborating module <or_bit_32>.
+WARNING:HDLCompiler:413 - "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Code\common\or_bit_32 .v" Line 25: Result of 32-bit expression is truncated to fit in 1-bit target.
+
+Elaborating module <SignalExt_32>.
+
+Elaborating module <GND>.
+
+Elaborating module <MUX8T1_32_MUSER_Top_Counter32_Rev>.
+
+Elaborating module <MUX8T1_8_MUSER_Top_Counter32_Rev>.
+
+Elaborating module <MUX4T1_4_MUSER_Top_Counter32_Rev>.
+WARNING:HDLCompiler:1127 - "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Top_Counter32_Rev.vf" Line 1331: Assignment to zero ignored, since the identifier is never used
+
+Elaborating module <Counter_4bit_MUSER_Top_Counter32_Rev>.
+
+Elaborating module <FD(INIT=1'b0)>.
+
+Elaborating module <XNOR2>.
+
+Elaborating module <NOR3>.
+
+Elaborating module <NOR2>.
+
+Elaborating module <NOR4>.
+
+Elaborating module <counter_32bit_rev>.
+
+Elaborating module <Seg7_Dev_MUSER_Top_Counter32_Rev>.
+
+Elaborating module <MUX2T1_8>.
+
+Elaborating module <MC14495_ZJU_MUSER_Top_Counter32_Rev>.
+
+Elaborating module <ScanSync>.
+
+Elaborating module <Seg_map>.
+
+Elaborating module <VCC>.
+WARNING:HDLCompiler:1127 - "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Top_Counter32_Rev.vf" Line 1125: Assignment to V5 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Top_Counter32_Rev.vf" Line 1126: Assignment to G0 ignored, since the identifier is never used
+
+Elaborating module <PIO>.
+WARNING:HDLCompiler:1127 - "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Top_Counter32_Rev.vf" Line 1359: Assignment to G0 ignored, since the identifier is never used
+
+Elaborating module <BUF>.
+WARNING:HDLCompiler:634 - "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Top_Counter32_Rev.vf" Line 1239: Net <N0> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Top_Counter32_Rev>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Top_Counter32_Rev.vf".
+    Set property "LOC = T9" for signal <clk_100mhz>.
+INFO:Xst:3210 - "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Top_Counter32_Rev.vf" line 1261: Output port <pulse_out> of the instance <M2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Top_Counter32_Rev.vf" line 1315: Output port <GPIOf0> of the instance <M6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Top_Counter32_Rev.vf" line 1325: Output port <overflow> of the instance <M8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Top_Counter32_Rev.vf" line 1325: Output port <zero> of the instance <M8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Top_Counter32_Rev.vf" line 1352: Output port <GPIOf0> of the instance <M61> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <N0> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	no macro.
+Unit <Top_Counter32_Rev> synthesized.
+
+Synthesizing Unit <clkdiv>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Code\clkdiv.v".
+    Found 32-bit register for signal <clkdiv>.
+    Found 32-bit adder for signal <clkdiv[31]_GND_2_o_add_0_OUT> created at line 30.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 D-type flip-flop(s).
+Unit <clkdiv> synthesized.
+
+Synthesizing Unit <Display_MUSER_Top_Counter32_Rev>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Top_Counter32_Rev.vf".
+    Summary:
+	no macro.
+Unit <Display_MUSER_Top_Counter32_Rev> synthesized.
+
+Synthesizing Unit <MUX2T1_64>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Code\MUX2T1_64.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <MUX2T1_64> synthesized.
+
+Synthesizing Unit <HexTo8SEG>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Code\HexTo8SEG.v".
+    Summary:
+	no macro.
+Unit <HexTo8SEG> synthesized.
+
+Synthesizing Unit <Hex2Seg>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Code\HexTo8SEG.v".
+    Summary:
+	no macro.
+Unit <Hex2Seg> synthesized.
+
+Synthesizing Unit <MC14495_ZJU>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\MC14495_ZJU.vf".
+    Summary:
+	no macro.
+Unit <MC14495_ZJU> synthesized.
+
+Synthesizing Unit <SSeg_map>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Code\SSeg_map.v".
+WARNING:Xst:647 - Input <Disp_num<63:32>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <SSeg_map> synthesized.
+
+Synthesizing Unit <Multi_8CH32>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Code\Multi_8CH32.v".
+WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 8-bit register for signal <cpu_blink>.
+    Found 8-bit register for signal <cpu_point>.
+    Found 32-bit register for signal <disp_data>.
+    Summary:
+	inferred  48 D-type flip-flop(s).
+Unit <Multi_8CH32> synthesized.
+
+Synthesizing Unit <MUX8T1_32>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\MUX8T1_32.vf".
+    Summary:
+	no macro.
+Unit <MUX8T1_32> synthesized.
+
+Synthesizing Unit <MUX8T1_8_MUSER_MUX8T1_32>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\MUX8T1_32.vf".
+    Summary:
+	no macro.
+Unit <MUX8T1_8_MUSER_MUX8T1_32> synthesized.
+
+Synthesizing Unit <MUX4T1_4_MUSER_MUX8T1_32>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\MUX8T1_32.vf".
+    Summary:
+	no macro.
+Unit <MUX4T1_4_MUSER_MUX8T1_32> synthesized.
+
+Synthesizing Unit <MUX8T1_8>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\MUX8T1_8.vf".
+    Summary:
+	no macro.
+Unit <MUX8T1_8> synthesized.
+
+Synthesizing Unit <MUX4T1_4_MUSER_MUX8T1_8>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\MUX8T1_8.vf".
+    Summary:
+	no macro.
+Unit <MUX4T1_4_MUSER_MUX8T1_8> synthesized.
+
+Synthesizing Unit <GPIO>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Code\SPIO.v".
+    Found 32-bit register for signal <GPIOf0>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <GPIO> synthesized.
+
+Synthesizing Unit <ALU_MUSER_Top_Counter32_Rev>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Top_Counter32_Rev.vf".
+WARNING:Xst:653 - Signal <overflow> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	no macro.
+Unit <ALU_MUSER_Top_Counter32_Rev> synthesized.
+
+Synthesizing Unit <ADC32_MUSER_Top_Counter32_Rev>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Top_Counter32_Rev.vf".
+    Summary:
+	no macro.
+Unit <ADC32_MUSER_Top_Counter32_Rev> synthesized.
+
+Synthesizing Unit <CLA_MUSER_Top_Counter32_Rev>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Top_Counter32_Rev.vf".
+    Summary:
+	no macro.
+Unit <CLA_MUSER_Top_Counter32_Rev> synthesized.
+
+Synthesizing Unit <ACLA4_MUSER_Top_Counter32_Rev>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Top_Counter32_Rev.vf".
+INFO:Xst:3210 - "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Top_Counter32_Rev.vf" line 264: Output port <co> of the instance <A0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Top_Counter32_Rev.vf" line 271: Output port <co> of the instance <A1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Top_Counter32_Rev.vf" line 278: Output port <co> of the instance <A2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Top_Counter32_Rev.vf" line 285: Output port <co> of the instance <A3> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <ACLA4_MUSER_Top_Counter32_Rev> synthesized.
+
+Synthesizing Unit <add_MUSER_Top_Counter32_Rev>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Top_Counter32_Rev.vf".
+    Summary:
+	no macro.
+Unit <add_MUSER_Top_Counter32_Rev> synthesized.
+
+Synthesizing Unit <and32>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Code\common\and32.v".
+    Summary:
+	no macro.
+Unit <and32> synthesized.
+
+Synthesizing Unit <or32>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Code\common\or32.v".
+    Summary:
+	no macro.
+Unit <or32> synthesized.
+
+Synthesizing Unit <xor32>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Code\common\xor32.v".
+    Summary:
+Unit <xor32> synthesized.
+
+Synthesizing Unit <nor32>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Code\common\nor32.v".
+    Summary:
+	no macro.
+Unit <nor32> synthesized.
+
+Synthesizing Unit <srl32>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Code\common\srl32.v".
+WARNING:Xst:647 - Input <A> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <B<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <srl32> synthesized.
+
+Synthesizing Unit <or_bit_32>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Code\common\or_bit_32 .v".
+    Summary:
+	no macro.
+Unit <or_bit_32> synthesized.
+
+Synthesizing Unit <SignalExt_32>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Code\common\SignalExt_32.v".
+    Summary:
+	no macro.
+Unit <SignalExt_32> synthesized.
+
+Synthesizing Unit <MUX8T1_32_MUSER_Top_Counter32_Rev>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Top_Counter32_Rev.vf".
+    Summary:
+	no macro.
+Unit <MUX8T1_32_MUSER_Top_Counter32_Rev> synthesized.
+
+Synthesizing Unit <MUX8T1_8_MUSER_Top_Counter32_Rev>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Top_Counter32_Rev.vf".
+    Summary:
+	no macro.
+Unit <MUX8T1_8_MUSER_Top_Counter32_Rev> synthesized.
+
+Synthesizing Unit <MUX4T1_4_MUSER_Top_Counter32_Rev>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Top_Counter32_Rev.vf".
+    Summary:
+	no macro.
+Unit <MUX4T1_4_MUSER_Top_Counter32_Rev> synthesized.
+
+Synthesizing Unit <Counter_4bit_MUSER_Top_Counter32_Rev>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Top_Counter32_Rev.vf".
+    Summary:
+	no macro.
+Unit <Counter_4bit_MUSER_Top_Counter32_Rev> synthesized.
+
+Synthesizing Unit <counter_32bit_rev>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Code\counter_32bit_rev.v".
+    Found 1-bit register for signal <Rc>.
+    Found 32-bit register for signal <cnt>.
+    Found 32-bit subtractor for signal <cnt[31]_GND_50_o_sub_3_OUT> created at line 40.
+    Found 32-bit adder for signal <cnt[31]_GND_50_o_add_1_OUT> created at line 39.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  33 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <counter_32bit_rev> synthesized.
+
+Synthesizing Unit <Seg7_Dev_MUSER_Top_Counter32_Rev>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Top_Counter32_Rev.vf".
+    Summary:
+	no macro.
+Unit <Seg7_Dev_MUSER_Top_Counter32_Rev> synthesized.
+
+Synthesizing Unit <MUX2T1_8>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Code\MUX2T1_8.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <MUX2T1_8> synthesized.
+
+Synthesizing Unit <MC14495_ZJU_MUSER_Top_Counter32_Rev>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Top_Counter32_Rev.vf".
+    Summary:
+	no macro.
+Unit <MC14495_ZJU_MUSER_Top_Counter32_Rev> synthesized.
+
+Synthesizing Unit <ScanSync>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Code\ScanSync.v".
+    Found 8x4-bit Read Only RAM for signal <AN>
+    Found 4-bit 8-to-1 multiplexer for signal <Hexo> created at line 32.
+    Found 1-bit 8-to-1 multiplexer for signal <p> created at line 32.
+    Found 1-bit 8-to-1 multiplexer for signal <LE> created at line 32.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   3 Multiplexer(s).
+Unit <ScanSync> synthesized.
+
+Synthesizing Unit <Seg_map>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Code\Seg_map.v".
+    Summary:
+	inferred   7 Multiplexer(s).
+Unit <Seg_map> synthesized.
+
+Synthesizing Unit <PIO>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp38-Counter32-Rev\Code\PIO.v".
+    Found 32-bit register for signal <GPIOf0>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <PIO> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 8x4-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 1
+ 32-bit addsub                                         : 1
+# Registers                                            : 8
+ 1-bit register                                        : 1
+ 32-bit register                                       : 5
+ 8-bit register                                        : 2
+# Multiplexers                                         : 13
+ 1-bit 8-to-1 multiplexer                              : 2
+ 32-bit 2-to-1 multiplexer                             : 1
+ 4-bit 8-to-1 multiplexer                              : 1
+ 64-bit 2-to-1 multiplexer                             : 1
+ 8-bit 2-to-1 multiplexer                              : 8
+# Xors                                                 : 2
+ 32-bit xor2                                           : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <Code/SAnti_jitter.ngc>.
+Reading core <Code/SEnter_2_32.ngc>.
+Reading core <Code/P2S.ngc>.
+Reading core <Code/LED_P2S.ngc>.
+Loading core <SAnti_jitter> for timing and area information for instance <M2>.
+Loading core <SEnter_2_32> for timing and area information for instance <M4>.
+Loading core <P2S> for timing and area information for instance <M2>.
+Loading core <LED_P2S> for timing and area information for instance <LED_P2S>.
+WARNING:Xst:1290 - Hierarchical block <ALU_Zero> is unconnected in block <M8>.
+   It will be removed from the design.
+WARNING:Xst:1710 - FF/Latch <GPIOf0_1> (without init value) has a constant value of 0 in block <M6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <GPIOf0_1> (without init value) has a constant value of 0 in block <M61>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <GPIOf0_16> of sequential type is unconnected in block <M6>.
+WARNING:Xst:2677 - Node <GPIOf0_17> of sequential type is unconnected in block <M6>.
+WARNING:Xst:2677 - Node <GPIOf0_18> of sequential type is unconnected in block <M6>.
+WARNING:Xst:2677 - Node <GPIOf0_19> of sequential type is unconnected in block <M6>.
+WARNING:Xst:2677 - Node <GPIOf0_20> of sequential type is unconnected in block <M6>.
+WARNING:Xst:2677 - Node <GPIOf0_21> of sequential type is unconnected in block <M6>.
+WARNING:Xst:2677 - Node <GPIOf0_22> of sequential type is unconnected in block <M6>.
+WARNING:Xst:2677 - Node <GPIOf0_23> of sequential type is unconnected in block <M6>.
+WARNING:Xst:2677 - Node <GPIOf0_24> of sequential type is unconnected in block <M6>.
+WARNING:Xst:2677 - Node <GPIOf0_25> of sequential type is unconnected in block <M6>.
+WARNING:Xst:2677 - Node <GPIOf0_26> of sequential type is unconnected in block <M6>.
+WARNING:Xst:2677 - Node <GPIOf0_27> of sequential type is unconnected in block <M6>.
+WARNING:Xst:2677 - Node <GPIOf0_28> of sequential type is unconnected in block <M6>.
+WARNING:Xst:2677 - Node <GPIOf0_29> of sequential type is unconnected in block <M6>.
+WARNING:Xst:2677 - Node <GPIOf0_30> of sequential type is unconnected in block <M6>.
+WARNING:Xst:2677 - Node <GPIOf0_31> of sequential type is unconnected in block <M6>.
+WARNING:Xst:2677 - Node <GPIOf0_8> of sequential type is unconnected in block <M61>.
+WARNING:Xst:2677 - Node <GPIOf0_9> of sequential type is unconnected in block <M61>.
+WARNING:Xst:2677 - Node <GPIOf0_10> of sequential type is unconnected in block <M61>.
+WARNING:Xst:2677 - Node <GPIOf0_11> of sequential type is unconnected in block <M61>.
+WARNING:Xst:2677 - Node <GPIOf0_12> of sequential type is unconnected in block <M61>.
+WARNING:Xst:2677 - Node <GPIOf0_13> of sequential type is unconnected in block <M61>.
+WARNING:Xst:2677 - Node <GPIOf0_14> of sequential type is unconnected in block <M61>.
+WARNING:Xst:2677 - Node <GPIOf0_15> of sequential type is unconnected in block <M61>.
+WARNING:Xst:2677 - Node <GPIOf0_16> of sequential type is unconnected in block <M61>.
+WARNING:Xst:2677 - Node <GPIOf0_17> of sequential type is unconnected in block <M61>.
+WARNING:Xst:2677 - Node <GPIOf0_18> of sequential type is unconnected in block <M61>.
+WARNING:Xst:2677 - Node <GPIOf0_19> of sequential type is unconnected in block <M61>.
+WARNING:Xst:2677 - Node <GPIOf0_20> of sequential type is unconnected in block <M61>.
+WARNING:Xst:2677 - Node <GPIOf0_21> of sequential type is unconnected in block <M61>.
+WARNING:Xst:2677 - Node <GPIOf0_22> of sequential type is unconnected in block <M61>.
+WARNING:Xst:2677 - Node <GPIOf0_23> of sequential type is unconnected in block <M61>.
+WARNING:Xst:2677 - Node <GPIOf0_24> of sequential type is unconnected in block <M61>.
+WARNING:Xst:2677 - Node <GPIOf0_25> of sequential type is unconnected in block <M61>.
+WARNING:Xst:2677 - Node <GPIOf0_26> of sequential type is unconnected in block <M61>.
+WARNING:Xst:2677 - Node <GPIOf0_27> of sequential type is unconnected in block <M61>.
+WARNING:Xst:2677 - Node <GPIOf0_28> of sequential type is unconnected in block <M61>.
+WARNING:Xst:2677 - Node <GPIOf0_29> of sequential type is unconnected in block <M61>.
+WARNING:Xst:2677 - Node <GPIOf0_30> of sequential type is unconnected in block <M61>.
+WARNING:Xst:2677 - Node <GPIOf0_31> of sequential type is unconnected in block <M61>.
+
+Synthesizing (advanced) Unit <ScanSync>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_AN> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 4-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <Scan>          |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <AN>            |          |
+    -----------------------------------------------------------------------
+Unit <ScanSync> synthesized (advanced).
+
+Synthesizing (advanced) Unit <clkdiv>.
+The following registers are absorbed into counter <clkdiv>: 1 register on signal <clkdiv>.
+Unit <clkdiv> synthesized (advanced).
+
+Synthesizing (advanced) Unit <counter_32bit_rev>.
+The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
+Unit <counter_32bit_rev> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 8x4-bit single-port distributed Read Only RAM         : 1
+# Counters                                             : 2
+ 32-bit up counter                                     : 1
+ 32-bit updown counter                                 : 1
+# Registers                                            : 117
+ Flip-Flops                                            : 117
+# Multiplexers                                         : 12
+ 1-bit 8-to-1 multiplexer                              : 2
+ 4-bit 8-to-1 multiplexer                              : 1
+ 64-bit 2-to-1 multiplexer                             : 1
+ 8-bit 2-to-1 multiplexer                              : 8
+# Xors                                                 : 2
+ 32-bit xor2                                           : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <GPIOf0_1> (without init value) has a constant value of 0 in block <GPIO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <GPIOf0_1> (without init value) has a constant value of 0 in block <PIO>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <MC14495_ZJU> ...
+
+Optimizing unit <Multi_8CH32> ...
+
+Optimizing unit <MUX8T1_8_MUSER_MUX8T1_32> ...
+
+Optimizing unit <MUX4T1_4_MUSER_MUX8T1_32> ...
+
+Optimizing unit <MUX8T1_8> ...
+
+Optimizing unit <MUX4T1_4_MUSER_MUX8T1_8> ...
+
+Optimizing unit <ADC32_MUSER_Top_Counter32_Rev> ...
+
+Optimizing unit <CLA_MUSER_Top_Counter32_Rev> ...
+
+Optimizing unit <MUX8T1_8_MUSER_Top_Counter32_Rev> ...
+
+Optimizing unit <MUX4T1_4_MUSER_Top_Counter32_Rev> ...
+
+Optimizing unit <MC14495_ZJU_MUSER_Top_Counter32_Rev> ...
+
+Optimizing unit <Counter_4bit_MUSER_Top_Counter32_Rev> ...
+
+Optimizing unit <Top_Counter32_Rev> ...
+
+Optimizing unit <HexTo8SEG> ...
+
+Optimizing unit <GPIO> ...
+
+Optimizing unit <PIO> ...
+
+Optimizing unit <ALU_MUSER_Top_Counter32_Rev> ...
+
+Optimizing unit <Seg7_Dev_MUSER_Top_Counter32_Rev> ...
+WARNING:Xst:2677 - Node <M6/GPIOf0_31> of sequential type is unconnected in block <Top_Counter32_Rev>.
+WARNING:Xst:2677 - Node <M6/GPIOf0_30> of sequential type is unconnected in block <Top_Counter32_Rev>.
+WARNING:Xst:2677 - Node <M6/GPIOf0_29> of sequential type is unconnected in block <Top_Counter32_Rev>.
+WARNING:Xst:2677 - Node <M6/GPIOf0_28> of sequential type is unconnected in block <Top_Counter32_Rev>.
+WARNING:Xst:2677 - Node <M6/GPIOf0_27> of sequential type is unconnected in block <Top_Counter32_Rev>.
+WARNING:Xst:2677 - Node <M6/GPIOf0_26> of sequential type is unconnected in block <Top_Counter32_Rev>.
+WARNING:Xst:2677 - Node <M6/GPIOf0_25> of sequential type is unconnected in block <Top_Counter32_Rev>.
+WARNING:Xst:2677 - Node <M6/GPIOf0_24> of sequential type is unconnected in block <Top_Counter32_Rev>.
+WARNING:Xst:2677 - Node <M6/GPIOf0_23> of sequential type is unconnected in block <Top_Counter32_Rev>.
+WARNING:Xst:2677 - Node <M6/GPIOf0_22> of sequential type is unconnected in block <Top_Counter32_Rev>.
+WARNING:Xst:2677 - Node <M6/GPIOf0_21> of sequential type is unconnected in block <Top_Counter32_Rev>.
+WARNING:Xst:2677 - Node <M6/GPIOf0_20> of sequential type is unconnected in block <Top_Counter32_Rev>.
+WARNING:Xst:2677 - Node <M6/GPIOf0_19> of sequential type is unconnected in block <Top_Counter32_Rev>.
+WARNING:Xst:2677 - Node <M6/GPIOf0_18> of sequential type is unconnected in block <Top_Counter32_Rev>.
+WARNING:Xst:2677 - Node <M6/GPIOf0_17> of sequential type is unconnected in block <Top_Counter32_Rev>.
+WARNING:Xst:2677 - Node <M6/GPIOf0_16> of sequential type is unconnected in block <Top_Counter32_Rev>.
+WARNING:Xst:2677 - Node <M61/GPIOf0_31> of sequential type is unconnected in block <Top_Counter32_Rev>.
+WARNING:Xst:2677 - Node <M61/GPIOf0_30> of sequential type is unconnected in block <Top_Counter32_Rev>.
+WARNING:Xst:2677 - Node <M61/GPIOf0_29> of sequential type is unconnected in block <Top_Counter32_Rev>.
+WARNING:Xst:2677 - Node <M61/GPIOf0_28> of sequential type is unconnected in block <Top_Counter32_Rev>.
+WARNING:Xst:2677 - Node <M61/GPIOf0_27> of sequential type is unconnected in block <Top_Counter32_Rev>.
+WARNING:Xst:2677 - Node <M61/GPIOf0_26> of sequential type is unconnected in block <Top_Counter32_Rev>.
+WARNING:Xst:2677 - Node <M61/GPIOf0_25> of sequential type is unconnected in block <Top_Counter32_Rev>.
+WARNING:Xst:2677 - Node <M61/GPIOf0_24> of sequential type is unconnected in block <Top_Counter32_Rev>.
+WARNING:Xst:2677 - Node <M61/GPIOf0_23> of sequential type is unconnected in block <Top_Counter32_Rev>.
+WARNING:Xst:2677 - Node <M61/GPIOf0_22> of sequential type is unconnected in block <Top_Counter32_Rev>.
+WARNING:Xst:2677 - Node <M61/GPIOf0_21> of sequential type is unconnected in block <Top_Counter32_Rev>.
+WARNING:Xst:2677 - Node <M61/GPIOf0_20> of sequential type is unconnected in block <Top_Counter32_Rev>.
+WARNING:Xst:2677 - Node <M61/GPIOf0_19> of sequential type is unconnected in block <Top_Counter32_Rev>.
+WARNING:Xst:2677 - Node <M61/GPIOf0_18> of sequential type is unconnected in block <Top_Counter32_Rev>.
+WARNING:Xst:2677 - Node <M61/GPIOf0_17> of sequential type is unconnected in block <Top_Counter32_Rev>.
+WARNING:Xst:2677 - Node <M61/GPIOf0_16> of sequential type is unconnected in block <Top_Counter32_Rev>.
+WARNING:Xst:2677 - Node <M61/GPIOf0_15> of sequential type is unconnected in block <Top_Counter32_Rev>.
+WARNING:Xst:2677 - Node <M61/GPIOf0_14> of sequential type is unconnected in block <Top_Counter32_Rev>.
+WARNING:Xst:2677 - Node <M61/GPIOf0_13> of sequential type is unconnected in block <Top_Counter32_Rev>.
+WARNING:Xst:2677 - Node <M61/GPIOf0_12> of sequential type is unconnected in block <Top_Counter32_Rev>.
+WARNING:Xst:2677 - Node <M61/GPIOf0_11> of sequential type is unconnected in block <Top_Counter32_Rev>.
+WARNING:Xst:2677 - Node <M61/GPIOf0_10> of sequential type is unconnected in block <Top_Counter32_Rev>.
+WARNING:Xst:2677 - Node <M61/GPIOf0_9> of sequential type is unconnected in block <Top_Counter32_Rev>.
+WARNING:Xst:2677 - Node <M61/GPIOf0_8> of sequential type is unconnected in block <Top_Counter32_Rev>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Top_Counter32_Rev, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 139
+ Flip-Flops                                            : 139
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Top_Counter32_Rev.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 3171
+#      AND2                        : 1076
+#      AND3                        : 129
+#      AND4                        : 111
+#      BUF                         : 1
+#      GND                         : 2
+#      INV                         : 175
+#      LUT1                        : 97
+#      LUT2                        : 199
+#      LUT3                        : 147
+#      LUT4                        : 99
+#      LUT5                        : 65
+#      LUT6                        : 231
+#      MULT_AND                    : 31
+#      MUXCY                       : 152
+#      MUXF7                       : 12
+#      OR2                         : 187
+#      OR3                         : 37
+#      OR4                         : 216
+#      VCC                         : 4
+#      XNOR2                       : 3
+#      XOR2                        : 64
+#      XORCY                       : 133
+# FlipFlops/Latches                : 438
+#      FD                          : 242
+#      FDC                         : 46
+#      FDC_1                       : 15
+#      FDCE                        : 4
+#      FDE                         : 95
+#      FDE_1                       : 7
+#      FDRE                        : 29
+# Clock Buffers                    : 3
+#      BUFG                        : 2
+#      BUFGP                       : 1
+# IO Buffers                       : 58
+#      IBUF                        : 21
+#      OBUF                        : 37
+# Logical                          : 3
+#      NOR2                        : 1
+#      NOR3                        : 1
+#      NOR4                        : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7k160tffg676-2l 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             438  out of  202800     0%  
+ Number of Slice LUTs:                 1013  out of  101400     0%  
+    Number used as Logic:              1013  out of  101400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1177
+   Number with an unused Flip Flop:     739  out of   1177    62%  
+   Number with an unused LUT:           164  out of   1177    13%  
+   Number of fully used LUT-FF pairs:   274  out of   1177    23%  
+   Number of unique control sets:        19
+
+IO Utilization: 
+ Number of IOs:                          59
+ Number of bonded IOBs:                  59  out of    400    14%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                3  out of     32     9%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk_100mhz                         | BUFGP                  | 357   |
+M1/clkdiv_26                       | BUFG                   | 37    |
+M2/clk1                            | BUFG                   | 41    |
+M4/push(M4/push1:O)                | NONE(*)(M4/state_0)    | 3     |
+-----------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 17.177ns (Maximum Frequency: 58.218MHz)
+   Minimum input arrival time before clock: 2.109ns
+   Maximum output required time after clock: 17.652ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_100mhz'
+  Clock period: 17.177ns (frequency: 58.218MHz)
+  Total number of paths / destination ports: 374050 / 444
+-------------------------------------------------------------------------
+Delay:               17.177ns (Levels of Logic = 27)
+  Source:            M2/SW_OK_4 (FF)
+  Destination:       M3/M2/buffer_4 (FF)
+  Source Clock:      clk_100mhz rising
+  Destination Clock: clk_100mhz rising
+
+  Data Path: M2/SW_OK_4 to M3/M2/buffer_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             78   0.236   0.488  SW_OK_4 (SW_OK<4>)
+     end scope: 'M2:SW_OK<4>'
+     LUT2:I1->O            2   0.043   0.618  M8/ALU_U7/Mxor_res_1_xo<0>1 (M8/Bo<1>)
+     XOR2:I0->O            8   0.043   0.561  M8/ALU_ADD/XLXI_46/A1/XLXI_1 (M8/ALU_ADD/XLXI_46/XLXN_217)
+     AND4:I2->O            1   0.134   0.495  M8/ALU_ADD/XLXI_46/CLA0/XLXI_23 (M8/ALU_ADD/XLXI_46/CLA0/XLXN_163)
+     OR4:I3->O             4   0.161   0.512  M8/ALU_ADD/XLXI_46/CLA0/XLXI_26 (M8/ALU_ADD/XLXN_323)
+     AND4:I3->O            1   0.161   0.495  M8/ALU_ADD/CLA2/XLXI_23 (M8/ALU_ADD/CLA2/XLXN_163)
+     OR4:I3->O             1   0.161   0.603  M8/ALU_ADD/CLA2/XLXI_26 (M8/ALU_ADD/XLXN_349)
+     OR2:I1->O             9   0.053   0.540  M8/ALU_ADD/XLXI_36 (M8/ALU_ADD/XLXN_358)
+     AND4:I3->O            1   0.161   0.495  M8/ALU_ADD/CLA1/XLXI_20 (M8/ALU_ADD/CLA1/XLXN_100)
+     OR4:I3->O             5   0.161   0.518  M8/ALU_ADD/CLA1/XLXI_21 (M8/ALU_ADD/XLXN_370)
+     AND4:I3->O            1   0.161   0.495  M8/ALU_ADD/XLXI_39/CLA0/XLXI_20 (M8/ALU_ADD/XLXI_39/CLA0/XLXN_100)
+     OR4:I3->O             2   0.161   0.618  M8/ALU_ADD/XLXI_39/CLA0/XLXI_21 (M8/ALU_ADD/XLXI_39/XLXN_14)
+     XOR2:I0->O            3   0.043   0.625  M8/ALU_ADD/XLXI_39/A3/XLXI_2 (M8/S<31>)
+     AND2:I0->O            1   0.043   0.603  M8/XLXI_15/MUX8183/MUX4413/XLXI_158 (M8/XLXI_15/MUX8183/MUX4413/XLXN_456)
+     OR4:I1->O             1   0.053   0.613  M8/XLXI_15/MUX8183/MUX4413/XLXI_160 (M8/XLXI_15/MUX8183/o3<3>)
+     AND2:I0->O            1   0.043   0.613  M8/XLXI_15/MUX8183/XLXI_67 (M8/XLXI_15/MUX8183/XLXN_158)
+     OR2:I0->O             1   0.043   0.613  M8/XLXI_15/MUX8183/XLXI_75 (ALUout<31>)
+     AND2:I0->O            1   0.043   0.603  M5/MUX1_DispData/MUX8183/MUX4412/XLXI_158 (M5/MUX1_DispData/MUX8183/MUX4412/XLXN_456)
+     OR4:I1->O             1   0.053   0.613  M5/MUX1_DispData/MUX8183/MUX4412/XLXI_160 (M5/MUX1_DispData/MUX8183/o2<3>)
+     AND2:I0->O            1   0.043   0.603  M5/MUX1_DispData/MUX8183/XLXI_66 (M5/MUX1_DispData/MUX8183/XLXN_157)
+     OR2:I1->O            12   0.053   0.400  M5/MUX1_DispData/MUX8183/XLXI_75 (Disp_num<31>)
+     INV:I->O             11   0.317   0.551  M3/SM1/HTS0/MSEG/XLXI_1 (M3/SM1/HTS0/MSEG/XLXN_14)
+     AND4:I3->O            2   0.161   0.500  M3/SM1/HTS0/MSEG/XLXI_5 (M3/SM1/HTS0/MSEG/XLXN_119)
+     OR4:I3->O             1   0.161   0.603  M3/SM1/HTS0/MSEG/XLXI_17 (M3/SM1/HTS0/MSEG/XLXN_208)
+     OR2:I1->O             1   0.053   0.350  M3/SM1/HTS0/MSEG/XLXI_47 (M3/XLXN_390<7>)
+     LUT3:I2->O            1   0.043   0.613  M3/MUXSH2M/Mmux_o621 (M3/SEGMENT<7>)
+     begin scope: 'M3/M2:P_Data<7>'
+     LUT6:I0->O            1   0.043   0.000  buffer_7_rstpot (buffer_7_rstpot)
+     FD:D                     -0.000          buffer_7
+    ----------------------------------------
+    Total                     17.177ns (2.831ns logic, 14.346ns route)
+                                       (16.5% logic, 83.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'M1/clkdiv_26'
+  Clock period: 2.578ns (frequency: 387.958MHz)
+  Total number of paths / destination ports: 1099 / 37
+-------------------------------------------------------------------------
+Delay:               2.578ns (Levels of Logic = 3)
+  Source:            M9/A (FF)
+  Destination:       M9/D (FF)
+  Source Clock:      M1/clkdiv_26 rising
+  Destination Clock: M1/clkdiv_26 rising
+
+  Data Path: M9/A to M9/D
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               4   0.236   0.356  M9/A (Qa)
+     INV:I->O              4   0.317   0.630  M9/XLXI_8 (M9/nQa)
+     NOR3:I0->O            1   0.043   0.603  M9/XLXI_24 (M9/XLXN_183)
+     XNOR2:I1->O           1   0.053   0.339  M9/XLXI_14 (M9/XLXN_25)
+     FD:D                     -0.000          M9/D
+    ----------------------------------------
+    Total                      2.578ns (0.649ns logic, 1.929ns route)
+                                       (25.2% logic, 74.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'M2/clk1'
+  Clock period: 2.152ns (frequency: 464.587MHz)
+  Total number of paths / destination ports: 1454 / 90
+-------------------------------------------------------------------------
+Delay:               2.152ns (Levels of Logic = 7)
+  Source:            M2/counter_8 (FF)
+  Destination:       M2/Key_x_0 (FF)
+  Source Clock:      M2/clk1 rising
+  Destination Clock: M2/clk1 rising
+
+  Data Path: M2/counter_8 to M2/Key_x_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             3   0.236   0.615  counter_8 (counter<8>)
+     LUT5:I0->O            1   0.043   0.000  Mcompar_counter[31]_GND_1_o_LessThan_5_o_lut<0> (Mcompar_counter[31]_GND_1_o_LessThan_5_o_lut<0>)
+     MUXCY:S->O            1   0.238   0.000  Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<0> (Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<0>)
+     MUXCY:CI->O           1   0.013   0.000  Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<1> (Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<1>)
+     MUXCY:CI->O           1   0.013   0.000  Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<2> (Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<2>)
+     MUXCY:CI->O           1   0.013   0.000  Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<3> (Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<3>)
+     MUXCY:CI->O           8   0.013   0.378  Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<4> (Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<4>)
+     INV:I->O              7   0.054   0.373  _n0225_inv1_cepot_INV_0 (_n0225_inv1_cepot)
+     FDE:CE                    0.161          Key_x_0
+    ----------------------------------------
+    Total                      2.152ns (0.786ns logic, 1.366ns route)
+                                       (36.5% logic, 63.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'M4/push'
+  Clock period: 1.069ns (frequency: 935.060MHz)
+  Total number of paths / destination ports: 6 / 3
+-------------------------------------------------------------------------
+Delay:               1.069ns (Levels of Logic = 1)
+  Source:            M4/state_0 (FF)
+  Destination:       M4/state_0 (FF)
+  Source Clock:      M4/push rising
+  Destination Clock: M4/push rising
+
+  Data Path: M4/state_0 to M4/state_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             19   0.236   0.440  state_0 (state<0>)
+     INV:I->O              1   0.054   0.339  Result<0>1_INV_0 (Result<0>)
+     FDE:D                    -0.000          state_0
+    ----------------------------------------
+    Total                      1.069ns (0.290ns logic, 0.779ns route)
+                                       (27.1% logic, 72.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_100mhz'
+  Total number of paths / destination ports: 1195 / 100
+-------------------------------------------------------------------------
+Offset:              2.089ns (Levels of Logic = 10)
+  Source:            SW<2> (PAD)
+  Destination:       M2/SW_OK_0 (FF)
+  Destination Clock: clk_100mhz rising
+
+  Data Path: SW<2> to M2/SW_OK_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   0.000   0.625  SW_2_IBUF (SW_2_IBUF)
+     begin scope: 'M2:SW<2>'
+     LUT6:I0->O            1   0.043   0.000  Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_lut<0> (Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_lut<0>)
+     MUXCY:S->O            1   0.238   0.000  Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<0> (Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<0>)
+     MUXCY:CI->O           1   0.013   0.000  Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<1> (Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<1>)
+     MUXCY:CI->O           1   0.013   0.000  Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<2> (Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<2>)
+     MUXCY:CI->O           1   0.013   0.000  Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<3> (Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<3>)
+     MUXCY:CI->O           1   0.013   0.000  Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<4> (Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<4>)
+     MUXCY:CI->O          43   0.013   0.471  Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<5> (sw_temp[15]_SW[15]_not_equal_100_o)
+     INV:I->O             17   0.054   0.429  _n0243_inv1_cepot_cepot_INV_0 (_n0243_inv1_cepot_cepot)
+     FDE:CE                    0.161          SW_OK_0
+    ----------------------------------------
+    Total                      2.089ns (0.563ns logic, 1.525ns route)
+                                       (27.0% logic, 73.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'M2/clk1'
+  Total number of paths / destination ports: 176 / 41
+-------------------------------------------------------------------------
+Offset:              2.109ns (Levels of Logic = 6)
+  Source:            K_COL<3> (PAD)
+  Destination:       M2/Key_x_1 (FF)
+  Destination Clock: M2/clk1 rising
+
+  Data Path: K_COL<3> to M2/Key_x_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   0.000   0.550  K_COL_3_IBUF (K_COL_3_IBUF)
+     begin scope: 'M2:Key_y<3>'
+     LUT4:I0->O           12   0.043   0.674  out1 (n0016)
+     LUT6:I0->O            3   0.043   0.362  _n0295<0>1 (_n0295<0>)
+     LUT6:I5->O            1   0.043   0.350  Key_x[4]_PWR_1_o_select_74_OUT<1>1 (Key_x[4]_PWR_1_o_select_74_OUT<4>)
+     LUT3:I2->O            1   0.043   0.000  Key_x_4_dpot (Key_x_4_dpot)
+     FDE:D                    -0.000          Key_x_4
+    ----------------------------------------
+    Total                      2.109ns (0.172ns logic, 1.937ns route)
+                                       (8.2% logic, 91.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_100mhz'
+  Total number of paths / destination ports: 350155 / 27
+-------------------------------------------------------------------------
+Offset:              17.652ns (Levels of Logic = 29)
+  Source:            M2/SW_OK_4 (FF)
+  Destination:       SEGMENT<3> (PAD)
+  Source Clock:      clk_100mhz rising
+
+  Data Path: M2/SW_OK_4 to SEGMENT<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             78   0.236   0.488  SW_OK_4 (SW_OK<4>)
+     end scope: 'M2:SW_OK<4>'
+     LUT2:I1->O            2   0.043   0.618  M8/ALU_U7/Mxor_res_1_xo<0>1 (M8/Bo<1>)
+     XOR2:I0->O            8   0.043   0.561  M8/ALU_ADD/XLXI_46/A1/XLXI_1 (M8/ALU_ADD/XLXI_46/XLXN_217)
+     AND4:I2->O            1   0.134   0.495  M8/ALU_ADD/XLXI_46/CLA0/XLXI_23 (M8/ALU_ADD/XLXI_46/CLA0/XLXN_163)
+     OR4:I3->O             4   0.161   0.512  M8/ALU_ADD/XLXI_46/CLA0/XLXI_26 (M8/ALU_ADD/XLXN_323)
+     AND4:I3->O            1   0.161   0.495  M8/ALU_ADD/CLA2/XLXI_23 (M8/ALU_ADD/CLA2/XLXN_163)
+     OR4:I3->O             1   0.161   0.603  M8/ALU_ADD/CLA2/XLXI_26 (M8/ALU_ADD/XLXN_349)
+     OR2:I1->O             9   0.053   0.567  M8/ALU_ADD/XLXI_36 (M8/ALU_ADD/XLXN_358)
+     AND3:I2->O            1   0.134   0.522  M8/ALU_ADD/CLA1/XLXI_5 (M8/ALU_ADD/CLA1/XLXN_36)
+     OR3:I2->O             5   0.134   0.626  M8/ALU_ADD/CLA1/XLXI_4 (M8/ALU_ADD/XLXN_367)
+     AND2:I1->O            1   0.053   0.603  M8/ALU_ADD/XLXI_40/CLA0/XLXI_1 (M8/ALU_ADD/XLXI_40/CLA0/XLXN_3)
+     OR2:I1->O             2   0.053   0.618  M8/ALU_ADD/XLXI_40/CLA0/XLXI_3 (M8/ALU_ADD/XLXI_40/XLXN_8)
+     XOR2:I0->O            2   0.043   0.618  M8/ALU_ADD/XLXI_40/A1/XLXI_2 (M8/S<25>)
+     AND2:I0->O            1   0.043   0.603  M8/XLXI_15/MUX8183/MUX4411/XLXI_128 (M8/XLXI_15/MUX8183/MUX4411/XLXN_396)
+     OR4:I1->O             1   0.053   0.613  M8/XLXI_15/MUX8183/MUX4411/XLXI_130 (M8/XLXI_15/MUX8183/o1<1>)
+     AND2:I0->O            1   0.043   0.613  M8/XLXI_15/MUX8183/XLXI_22 (M8/XLXI_15/MUX8183/XLXN_45)
+     OR2:I0->O             1   0.043   0.613  M8/XLXI_15/MUX8183/XLXI_69 (ALUout<25>)
+     AND2:I0->O            1   0.043   0.603  M5/MUX1_DispData/MUX8183/MUX4410/XLXI_128 (M5/MUX1_DispData/MUX8183/MUX4410/XLXN_396)
+     OR4:I1->O             1   0.053   0.613  M5/MUX1_DispData/MUX8183/MUX4410/XLXI_130 (M5/MUX1_DispData/MUX8183/o0<1>)
+     AND2:I0->O            1   0.043   0.603  M5/MUX1_DispData/MUX8183/XLXI_21 (M5/MUX1_DispData/MUX8183/XLXN_44)
+     OR2:I1->O            15   0.053   0.600  M5/MUX1_DispData/MUX8183/XLXI_69 (Disp_num<25>)
+     LUT6:I2->O            1   0.043   0.000  M31/M2/Mmux_Hexo_31 (M31/M2/Mmux_Hexo_31)
+     MUXF7:I1->O          11   0.178   0.395  M31/M2/Mmux_Hexo_2_f7_0 (M31/Hex<1>)
+     INV:I->O              8   0.317   0.561  M31/M1/XLXI_3 (M31/M1/XLXN_62)
+     AND4:I2->O            2   0.134   0.500  M31/M1/XLXI_5 (M31/M1/XLXN_119)
+     OR4:I3->O             1   0.161   0.603  M31/M1/XLXI_17 (M31/M1/XLXN_208)
+     OR2:I1->O             1   0.053   0.350  M31/M1/XLXI_47 (M31/SEG_TXT<0>)
+     LUT3:I2->O            1   0.043   0.339  M31/MUXHM/Mmux_o1 (SEGMENT_0_OBUF)
+     OBUF:I->O                 0.000          SEGMENT_0_OBUF (SEGMENT<0>)
+    ----------------------------------------
+    Total                     17.652ns (2.712ns logic, 14.940ns route)
+                                       (15.4% logic, 84.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'M2/clk1'
+  Total number of paths / destination ports: 6 / 6
+-------------------------------------------------------------------------
+Offset:              0.658ns (Levels of Logic = 2)
+  Source:            M2/Key_x_4 (FF)
+  Destination:       K_ROW<4> (PAD)
+  Source Clock:      M2/clk1 rising
+
+  Data Path: M2/Key_x_4 to K_ROW<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             16   0.236   0.422  Key_x_4 (Key_x<4>)
+     end scope: 'M2:Key_x<4>'
+     OBUF:I->O                 0.000          K_ROW_4_OBUF (K_ROW<4>)
+    ----------------------------------------
+    Total                      0.658ns (0.236ns logic, 0.422ns route)
+                                       (35.8% logic, 64.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'M1/clkdiv_26'
+  Total number of paths / destination ports: 2880 / 8
+-------------------------------------------------------------------------
+Offset:              7.173ns (Levels of Logic = 12)
+  Source:            M9_1/cnt_25 (FF)
+  Destination:       SEGMENT<3> (PAD)
+  Source Clock:      M1/clkdiv_26 rising
+
+  Data Path: M9_1/cnt_25 to SEGMENT<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               7   0.236   0.647  M9_1/cnt_25 (M9_1/cnt_25)
+     AND2:I0->O            1   0.043   0.603  M5/MUX1_DispData/MUX8183/MUX4411/XLXI_128 (M5/MUX1_DispData/MUX8183/MUX4411/XLXN_396)
+     OR4:I1->O             1   0.053   0.613  M5/MUX1_DispData/MUX8183/MUX4411/XLXI_130 (M5/MUX1_DispData/MUX8183/o1<1>)
+     AND2:I0->O            1   0.043   0.613  M5/MUX1_DispData/MUX8183/XLXI_22 (M5/MUX1_DispData/MUX8183/XLXN_45)
+     OR2:I0->O            15   0.043   0.600  M5/MUX1_DispData/MUX8183/XLXI_69 (Disp_num<25>)
+     LUT6:I2->O            1   0.043   0.000  M31/M2/Mmux_Hexo_31 (M31/M2/Mmux_Hexo_31)
+     MUXF7:I1->O          11   0.178   0.395  M31/M2/Mmux_Hexo_2_f7_0 (M31/Hex<1>)
+     INV:I->O              8   0.317   0.561  M31/M1/XLXI_3 (M31/M1/XLXN_62)
+     AND4:I2->O            2   0.134   0.500  M31/M1/XLXI_5 (M31/M1/XLXN_119)
+     OR4:I3->O             1   0.161   0.603  M31/M1/XLXI_17 (M31/M1/XLXN_208)
+     OR2:I1->O             1   0.053   0.350  M31/M1/XLXI_47 (M31/SEG_TXT<0>)
+     LUT3:I2->O            1   0.043   0.339  M31/MUXHM/Mmux_o1 (SEGMENT_0_OBUF)
+     OBUF:I->O                 0.000          SEGMENT_0_OBUF (SEGMENT<0>)
+    ----------------------------------------
+    Total                      7.173ns (1.347ns logic, 5.826ns route)
+                                       (18.8% logic, 81.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'M4/push'
+  Total number of paths / destination ports: 168 / 7
+-------------------------------------------------------------------------
+Offset:              6.450ns (Levels of Logic = 12)
+  Source:            M4/state_0 (FF)
+  Destination:       SEGMENT<6> (PAD)
+  Source Clock:      M4/push rising
+
+  Data Path: M4/state_0 to SEGMENT<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             19   0.236   0.714  state_0 (state<0>)
+     LUT6:I0->O            2   0.043   0.618  Mmux_blink71 (blink<6>)
+     end scope: 'M4:blink<6>'
+     AND2:I0->O            1   0.043   0.522  M5/MUX2_Blink/MUX4412/XLXI_152 (M5/MUX2_Blink/MUX4412/XLXN_444)
+     OR4:I2->O             1   0.134   0.613  M5/MUX2_Blink/MUX4412/XLXI_155 (M5/MUX2_Blink/o2<2>)
+     AND2:I0->O            1   0.043   0.603  M5/MUX2_Blink/XLXI_64 (M5/MUX2_Blink/XLXN_155)
+     OR2:I1->O             2   0.053   0.527  M5/MUX2_Blink/XLXI_74 (LE_out<6>)
+     LUT6:I2->O            1   0.043   0.000  M31/M2/Mmux_LE_3 (M31/M2/Mmux_LE_3)
+     MUXF7:I1->O           1   0.178   0.613  M31/M2/Mmux_LE_2_f7 (M31/XLXN_382)
+     AND2:I0->O            7   0.043   0.647  M31/XLXI_44 (M31/XLXN_385)
+     OR2:I0->O             1   0.043   0.350  M31/M1/XLXI_47 (M31/SEG_TXT<0>)
+     LUT3:I2->O            1   0.043   0.339  M31/MUXHM/Mmux_o1 (SEGMENT_0_OBUF)
+     OBUF:I->O                 0.000          SEGMENT_0_OBUF (SEGMENT<0>)
+    ----------------------------------------
+    Total                      6.450ns (0.902ns logic, 5.548ns route)
+                                       (14.0% logic, 86.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock M1/clkdiv_26
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+M1/clkdiv_26   |    2.578|         |         |         |
+M2/clk1        |    2.252|         |         |         |
+clk_100mhz     |    1.602|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock M2/clk1
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+M2/clk1        |    2.152|         |         |         |
+clk_100mhz     |    1.292|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock M4/push
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+M2/clk1        |    0.932|         |         |         |
+M4/push        |    1.069|         |         |         |
+clk_100mhz     |    1.336|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk_100mhz
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+M1/clkdiv_26   |    6.691|         |    1.927|         |
+M2/clk1        |    1.100|         |         |         |
+M4/push        |    5.816|         |         |         |
+clk_100mhz     |   17.177|    1.289|    6.467|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 15.00 secs
+Total CPU time to Xst completion: 14.89 secs
+ 
+--> 
+
+Total memory usage is 432340 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  104 (   0 filtered)
+Number of infos    :   11 (   0 filtered)
+

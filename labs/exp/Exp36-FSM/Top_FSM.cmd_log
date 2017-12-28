@@ -1,0 +1,43 @@
+xst -intstyle ise -ifn "D:/FPGA_work/SWord-DLD/Exp36-FSM/Top_FSM.xst" -ofn "D:/FPGA_work/SWord-DLD/Exp36-FSM/Top_FSM.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd Code -nt timestamp -uc Code/FSM.ucf -p xc7k160t-ffg676-2L Top_FSM.ngc Top_FSM.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_FSM_map.ncd Top_FSM.ngd Top_FSM.pcf 
+par -w -intstyle ise -ol high -mt off Top_FSM_map.ncd Top_FSM.ncd Top_FSM.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Top_FSM.twx Top_FSM.ncd -o Top_FSM.twr Top_FSM.pcf 
+bitgen -intstyle ise -f Top_FSM.ut Top_FSM.ncd 
+xst -intstyle ise -ifn "D:/FPGA_work/SWord-DLD/Exp36-FSM/Top_FSM.xst" -ofn "D:/FPGA_work/SWord-DLD/Exp36-FSM/Top_FSM.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd Code -nt timestamp -uc Code/FSM.ucf -p xc7k160t-ffg676-2L Top_FSM.ngc Top_FSM.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_FSM_map.ncd Top_FSM.ngd Top_FSM.pcf 
+par -w -intstyle ise -ol high -mt off Top_FSM_map.ncd Top_FSM.ncd Top_FSM.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Top_FSM.twx Top_FSM.ncd -o Top_FSM.twr Top_FSM.pcf 
+bitgen -intstyle ise -f Top_FSM.ut Top_FSM.ncd 
+xst -intstyle ise -ifn "D:/FPGA_work/SWord-DLD/Exp36-FSM/Top_FSM.xst" -ofn "D:/FPGA_work/SWord-DLD/Exp36-FSM/Top_FSM.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd Code -nt timestamp -uc Code/FSM.ucf -p xc7k160t-ffg676-2L Top_FSM.ngc Top_FSM.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_FSM_map.ncd Top_FSM.ngd Top_FSM.pcf 
+par -w -intstyle ise -ol high -mt off Top_FSM_map.ncd Top_FSM.ncd Top_FSM.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Top_FSM.twx Top_FSM.ncd -o Top_FSM.twr Top_FSM.pcf 
+bitgen -intstyle ise -f Top_FSM.ut Top_FSM.ncd 
+xst -intstyle ise -ifn "D:/FPGA_work/SWord-DLD/Exp36-FSM/Top_FSM.xst" -ofn "D:/FPGA_work/SWord-DLD/Exp36-FSM/Top_FSM.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd Code -nt timestamp -uc Code/FSM.ucf -p xc7k160t-ffg676-2L Top_FSM.ngc Top_FSM.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_FSM_map.ncd Top_FSM.ngd Top_FSM.pcf 
+par -w -intstyle ise -ol high -mt off Top_FSM_map.ncd Top_FSM.ncd Top_FSM.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Top_FSM.twx Top_FSM.ncd -o Top_FSM.twr Top_FSM.pcf 
+bitgen -intstyle ise -f Top_FSM.ut Top_FSM.ncd 
+xst -intstyle ise -ifn "D:/FPGA_work/SWord-DLD/Exp36-FSM/Top_FSM.xst" -ofn "D:/FPGA_work/SWord-DLD/Exp36-FSM/Top_FSM.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd Code -nt timestamp -uc Code/FSM.ucf -p xc7k160t-ffg676-2L Top_FSM.ngc Top_FSM.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_FSM_map.ncd Top_FSM.ngd Top_FSM.pcf 
+par -w -intstyle ise -ol high -mt off Top_FSM_map.ncd Top_FSM.ncd Top_FSM.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Top_FSM.twx Top_FSM.ncd -o Top_FSM.twr Top_FSM.pcf 
+bitgen -intstyle ise -f Top_FSM.ut Top_FSM.ncd 
+xst -intstyle ise -ifn "D:/FPGA_work/SWord-DLD/Exp36-FSM/Top_FSM.xst" -ofn "D:/FPGA_work/SWord-DLD/Exp36-FSM/Top_FSM.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd Code -nt timestamp -uc Code/FSM.ucf -p xc7k160t-ffg676-2L Top_FSM.ngc Top_FSM.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_FSM_map.ncd Top_FSM.ngd Top_FSM.pcf 
+par -w -intstyle ise -ol high -mt off Top_FSM_map.ncd Top_FSM.ncd Top_FSM.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Top_FSM.twx Top_FSM.ncd -o Top_FSM.twr Top_FSM.pcf 
+bitgen -intstyle ise -f Top_FSM.ut Top_FSM.ncd 
+xst -intstyle ise -ifn "D:/FPGA_work/SWord-DLD/Exp36-FSM/Top_FSM.xst" -ofn "D:/FPGA_work/SWord-DLD/Exp36-FSM/Top_FSM.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd Code -nt timestamp -uc Code/FSM.ucf -p xc7k160t-ffg676-2L Top_FSM.ngc Top_FSM.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_FSM_map.ncd Top_FSM.ngd Top_FSM.pcf 
+par -w -intstyle ise -ol high -mt off Top_FSM_map.ncd Top_FSM.ncd Top_FSM.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Top_FSM.twx Top_FSM.ncd -o Top_FSM.twr Top_FSM.pcf 
+bitgen -intstyle ise -f Top_FSM.ut Top_FSM.ncd 
+xst -intstyle ise -ifn "F:/FPGA_work/SWord-DLD/Exp36-FSM/Top_FSM.xst" -ofn "F:/FPGA_work/SWord-DLD/Exp36-FSM/Top_FSM.syr" 

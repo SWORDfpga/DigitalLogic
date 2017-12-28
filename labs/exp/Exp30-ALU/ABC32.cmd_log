@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family kintex7 -refsym ABC32 D:/FPGA_work/SWord-DLD/Exp30-ALU/Code/ABC32.sch D:/FPGA_work/SWord-DLD/Exp30-ALU/ABC32.sym 

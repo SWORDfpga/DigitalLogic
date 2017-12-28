@@ -1,0 +1,1 @@
+sch2hdl,-sympath,F:/FPGA_work/SWord-DLD/Exp36-FSM/Code,-sympath,F:/FPGA_work/SWORD-V2/USB_PS2,-intstyle,ise,-family,kintex7,-verilog,F:/FPGA_work/SWord-DLD/Exp36-FSM/Top_FSM.vf,-w,F:/FPGA_work/SWord-DLD/Exp36-FSM/Code/Top_FSM.sch

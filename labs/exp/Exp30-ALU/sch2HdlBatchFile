@@ -1,0 +1,2 @@
+sch2hdl,-sympath,E:/FPGA_work/SWord-DLD/Exp30-ALU/Code,-intstyle,ise,-family,kintex7,-verilog,E:/FPGA_work/SWord-DLD/Exp30-ALU/ALU.vf,-w,E:/FPGA_work/SWord-DLD/Exp30-ALU/Code/ALU.sch
+sch2hdl,-sympath,E:/FPGA_work/SWord-DLD/Exp30-ALU/Code,-intstyle,ise,-family,kintex7,-verilog,E:/FPGA_work/SWord-DLD/Exp30-ALU/Top_ALU.vf,-w,E:/FPGA_work/SWord-DLD/Exp30-ALU/Code/Top_ALU.sch

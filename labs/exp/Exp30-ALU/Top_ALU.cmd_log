@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "E:/FPGA_work/SWord-DLD/Exp30-ALU/Top_ALU.xst" -ofn "E:/FPGA_work/SWord-DLD/Exp30-ALU/Top_ALU.syr" 
+xst -intstyle ise -ifn "E:/FPGA_work/SWord-DLD/Exp30-ALU/Top_ALU.xst" -ofn "E:/FPGA_work/SWord-DLD/Exp30-ALU/Top_ALU.syr" 
+xst -intstyle ise -ifn "E:/FPGA_work/SWord-DLD/Exp30-ALU/Top_ALU.xst" -ofn "E:/FPGA_work/SWord-DLD/Exp30-ALU/Top_ALU.syr" 
+xst -intstyle ise -ifn "E:/FPGA_work/SWord-DLD/Exp30-ALU/Top_ALU.xst" -ofn "E:/FPGA_work/SWord-DLD/Exp30-ALU/Top_ALU.syr" 
+xst -intstyle ise -ifn "E:/FPGA_work/SWord-DLD/Exp30-ALU/Top_ALU.xst" -ofn "E:/FPGA_work/SWord-DLD/Exp30-ALU/Top_ALU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd Code -nt timestamp -uc Code/ALU.ucf -p xc7k160t-ffg676-2L Top_ALU.ngc Top_ALU.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_ALU_map.ncd Top_ALU.ngd Top_ALU.pcf 
+par -w -intstyle ise -ol high -mt off Top_ALU_map.ncd Top_ALU.ncd Top_ALU.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Top_ALU.twx Top_ALU.ncd -o Top_ALU.twr Top_ALU.pcf 
+bitgen -intstyle ise -f Top_ALU.ut Top_ALU.ncd 

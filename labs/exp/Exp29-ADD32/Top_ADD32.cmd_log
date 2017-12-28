@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "D:/FPGA_work/SWord-DLD/Exp29-ADD32/Top_ADD32.xst" -ofn "D:/FPGA_work/SWord-DLD/Exp29-ADD32/Top_ADD32.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd Code -nt timestamp -uc Code/ADD32.ucf -p xc7k160t-ffg676-2L Top_ADD32.ngc Top_ADD32.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_ADD32_map.ncd Top_ADD32.ngd Top_ADD32.pcf 
+par -w -intstyle ise -ol high -mt off Top_ADD32_map.ncd Top_ADD32.ncd Top_ADD32.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Top_ADD32.twx Top_ADD32.ncd -o Top_ADD32.twr Top_ADD32.pcf 
+bitgen -intstyle ise -f Top_ADD32.ut Top_ADD32.ncd 
