@@ -1,0 +1,1 @@
+sch2verilog -intstyle ise -family kintex7 -tionly {} -tiext tfi -w D:/FPGA_work/SWord-DLD/Exp45-Shift/Code/SN74LS194.sch SN74LS194.tfi 

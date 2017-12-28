@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/FPGA_work/SWord-DLD/Exp50-WallClock/Counter_24_Counter_24_sch_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="Counter_24_Counter_24_sch_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="5" />
+   <wvobject fp_name="/Counter_24_Counter_24_sch_tb/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Counter_24_Counter_24_sch_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Counter_24_Counter_24_sch_tb/Q" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Q[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Q[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Counter_24_Counter_24_sch_tb/UUT/LD" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">LD</obj_property>
+      <obj_property name="ObjectShortName">LD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Counter_24_Counter_24_sch_tb/UUT/C24" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">C24</obj_property>
+      <obj_property name="ObjectShortName">C24</obj_property>
+   </wvobject>
+</wave_config>

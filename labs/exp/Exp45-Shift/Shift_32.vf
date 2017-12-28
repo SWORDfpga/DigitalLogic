@@ -1,0 +1,387 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Shift_32.vf
+// /___/   /\     Timestamp : 12/15/2016 20:53:34
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -sympath D:/FPGA_work/SWord-DLD/Exp45-Shift/Code -intstyle ise -family kintex7 -verilog D:/FPGA_work/SWord-DLD/Exp45-Shift/Shift_32.vf -w D:/FPGA_work/SWord-DLD/Exp45-Shift/Code/Shift_32.sch
+//Design Name: Shift_32
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module MB_DFF_MUSER_Shift_32(Cp, 
+                             D, 
+                             Rn, 
+                             Sn, 
+                             Q, 
+                             Qn);
+
+    input Cp;
+    input D;
+    input Rn;
+    input Sn;
+   output Q;
+   output Qn;
+   
+   wire XLXN_5;
+   wire XLXN_15;
+   wire XLXN_50;
+   wire XLXN_111;
+   wire Q_DUMMY;
+   wire Qn_DUMMY;
+   
+   assign Q = Q_DUMMY;
+   assign Qn = Qn_DUMMY;
+   NAND3  NA1 (.I0(XLXN_5), 
+              .I1(Rn), 
+              .I2(D), 
+              .O(XLXN_15));
+   NAND3  NA2 (.I0(XLXN_15), 
+              .I1(Sn), 
+              .I2(XLXN_111), 
+              .O(XLXN_50));
+   NAND3  NA3 (.I0(Cp), 
+              .I1(XLXN_15), 
+              .I2(XLXN_111), 
+              .O(XLXN_5));
+   NAND3  NA4 (.I0(Rn), 
+              .I1(Cp), 
+              .I2(XLXN_50), 
+              .O(XLXN_111));
+   NAND3  NA5 (.I0(Rn), 
+              .I1(XLXN_5), 
+              .I2(Q_DUMMY), 
+              .O(Qn_DUMMY));
+   NAND3  NA6 (.I0(Qn_DUMMY), 
+              .I1(XLXN_111), 
+              .I2(Sn), 
+              .O(Q_DUMMY));
+endmodule
+`timescale 1ns / 1ps
+
+module SN74LS194_MUSER_Shift_32(A, 
+                                B, 
+                                C, 
+                                clk, 
+                                CR, 
+                                D, 
+                                SL, 
+                                SR, 
+                                S0, 
+                                S1, 
+                                QA, 
+                                QB, 
+                                QC, 
+                                QD);
+
+    input A;
+    input B;
+    input C;
+    input clk;
+    input CR;
+    input D;
+    input SL;
+    input SR;
+    input S0;
+    input S1;
+   output QA;
+   output QB;
+   output QC;
+   output QD;
+   
+   wire D0;
+   wire HD0;
+   wire LD0;
+   wire nS0;
+   wire nS1;
+   wire PD0;
+   wire RD0;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_43;
+   wire XLXN_44;
+   wire XLXN_45;
+   wire XLXN_46;
+   wire XLXN_92;
+   wire XLXN_93;
+   wire XLXN_94;
+   wire XLXN_95;
+   wire XLXN_106;
+   wire XLXN_107;
+   wire XLXN_108;
+   wire XLXN_109;
+   wire XLXN_263;
+   wire QA_DUMMY;
+   wire QB_DUMMY;
+   wire QC_DUMMY;
+   wire QD_DUMMY;
+   
+   assign QA = QA_DUMMY;
+   assign QB = QB_DUMMY;
+   assign QC = QC_DUMMY;
+   assign QD = QD_DUMMY;
+   MB_DFF_MUSER_Shift_32  DFF0 (.Cp(clk), 
+                               .D(D0), 
+                               .Rn(CR), 
+                               .Sn(XLXN_263), 
+                               .Q(QA_DUMMY), 
+                               .Qn());
+   MB_DFF_MUSER_Shift_32  DFF1 (.Cp(clk), 
+                               .D(XLXN_2), 
+                               .Rn(CR), 
+                               .Sn(XLXN_263), 
+                               .Q(QB_DUMMY), 
+                               .Qn());
+   MB_DFF_MUSER_Shift_32  DFF2 (.Cp(clk), 
+                               .D(XLXN_3), 
+                               .Rn(CR), 
+                               .Sn(XLXN_263), 
+                               .Q(QC_DUMMY), 
+                               .Qn());
+   MB_DFF_MUSER_Shift_32  DFF3 (.Cp(clk), 
+                               .D(XLXN_4), 
+                               .Rn(CR), 
+                               .Sn(XLXN_263), 
+                               .Q(QD_DUMMY), 
+                               .Qn());
+   OR4  XLXI_5 (.I0(RD0), 
+               .I1(PD0), 
+               .I2(LD0), 
+               .I3(HD0), 
+               .O(D0));
+   OR4  XLXI_6 (.I0(XLXN_43), 
+               .I1(XLXN_44), 
+               .I2(XLXN_45), 
+               .I3(XLXN_46), 
+               .O(XLXN_2));
+   OR4  XLXI_7 (.I0(XLXN_106), 
+               .I1(XLXN_107), 
+               .I2(XLXN_108), 
+               .I3(XLXN_109), 
+               .O(XLXN_4));
+   OR4  XLXI_8 (.I0(XLXN_92), 
+               .I1(XLXN_93), 
+               .I2(XLXN_94), 
+               .I3(XLXN_95), 
+               .O(XLXN_3));
+   AND3  XLXI_9 (.I0(SR), 
+                .I1(S0), 
+                .I2(nS1), 
+                .O(RD0));
+   AND3  XLXI_18 (.I0(S0), 
+                 .I1(S1), 
+                 .I2(A), 
+                 .O(PD0));
+   AND3  XLXI_19 (.I0(nS0), 
+                 .I1(S1), 
+                 .I2(QB_DUMMY), 
+                 .O(LD0));
+   AND3  XLXI_20 (.I0(nS0), 
+                 .I1(nS1), 
+                 .I2(QA_DUMMY), 
+                 .O(HD0));
+   AND3  XLXI_21 (.I0(QA_DUMMY), 
+                 .I1(S0), 
+                 .I2(nS1), 
+                 .O(XLXN_43));
+   AND3  XLXI_22 (.I0(S0), 
+                 .I1(S1), 
+                 .I2(B), 
+                 .O(XLXN_44));
+   AND3  XLXI_23 (.I0(nS0), 
+                 .I1(S1), 
+                 .I2(QC_DUMMY), 
+                 .O(XLXN_45));
+   AND3  XLXI_24 (.I0(nS0), 
+                 .I1(nS1), 
+                 .I2(QB_DUMMY), 
+                 .O(XLXN_46));
+   AND3  XLXI_50 (.I0(QB_DUMMY), 
+                 .I1(S0), 
+                 .I2(nS1), 
+                 .O(XLXN_92));
+   AND3  XLXI_51 (.I0(S0), 
+                 .I1(S1), 
+                 .I2(C), 
+                 .O(XLXN_93));
+   AND3  XLXI_52 (.I0(nS0), 
+                 .I1(S1), 
+                 .I2(QD_DUMMY), 
+                 .O(XLXN_94));
+   AND3  XLXI_53 (.I0(nS0), 
+                 .I1(nS1), 
+                 .I2(QC_DUMMY), 
+                 .O(XLXN_95));
+   AND3  XLXI_54 (.I0(QC_DUMMY), 
+                 .I1(S0), 
+                 .I2(nS1), 
+                 .O(XLXN_106));
+   AND3  XLXI_55 (.I0(S0), 
+                 .I1(S1), 
+                 .I2(D), 
+                 .O(XLXN_107));
+   AND3  XLXI_56 (.I0(nS0), 
+                 .I1(S1), 
+                 .I2(SL), 
+                 .O(XLXN_108));
+   AND3  XLXI_57 (.I0(nS0), 
+                 .I1(nS1), 
+                 .I2(QD_DUMMY), 
+                 .O(XLXN_109));
+   INV  XLXI_156 (.I(S1), 
+                 .O(nS1));
+   INV  XLXI_157 (.I(S0), 
+                 .O(nS0));
+   VCC  XLXI_270 (.P(XLXN_263));
+endmodule
+`timescale 1ns / 1ps
+
+module Shift_32(clear, 
+                clk, 
+                PData, 
+                SL, 
+                SR, 
+                S0, 
+                S1, 
+                Q);
+
+    input clear;
+    input clk;
+    input [31:0] PData;
+    input SL;
+    input SR;
+    input S0;
+    input S1;
+   output [31:0] Q;
+   
+   wire XLXN_201;
+   wire [31:0] Q_DUMMY;
+   
+   assign Q[31:0] = Q_DUMMY[31:0];
+   SN74LS194_MUSER_Shift_32  SH0 (.A(PData[3]), 
+                                 .B(PData[2]), 
+                                 .C(PData[1]), 
+                                 .clk(clk), 
+                                 .CR(XLXN_201), 
+                                 .D(PData[0]), 
+                                 .SL(SL), 
+                                 .SR(Q_DUMMY[4]), 
+                                 .S0(S0), 
+                                 .S1(S1), 
+                                 .QA(Q_DUMMY[3]), 
+                                 .QB(Q_DUMMY[2]), 
+                                 .QC(Q_DUMMY[1]), 
+                                 .QD(Q_DUMMY[0]));
+   SN74LS194_MUSER_Shift_32  SH1 (.A(PData[7]), 
+                                 .B(PData[6]), 
+                                 .C(PData[5]), 
+                                 .clk(clk), 
+                                 .CR(XLXN_201), 
+                                 .D(PData[4]), 
+                                 .SL(Q_DUMMY[3]), 
+                                 .SR(Q_DUMMY[8]), 
+                                 .S0(S0), 
+                                 .S1(S1), 
+                                 .QA(Q_DUMMY[7]), 
+                                 .QB(Q_DUMMY[6]), 
+                                 .QC(Q_DUMMY[5]), 
+                                 .QD(Q_DUMMY[4]));
+   SN74LS194_MUSER_Shift_32  SH2 (.A(PData[11]), 
+                                 .B(PData[10]), 
+                                 .C(PData[9]), 
+                                 .clk(clk), 
+                                 .CR(XLXN_201), 
+                                 .D(PData[8]), 
+                                 .SL(Q_DUMMY[7]), 
+                                 .SR(Q_DUMMY[12]), 
+                                 .S0(S0), 
+                                 .S1(S1), 
+                                 .QA(Q_DUMMY[11]), 
+                                 .QB(Q_DUMMY[10]), 
+                                 .QC(Q_DUMMY[9]), 
+                                 .QD(Q_DUMMY[8]));
+   SN74LS194_MUSER_Shift_32  SH3 (.A(PData[15]), 
+                                 .B(PData[14]), 
+                                 .C(PData[13]), 
+                                 .clk(clk), 
+                                 .CR(XLXN_201), 
+                                 .D(PData[12]), 
+                                 .SL(Q_DUMMY[11]), 
+                                 .SR(Q_DUMMY[16]), 
+                                 .S0(S0), 
+                                 .S1(S1), 
+                                 .QA(Q_DUMMY[15]), 
+                                 .QB(Q_DUMMY[14]), 
+                                 .QC(Q_DUMMY[13]), 
+                                 .QD(Q_DUMMY[12]));
+   SN74LS194_MUSER_Shift_32  SH4 (.A(PData[19]), 
+                                 .B(PData[18]), 
+                                 .C(PData[17]), 
+                                 .clk(clk), 
+                                 .CR(XLXN_201), 
+                                 .D(PData[16]), 
+                                 .SL(Q_DUMMY[15]), 
+                                 .SR(Q_DUMMY[20]), 
+                                 .S0(S0), 
+                                 .S1(S1), 
+                                 .QA(Q_DUMMY[19]), 
+                                 .QB(Q_DUMMY[18]), 
+                                 .QC(Q_DUMMY[17]), 
+                                 .QD(Q_DUMMY[16]));
+   SN74LS194_MUSER_Shift_32  SH5 (.A(PData[23]), 
+                                 .B(PData[22]), 
+                                 .C(PData[21]), 
+                                 .clk(clk), 
+                                 .CR(XLXN_201), 
+                                 .D(PData[20]), 
+                                 .SL(Q_DUMMY[19]), 
+                                 .SR(Q_DUMMY[24]), 
+                                 .S0(S0), 
+                                 .S1(S1), 
+                                 .QA(Q_DUMMY[23]), 
+                                 .QB(Q_DUMMY[22]), 
+                                 .QC(Q_DUMMY[21]), 
+                                 .QD(Q_DUMMY[20]));
+   SN74LS194_MUSER_Shift_32  SH6 (.A(PData[27]), 
+                                 .B(PData[26]), 
+                                 .C(PData[25]), 
+                                 .clk(clk), 
+                                 .CR(XLXN_201), 
+                                 .D(PData[24]), 
+                                 .SL(Q_DUMMY[23]), 
+                                 .SR(Q_DUMMY[28]), 
+                                 .S0(S0), 
+                                 .S1(S1), 
+                                 .QA(Q_DUMMY[27]), 
+                                 .QB(Q_DUMMY[26]), 
+                                 .QC(Q_DUMMY[25]), 
+                                 .QD(Q_DUMMY[24]));
+   SN74LS194_MUSER_Shift_32  SH7 (.A(PData[31]), 
+                                 .B(PData[30]), 
+                                 .C(PData[29]), 
+                                 .clk(clk), 
+                                 .CR(XLXN_201), 
+                                 .D(PData[28]), 
+                                 .SL(Q_DUMMY[27]), 
+                                 .SR(SR), 
+                                 .S0(S0), 
+                                 .S1(S1), 
+                                 .QA(Q_DUMMY[31]), 
+                                 .QB(Q_DUMMY[30]), 
+                                 .QC(Q_DUMMY[29]), 
+                                 .QD(Q_DUMMY[28]));
+   INV  XLXI_110 (.I(clear), 
+                 .O(XLXN_201));
+endmodule

@@ -1,0 +1,1 @@
+sch2verilog -intstyle ise -family kintex7 -tionly {} -tiext tfi -w D:/FPGA_work/SWord-DLD/Exp50-WallClock/Code/Counter_60.sch Counter_60.tfi 

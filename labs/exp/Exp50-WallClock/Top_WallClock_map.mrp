@@ -1,0 +1,879 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'Top_WallClock'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off
+-power off -o Top_WallClock_map.ncd Top_WallClock.ngd Top_WallClock.pcf 
+Target Device  : xc7k160t
+Target Package : ffg676
+Target Speed   : -2l
+Mapper Version : kintex7 -- $Revision: 1.55 $
+Mapped Date    : Thu Jun 08 23:58:20 2017
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:   36
+Slice Logic Utilization:
+  Number of Slice Registers:                   867 out of 202,800    1%
+    Number used as Flip Flops:                 832
+    Number used as Latches:                     35
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                      2,519 out of 101,400    2%
+    Number used as logic:                    2,512 out of 101,400    2%
+      Number using O6 output only:           2,150
+      Number using O5 output only:              99
+      Number using O5 and O6:                  263
+      Number used as ROM:                        0
+    Number used as Memory:                       0 out of  35,000    0%
+    Number used exclusively as route-thrus:      7
+      Number with same-slice register load:      3
+      Number with same-slice carry load:         4
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                   943 out of  25,350    3%
+  Number of LUT Flip Flop pairs used:        2,638
+    Number with an unused Flip Flop:         1,790 out of   2,638   67%
+    Number with an unused LUT:                 119 out of   2,638    4%
+    Number of fully used LUT-FF pairs:         729 out of   2,638   27%
+    Number of unique control sets:             136
+    Number of slice register sites lost
+      to control set restrictions:             797 out of 202,800    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+  OVERMAPPING of BRAM resources should be ignored if the design is
+  over-mapped for a non-BRAM resource or if placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        59 out of     400   14%
+    Number of LOCed IOBs:                       59 out of      59  100%
+
+Specific Feature Utilization:
+  Number of RAMB36E1/FIFO36E1s:                  0 out of     325    0%
+  Number of RAMB18E1/FIFO18E1s:                  0 out of     650    0%
+  Number of BUFG/BUFGCTRLs:                     12 out of      32   37%
+    Number used as BUFGs:                       12
+    Number used as BUFGCTRLs:                    0
+  Number of IDELAYE2/IDELAYE2_FINEDELAYs:        0 out of     400    0%
+  Number of ILOGICE2/ILOGICE3/ISERDESE2s:        0 out of     400    0%
+  Number of ODELAYE2/ODELAYE2_FINEDELAYs:        0 out of     150    0%
+  Number of OLOGICE2/OLOGICE3/OSERDESE2s:        8 out of     400    2%
+    Number used as OLOGICE2s:                    8
+    Number used as OLOGICE3s:                    0
+    Number used as OSERDESE2s:                   0
+  Number of PHASER_IN/PHASER_IN_PHYs:            0 out of      32    0%
+  Number of PHASER_OUT/PHASER_OUT_PHYs:          0 out of      32    0%
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHCEs:                             0 out of     120    0%
+  Number of BUFRs:                               0 out of      32    0%
+  Number of CAPTUREs:                            0 out of       1    0%
+  Number of DNA_PORTs:                           0 out of       1    0%
+  Number of DSP48E1s:                            0 out of     600    0%
+  Number of EFUSE_USRs:                          0 out of       1    0%
+  Number of FRAME_ECCs:                          0 out of       1    0%
+  Number of GTXE2_CHANNELs:                      0 out of       8    0%
+  Number of GTXE2_COMMONs:                       0 out of       2    0%
+  Number of IBUFDS_GTE2s:                        0 out of       4    0%
+  Number of ICAPs:                               0 out of       2    0%
+  Number of IDELAYCTRLs:                         0 out of       8    0%
+  Number of IN_FIFOs:                            0 out of      32    0%
+  Number of MMCME2_ADVs:                         0 out of       8    0%
+  Number of OUT_FIFOs:                           0 out of      32    0%
+  Number of PCIE_2_1s:                           0 out of       1    0%
+  Number of PHASER_REFs:                         0 out of       8    0%
+  Number of PHY_CONTROLs:                        0 out of       8    0%
+  Number of PLLE2_ADVs:                          0 out of       8    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of XADCs:                               0 out of       1    0%
+
+Average Fanout of Non-Clock Nets:                3.31
+
+Peak Memory Usage:  1054 MB
+Total REAL time to MAP completion:  1 mins 10 secs 
+Total CPU time to MAP completion:   1 mins 10 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   M13_1/Start_Timing_constants[7]_AND_137_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   M13_1/Start_Timing_constants[31]_AND_89_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   M13_1/Start_Timing_constants[24]_AND_103_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   M13_1/Start_Timing_constants[23]_AND_105_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   M13_1/Start_Timing_constants[10]_AND_131_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   M13_1/Start_Timing_constants[15]_AND_121_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   M13_1/Start_Timing_constants[9]_AND_133_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   M13_1/Start_Timing_constants[26]_AND_99_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   M13_1/Start_Timing_constants[12]_AND_127_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   M13_1/Start_Timing_constants[0]_AND_151_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   M13_1/Start_Timing_constants[27]_AND_97_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   M13_1/Start_Timing_constants[19]_AND_113_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   M13_1/Start_Timing_constants[3]_AND_145_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   M13_1/Start_Timing_constants[28]_AND_95_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   M13_1/Start_Timing_constants[30]_AND_91_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   M13_1/Start_Timing_constants[14]_AND_123_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   M13_1/Start_Timing_constants[22]_AND_107_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   M13_1/Start_Timing_constants[2]_AND_147_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net M13/clk_1 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   M13_1/Start_Timing_constants[5]_AND_141_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net M13/m_1ms/LD is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   M13_1/Start_Timing_constants[16]_AND_119_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   M13_1/Start_Timing_constants[21]_AND_109_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   M13_1/Start_Timing_constants[18]_AND_115_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   M13_1/Start_Timing_constants[13]_AND_125_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   M13_1/Start_Timing_constants[8]_AND_135_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   M13_1/Start_Timing_constants[25]_AND_101_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   M13_1/Start_Timing_constants[11]_AND_129_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   M13_1/Start_Timing_constants[17]_AND_117_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   M13_1/Start_Timing_constants[1]_AND_149_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   M13_1/Start_Timing_constants[4]_AND_143_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   M13_1/Start_Timing_constants[20]_AND_111_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net M13/clk_2 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net M4/push is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   M13_1/Start_Timing_constants[6]_AND_139_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   M13_1/Start_Timing_constants[29]_AND_93_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+INFO:Pack:1716 - Initializing temperature to 100.000 Celsius. (default - Range:
+   0.000 to 100.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 0.970 Volts. (default - Range: 0.970 to
+   1.030 Volts)
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+INFO:Pack:1650 - Map created a placed design.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+ 133 block(s) removed
+ 222 block(s) optimized away
+ 100 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+Loadless block "M13/m_1ms/CT3/XLXI_309" (AND) removed.
+ The signal "M13/m_1ms/CT3/XLXN_628" is loadless and has been removed.
+  Loadless block "M13/m_1ms/CT3/XLXI_40" (OR) removed.
+Loadless block "M8/ALU_ADD/XLXI_39/A0/XLXI_5" (OR) removed.
+ The signal "M8/ALU_ADD/XLXI_39/A0/XLXN_10" is loadless and has been removed.
+  Loadless block "M8/ALU_ADD/XLXI_39/A0/XLXI_3" (AND) removed.
+Loadless block "M8/ALU_ADD/XLXI_39/A1/XLXI_5" (OR) removed.
+ The signal "M8/ALU_ADD/XLXI_39/A1/XLXN_10" is loadless and has been removed.
+  Loadless block "M8/ALU_ADD/XLXI_39/A1/XLXI_3" (AND) removed.
+Loadless block "M8/ALU_ADD/XLXI_39/A2/XLXI_5" (OR) removed.
+ The signal "M8/ALU_ADD/XLXI_39/A2/XLXN_10" is loadless and has been removed.
+  Loadless block "M8/ALU_ADD/XLXI_39/A2/XLXI_3" (AND) removed.
+Loadless block "M8/ALU_ADD/XLXI_39/A3/XLXI_5" (OR) removed.
+ The signal "M8/ALU_ADD/XLXI_39/A3/XLXN_10" is loadless and has been removed.
+  Loadless block "M8/ALU_ADD/XLXI_39/A3/XLXI_3" (AND) removed.
+Loadless block "M8/ALU_ADD/XLXI_40/A0/XLXI_5" (OR) removed.
+ The signal "M8/ALU_ADD/XLXI_40/A0/XLXN_10" is loadless and has been removed.
+  Loadless block "M8/ALU_ADD/XLXI_40/A0/XLXI_3" (AND) removed.
+Loadless block "M8/ALU_ADD/XLXI_40/A1/XLXI_5" (OR) removed.
+ The signal "M8/ALU_ADD/XLXI_40/A1/XLXN_10" is loadless and has been removed.
+  Loadless block "M8/ALU_ADD/XLXI_40/A1/XLXI_3" (AND) removed.
+Loadless block "M8/ALU_ADD/XLXI_40/A2/XLXI_5" (OR) removed.
+ The signal "M8/ALU_ADD/XLXI_40/A2/XLXN_10" is loadless and has been removed.
+  Loadless block "M8/ALU_ADD/XLXI_40/A2/XLXI_3" (AND) removed.
+Loadless block "M8/ALU_ADD/XLXI_40/A3/XLXI_5" (OR) removed.
+ The signal "M8/ALU_ADD/XLXI_40/A3/XLXN_10" is loadless and has been removed.
+  Loadless block "M8/ALU_ADD/XLXI_40/A3/XLXI_3" (AND) removed.
+Loadless block "M8/ALU_ADD/XLXI_41/A0/XLXI_5" (OR) removed.
+ The signal "M8/ALU_ADD/XLXI_41/A0/XLXN_10" is loadless and has been removed.
+  Loadless block "M8/ALU_ADD/XLXI_41/A0/XLXI_3" (AND) removed.
+Loadless block "M8/ALU_ADD/XLXI_41/A1/XLXI_5" (OR) removed.
+ The signal "M8/ALU_ADD/XLXI_41/A1/XLXN_10" is loadless and has been removed.
+  Loadless block "M8/ALU_ADD/XLXI_41/A1/XLXI_3" (AND) removed.
+Loadless block "M8/ALU_ADD/XLXI_41/A2/XLXI_5" (OR) removed.
+ The signal "M8/ALU_ADD/XLXI_41/A2/XLXN_10" is loadless and has been removed.
+  Loadless block "M8/ALU_ADD/XLXI_41/A2/XLXI_3" (AND) removed.
+Loadless block "M8/ALU_ADD/XLXI_41/A3/XLXI_5" (OR) removed.
+ The signal "M8/ALU_ADD/XLXI_41/A3/XLXN_10" is loadless and has been removed.
+  Loadless block "M8/ALU_ADD/XLXI_41/A3/XLXI_3" (AND) removed.
+Loadless block "M8/ALU_ADD/XLXI_42/A0/XLXI_5" (OR) removed.
+ The signal "M8/ALU_ADD/XLXI_42/A0/XLXN_10" is loadless and has been removed.
+  Loadless block "M8/ALU_ADD/XLXI_42/A0/XLXI_3" (AND) removed.
+Loadless block "M8/ALU_ADD/XLXI_42/A1/XLXI_5" (OR) removed.
+ The signal "M8/ALU_ADD/XLXI_42/A1/XLXN_10" is loadless and has been removed.
+  Loadless block "M8/ALU_ADD/XLXI_42/A1/XLXI_3" (AND) removed.
+Loadless block "M8/ALU_ADD/XLXI_42/A2/XLXI_5" (OR) removed.
+ The signal "M8/ALU_ADD/XLXI_42/A2/XLXN_10" is loadless and has been removed.
+  Loadless block "M8/ALU_ADD/XLXI_42/A2/XLXI_3" (AND) removed.
+Loadless block "M8/ALU_ADD/XLXI_42/A3/XLXI_5" (OR) removed.
+ The signal "M8/ALU_ADD/XLXI_42/A3/XLXN_10" is loadless and has been removed.
+  Loadless block "M8/ALU_ADD/XLXI_42/A3/XLXI_3" (AND) removed.
+Loadless block "M8/ALU_ADD/XLXI_43/A0/XLXI_5" (OR) removed.
+ The signal "M8/ALU_ADD/XLXI_43/A0/XLXN_10" is loadless and has been removed.
+  Loadless block "M8/ALU_ADD/XLXI_43/A0/XLXI_3" (AND) removed.
+Loadless block "M8/ALU_ADD/XLXI_43/A1/XLXI_5" (OR) removed.
+ The signal "M8/ALU_ADD/XLXI_43/A1/XLXN_10" is loadless and has been removed.
+  Loadless block "M8/ALU_ADD/XLXI_43/A1/XLXI_3" (AND) removed.
+Loadless block "M8/ALU_ADD/XLXI_43/A2/XLXI_5" (OR) removed.
+ The signal "M8/ALU_ADD/XLXI_43/A2/XLXN_10" is loadless and has been removed.
+  Loadless block "M8/ALU_ADD/XLXI_43/A2/XLXI_3" (AND) removed.
+Loadless block "M8/ALU_ADD/XLXI_43/A3/XLXI_5" (OR) removed.
+ The signal "M8/ALU_ADD/XLXI_43/A3/XLXN_10" is loadless and has been removed.
+  Loadless block "M8/ALU_ADD/XLXI_43/A3/XLXI_3" (AND) removed.
+Loadless block "M8/ALU_ADD/XLXI_44/A0/XLXI_5" (OR) removed.
+ The signal "M8/ALU_ADD/XLXI_44/A0/XLXN_10" is loadless and has been removed.
+  Loadless block "M8/ALU_ADD/XLXI_44/A0/XLXI_3" (AND) removed.
+Loadless block "M8/ALU_ADD/XLXI_44/A1/XLXI_5" (OR) removed.
+ The signal "M8/ALU_ADD/XLXI_44/A1/XLXN_10" is loadless and has been removed.
+  Loadless block "M8/ALU_ADD/XLXI_44/A1/XLXI_3" (AND) removed.
+Loadless block "M8/ALU_ADD/XLXI_44/A2/XLXI_5" (OR) removed.
+ The signal "M8/ALU_ADD/XLXI_44/A2/XLXN_10" is loadless and has been removed.
+  Loadless block "M8/ALU_ADD/XLXI_44/A2/XLXI_3" (AND) removed.
+Loadless block "M8/ALU_ADD/XLXI_44/A3/XLXI_5" (OR) removed.
+ The signal "M8/ALU_ADD/XLXI_44/A3/XLXN_10" is loadless and has been removed.
+  Loadless block "M8/ALU_ADD/XLXI_44/A3/XLXI_3" (AND) removed.
+Loadless block "M8/ALU_ADD/XLXI_45/A0/XLXI_5" (OR) removed.
+ The signal "M8/ALU_ADD/XLXI_45/A0/XLXN_10" is loadless and has been removed.
+  Loadless block "M8/ALU_ADD/XLXI_45/A0/XLXI_3" (AND) removed.
+Loadless block "M8/ALU_ADD/XLXI_45/A1/XLXI_5" (OR) removed.
+ The signal "M8/ALU_ADD/XLXI_45/A1/XLXN_10" is loadless and has been removed.
+  Loadless block "M8/ALU_ADD/XLXI_45/A1/XLXI_3" (AND) removed.
+Loadless block "M8/ALU_ADD/XLXI_45/A2/XLXI_5" (OR) removed.
+ The signal "M8/ALU_ADD/XLXI_45/A2/XLXN_10" is loadless and has been removed.
+  Loadless block "M8/ALU_ADD/XLXI_45/A2/XLXI_3" (AND) removed.
+Loadless block "M8/ALU_ADD/XLXI_45/A3/XLXI_5" (OR) removed.
+ The signal "M8/ALU_ADD/XLXI_45/A3/XLXN_10" is loadless and has been removed.
+  Loadless block "M8/ALU_ADD/XLXI_45/A3/XLXI_3" (AND) removed.
+Loadless block "M8/ALU_ADD/XLXI_46/A0/XLXI_5" (OR) removed.
+ The signal "M8/ALU_ADD/XLXI_46/A0/XLXN_10" is loadless and has been removed.
+  Loadless block "M8/ALU_ADD/XLXI_46/A0/XLXI_3" (AND) removed.
+Loadless block "M8/ALU_ADD/XLXI_46/A1/XLXI_5" (OR) removed.
+ The signal "M8/ALU_ADD/XLXI_46/A1/XLXN_10" is loadless and has been removed.
+  Loadless block "M8/ALU_ADD/XLXI_46/A1/XLXI_3" (AND) removed.
+Loadless block "M8/ALU_ADD/XLXI_46/A2/XLXI_5" (OR) removed.
+ The signal "M8/ALU_ADD/XLXI_46/A2/XLXN_10" is loadless and has been removed.
+  Loadless block "M8/ALU_ADD/XLXI_46/A2/XLXI_3" (AND) removed.
+Loadless block "M8/ALU_ADD/XLXI_46/A3/XLXI_5" (OR) removed.
+ The signal "M8/ALU_ADD/XLXI_46/A3/XLXN_10" is loadless and has been removed.
+  Loadless block "M8/ALU_ADD/XLXI_46/A3/XLXI_3" (AND) removed.
+Loadless block "MS/CT3/XLXI_309" (AND) removed.
+ The signal "MS/CT3/XLXN_628" is loadless and has been removed.
+  Loadless block "MS/CT3/XLXI_40" (OR) removed.
+The signal "M2/SW_OK<14>" is sourceless and has been removed.
+ Sourceless block "M2/SW_OK_14_dpot1" (ROM) removed.
+  The signal "M2/SW_OK_14_dpot1" is sourceless and has been removed.
+   Sourceless block "M2/SW_OK_14" (FF) removed.
+The signal "M2/SW_OK<13>" is sourceless and has been removed.
+ Sourceless block "M2/SW_OK_13_dpot1" (ROM) removed.
+  The signal "M2/SW_OK_13_dpot1" is sourceless and has been removed.
+   Sourceless block "M2/SW_OK_13" (FF) removed.
+The signal "M2/SW_OK<12>" is sourceless and has been removed.
+ Sourceless block "M2/SW_OK_12_dpot1" (ROM) removed.
+  The signal "M2/SW_OK_12_dpot1" is sourceless and has been removed.
+   Sourceless block "M2/SW_OK_12" (FF) removed.
+The signal "M2/SW_OK<11>" is sourceless and has been removed.
+ Sourceless block "M2/SW_OK_11_dpot1" (ROM) removed.
+  The signal "M2/SW_OK_11_dpot1" is sourceless and has been removed.
+   Sourceless block "M2/SW_OK_11" (FF) removed.
+The signal "M2/SW_OK<10>" is sourceless and has been removed.
+ Sourceless block "M2/SW_OK_10_dpot1" (ROM) removed.
+  The signal "M2/SW_OK_10_dpot1" is sourceless and has been removed.
+   Sourceless block "M2/SW_OK_10" (FF) removed.
+The signal "M2/SW_OK<9>" is sourceless and has been removed.
+ Sourceless block "M2/SW_OK_9_dpot1" (ROM) removed.
+  The signal "M2/SW_OK_9_dpot1" is sourceless and has been removed.
+   Sourceless block "M2/SW_OK_9" (FF) removed.
+The signal "M2/Key_out_4_dpot" is sourceless and has been removed.
+ Sourceless block "M2/Key_out_4" (FF) removed.
+  The signal "XLXN_444<4>" is sourceless and has been removed.
+   Sourceless block "M2/Key_out_4_dpot" (ROM) removed.
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "MS/CT3/PD" is unused and has been removed.
+ Unused block "MS/CT3/XLXI_307" (BUF) removed.
+The signal "MS/CT2/PD" is unused and has been removed.
+ Unused block "MS/CT2/XLXI_307" (BUF) removed.
+The signal "MS/CT1/PD" is unused and has been removed.
+ Unused block "MS/CT1/XLXI_307" (BUF) removed.
+The signal "MS/CT0/PD" is unused and has been removed.
+ Unused block "MS/CT0/XLXI_307" (BUF) removed.
+The signal "M5/MUX1_DispData/MUX8183/MUX4413/D2" is unused and has been removed.
+ Unused block "M5/MUX1_DispData/MUX8183/MUX4413/XLXI_7" (AND) removed.
+The signal "M5/MUX1_DispData/MUX8183/MUX4413/D3" is unused and has been removed.
+ Unused block "M5/MUX1_DispData/MUX8183/MUX4413/XLXI_8" (AND) removed.
+The signal "M5/MUX1_DispData/MUX8183/MUX4411/D2" is unused and has been removed.
+ Unused block "M5/MUX1_DispData/MUX8183/MUX4411/XLXI_7" (AND) removed.
+The signal "M5/MUX1_DispData/MUX8183/MUX4411/D3" is unused and has been removed.
+ Unused block "M5/MUX1_DispData/MUX8183/MUX4411/XLXI_8" (AND) removed.
+The signal "M5/MUX1_DispData/MUX8182/MUX4413/D2" is unused and has been removed.
+ Unused block "M5/MUX1_DispData/MUX8182/MUX4413/XLXI_7" (AND) removed.
+The signal "M5/MUX1_DispData/MUX8182/MUX4413/D3" is unused and has been removed.
+ Unused block "M5/MUX1_DispData/MUX8182/MUX4413/XLXI_8" (AND) removed.
+The signal "M5/MUX1_DispData/MUX8182/MUX4411/D2" is unused and has been removed.
+ Unused block "M5/MUX1_DispData/MUX8182/MUX4411/XLXI_7" (AND) removed.
+The signal "M5/MUX1_DispData/MUX8182/MUX4411/D3" is unused and has been removed.
+ Unused block "M5/MUX1_DispData/MUX8182/MUX4411/XLXI_8" (AND) removed.
+The signal "M5/MUX1_DispData/MUX8181/MUX4413/D3" is unused and has been removed.
+ Unused block "M5/MUX1_DispData/MUX8181/MUX4413/XLXI_8" (AND) removed.
+The signal "M5/MUX1_DispData/MUX8181/MUX4411/D3" is unused and has been removed.
+ Unused block "M5/MUX1_DispData/MUX8181/MUX4411/XLXI_8" (AND) removed.
+The signal "M5/MUX1_DispData/MUX8180/MUX4413/D3" is unused and has been removed.
+ Unused block "M5/MUX1_DispData/MUX8180/MUX4413/XLXI_8" (AND) removed.
+The signal "M5/MUX1_DispData/MUX8180/MUX4411/D3" is unused and has been removed.
+ Unused block "M5/MUX1_DispData/MUX8180/MUX4411/XLXI_8" (AND) removed.
+The signal "M5/MUX2_Blink/MUX4413/D0" is unused and has been removed.
+ Unused block "M5/MUX2_Blink/MUX4413/XLXI_4" (AND) removed.
+  The signal "M5/MUX2_Blink/MUX4413/XLXN_108" is unused and has been removed.
+   Unused block "M5/MUX2_Blink/MUX4413/XLXI_2" (BUF) removed.
+  The signal "M5/MUX2_Blink/MUX4413/XLXN_80" is unused and has been removed.
+   Unused block "M5/MUX2_Blink/MUX4413/XLXI_5" (BUF) removed.
+The signal "M5/MUX2_Blink/MUX4413/D2" is unused and has been removed.
+ Unused block "M5/MUX2_Blink/MUX4413/XLXI_7" (AND) removed.
+The signal "M5/MUX2_Blink/MUX4413/D3" is unused and has been removed.
+ Unused block "M5/MUX2_Blink/MUX4413/XLXI_8" (AND) removed.
+The signal "M5/MUX2_Blink/MUX4413/D1" is unused and has been removed.
+ Unused block "M5/MUX2_Blink/MUX4413/XLXI_1" (AND) removed.
+The signal "M5/MUX2_Blink/MUX4411/D0" is unused and has been removed.
+ Unused block "M5/MUX2_Blink/MUX4411/XLXI_4" (AND) removed.
+  The signal "M5/MUX2_Blink/MUX4411/XLXN_80" is unused and has been removed.
+   Unused block "M5/MUX2_Blink/MUX4411/XLXI_5" (BUF) removed.
+The signal "M5/MUX2_Blink/MUX4411/D3" is unused and has been removed.
+ Unused block "M5/MUX2_Blink/MUX4411/XLXI_8" (AND) removed.
+The signal "M5/MUX2_Blink/MUX4411/D1" is unused and has been removed.
+ Unused block "M5/MUX2_Blink/MUX4411/XLXI_1" (AND) removed.
+The signal "M5/MUX2_Blink/MUX4412/D2" is unused and has been removed.
+ Unused block "M5/MUX2_Blink/MUX4412/XLXI_7" (AND) removed.
+The signal "M5/MUX2_Blink/MUX4412/D3" is unused and has been removed.
+ Unused block "M5/MUX2_Blink/MUX4412/XLXI_8" (AND) removed.
+The signal "M5/MUX2_Blink/MUX4410/D2" is unused and has been removed.
+ Unused block "M5/MUX2_Blink/MUX4410/XLXI_7" (AND) removed.
+The signal "M5/MUX2_Blink/MUX4410/D3" is unused and has been removed.
+ Unused block "M5/MUX2_Blink/MUX4410/XLXI_8" (AND) removed.
+The signal "M5/MUX3_Point/MUX4413/D0" is unused and has been removed.
+ Unused block "M5/MUX3_Point/MUX4413/XLXI_4" (AND) removed.
+  The signal "M5/MUX3_Point/MUX4413/XLXN_108" is unused and has been removed.
+   Unused block "M5/MUX3_Point/MUX4413/XLXI_2" (BUF) removed.
+  The signal "M5/MUX3_Point/MUX4413/XLXN_80" is unused and has been removed.
+   Unused block "M5/MUX3_Point/MUX4413/XLXI_5" (BUF) removed.
+The signal "M5/MUX3_Point/MUX4413/D2" is unused and has been removed.
+ Unused block "M5/MUX3_Point/MUX4413/XLXI_7" (AND) removed.
+The signal "M5/MUX3_Point/MUX4413/D3" is unused and has been removed.
+ Unused block "M5/MUX3_Point/MUX4413/XLXI_8" (AND) removed.
+The signal "M5/MUX3_Point/MUX4413/D1" is unused and has been removed.
+ Unused block "M5/MUX3_Point/MUX4413/XLXI_1" (AND) removed.
+The signal "M5/MUX3_Point/MUX4411/D0" is unused and has been removed.
+ Unused block "M5/MUX3_Point/MUX4411/XLXI_4" (AND) removed.
+  The signal "M5/MUX3_Point/MUX4411/XLXN_80" is unused and has been removed.
+   Unused block "M5/MUX3_Point/MUX4411/XLXI_5" (BUF) removed.
+The signal "M5/MUX3_Point/MUX4411/D3" is unused and has been removed.
+ Unused block "M5/MUX3_Point/MUX4411/XLXI_8" (AND) removed.
+The signal "M5/MUX3_Point/MUX4411/D1" is unused and has been removed.
+ Unused block "M5/MUX3_Point/MUX4411/XLXI_1" (AND) removed.
+The signal "M13/m_1ms/CT0/DFF0/rst_inv" is unused and has been removed.
+The signal "M13/m_1ms/CT0/PD" is unused and has been removed.
+ Unused block "M13/m_1ms/CT0/XLXI_307" (BUF) removed.
+The signal "M13/m_1ms/CT1/PD" is unused and has been removed.
+ Unused block "M13/m_1ms/CT1/XLXI_307" (BUF) removed.
+The signal "M13/m_1ms/CT2/PD" is unused and has been removed.
+ Unused block "M13/m_1ms/CT2/XLXI_307" (BUF) removed.
+The signal "M13/m_1ms/CT3/PD" is unused and has been removed.
+ Unused block "M13/m_1ms/CT3/XLXI_307" (BUF) removed.
+The signal "M8/ALU_MUX/MUX8183/MUX4413/D3" is unused and has been removed.
+ Unused block "M8/ALU_MUX/MUX8183/MUX4413/XLXI_8" (AND) removed.
+The signal "M8/ALU_MUX/MUX8183/MUX4411/D3" is unused and has been removed.
+ Unused block "M8/ALU_MUX/MUX8183/MUX4411/XLXI_8" (AND) removed.
+The signal "M8/ALU_MUX/MUX8182/MUX4413/D3" is unused and has been removed.
+ Unused block "M8/ALU_MUX/MUX8182/MUX4413/XLXI_8" (AND) removed.
+The signal "M8/ALU_MUX/MUX8182/MUX4411/D3" is unused and has been removed.
+ Unused block "M8/ALU_MUX/MUX8182/MUX4411/XLXI_8" (AND) removed.
+The signal "M8/ALU_MUX/MUX8181/MUX4413/D3" is unused and has been removed.
+ Unused block "M8/ALU_MUX/MUX8181/MUX4413/XLXI_8" (AND) removed.
+The signal "M8/ALU_MUX/MUX8181/MUX4411/D3" is unused and has been removed.
+ Unused block "M8/ALU_MUX/MUX8181/MUX4411/XLXI_8" (AND) removed.
+The signal "M8/ALU_MUX/MUX8180/MUX4413/D3" is unused and has been removed.
+ Unused block "M8/ALU_MUX/MUX8180/MUX4413/XLXI_8" (AND) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+INV 		M10/D/XLXI_42
+INV 		M10/D/XLXI_43
+INV 		M13/m_1ms/CT0/DFF0/rst_inv1_INV_0
+AND2 		M13/m_1ms/CT0/XLXI_314
+NAND2 		M13/m_1ms/CT0/XLXI_317
+AND2 		M13/m_1ms/CT0/XLXI_329
+AND2 		M13/m_1ms/CT0/XLXI_330
+AND2 		M13/m_1ms/CT0/XLXI_332
+AND2 		M13/m_1ms/CT0/XLXI_334
+AND2 		M13/m_1ms/CT0/XLXI_335
+AND2 		M13/m_1ms/CT0/XLXI_337
+AND2 		M13/m_1ms/CT0/XLXI_338
+AND2 		M13/m_1ms/CT0/XLXI_340
+AND2 		M13/m_1ms/CT1/XLXI_330
+AND2 		M13/m_1ms/CT1/XLXI_332
+AND2 		M13/m_1ms/CT1/XLXI_335
+AND2 		M13/m_1ms/CT1/XLXI_338
+AND2 		M13/m_1ms/CT2/XLXI_330
+AND2 		M13/m_1ms/CT2/XLXI_332
+AND2 		M13/m_1ms/CT2/XLXI_335
+AND2 		M13/m_1ms/CT2/XLXI_338
+AND2 		M13/m_1ms/CT3/XLXI_330
+AND2 		M13/m_1ms/CT3/XLXI_332
+AND2 		M13/m_1ms/CT3/XLXI_335
+AND2 		M13/m_1ms/CT3/XLXI_338
+INV 		M13/m_1ms/XLXI_42
+GND 		M2/XST_GND
+VCC 		M2/XST_VCC
+VCC 		M3/M2/XST_VCC
+AND2 		M5/MUX1_DispData/MUX8180/MUX4411/XLXI_129
+AND2 		M5/MUX1_DispData/MUX8180/MUX4411/XLXI_154
+AND2 		M5/MUX1_DispData/MUX8180/MUX4411/XLXI_159
+AND2 		M5/MUX1_DispData/MUX8180/MUX4411/XLXI_44
+AND2 		M5/MUX1_DispData/MUX8180/MUX4413/XLXI_129
+AND2 		M5/MUX1_DispData/MUX8180/MUX4413/XLXI_154
+AND2 		M5/MUX1_DispData/MUX8180/MUX4413/XLXI_159
+AND2 		M5/MUX1_DispData/MUX8180/MUX4413/XLXI_44
+AND2 		M5/MUX1_DispData/MUX8181/MUX4411/XLXI_129
+AND2 		M5/MUX1_DispData/MUX8181/MUX4411/XLXI_154
+AND2 		M5/MUX1_DispData/MUX8181/MUX4411/XLXI_159
+AND2 		M5/MUX1_DispData/MUX8181/MUX4411/XLXI_44
+AND2 		M5/MUX1_DispData/MUX8181/MUX4413/XLXI_129
+AND2 		M5/MUX1_DispData/MUX8181/MUX4413/XLXI_154
+AND2 		M5/MUX1_DispData/MUX8181/MUX4413/XLXI_159
+AND2 		M5/MUX1_DispData/MUX8181/MUX4413/XLXI_44
+AND2 		M5/MUX1_DispData/MUX8182/MUX4411/XLXI_128
+AND2 		M5/MUX1_DispData/MUX8182/MUX4411/XLXI_129
+AND2 		M5/MUX1_DispData/MUX8182/MUX4411/XLXI_153
+AND2 		M5/MUX1_DispData/MUX8182/MUX4411/XLXI_154
+AND2 		M5/MUX1_DispData/MUX8182/MUX4411/XLXI_158
+AND2 		M5/MUX1_DispData/MUX8182/MUX4411/XLXI_159
+AND2 		M5/MUX1_DispData/MUX8182/MUX4411/XLXI_43
+AND2 		M5/MUX1_DispData/MUX8182/MUX4411/XLXI_44
+AND2 		M5/MUX1_DispData/MUX8182/MUX4413/XLXI_128
+AND2 		M5/MUX1_DispData/MUX8182/MUX4413/XLXI_129
+AND2 		M5/MUX1_DispData/MUX8182/MUX4413/XLXI_153
+AND2 		M5/MUX1_DispData/MUX8182/MUX4413/XLXI_154
+AND2 		M5/MUX1_DispData/MUX8182/MUX4413/XLXI_158
+AND2 		M5/MUX1_DispData/MUX8182/MUX4413/XLXI_159
+AND2 		M5/MUX1_DispData/MUX8182/MUX4413/XLXI_43
+AND2 		M5/MUX1_DispData/MUX8182/MUX4413/XLXI_44
+AND2 		M5/MUX1_DispData/MUX8183/MUX4411/XLXI_128
+AND2 		M5/MUX1_DispData/MUX8183/MUX4411/XLXI_129
+AND2 		M5/MUX1_DispData/MUX8183/MUX4411/XLXI_153
+AND2 		M5/MUX1_DispData/MUX8183/MUX4411/XLXI_154
+AND2 		M5/MUX1_DispData/MUX8183/MUX4411/XLXI_158
+AND2 		M5/MUX1_DispData/MUX8183/MUX4411/XLXI_159
+AND2 		M5/MUX1_DispData/MUX8183/MUX4411/XLXI_43
+AND2 		M5/MUX1_DispData/MUX8183/MUX4411/XLXI_44
+AND2 		M5/MUX1_DispData/MUX8183/MUX4413/XLXI_128
+AND2 		M5/MUX1_DispData/MUX8183/MUX4413/XLXI_129
+AND2 		M5/MUX1_DispData/MUX8183/MUX4413/XLXI_153
+AND2 		M5/MUX1_DispData/MUX8183/MUX4413/XLXI_154
+AND2 		M5/MUX1_DispData/MUX8183/MUX4413/XLXI_158
+AND2 		M5/MUX1_DispData/MUX8183/MUX4413/XLXI_159
+AND2 		M5/MUX1_DispData/MUX8183/MUX4413/XLXI_43
+AND2 		M5/MUX1_DispData/MUX8183/MUX4413/XLXI_44
+AND2 		M5/MUX2_Blink/MUX4410/XLXI_128
+AND2 		M5/MUX2_Blink/MUX4410/XLXI_129
+AND2 		M5/MUX2_Blink/MUX4410/XLXI_153
+AND2 		M5/MUX2_Blink/MUX4410/XLXI_154
+AND2 		M5/MUX2_Blink/MUX4410/XLXI_158
+AND2 		M5/MUX2_Blink/MUX4410/XLXI_159
+AND2 		M5/MUX2_Blink/MUX4410/XLXI_43
+AND2 		M5/MUX2_Blink/MUX4410/XLXI_44
+AND2 		M5/MUX2_Blink/MUX4411/XLXI_126
+AND2 		M5/MUX2_Blink/MUX4411/XLXI_127
+AND2 		M5/MUX2_Blink/MUX4411/XLXI_129
+AND2 		M5/MUX2_Blink/MUX4411/XLXI_151
+AND2 		M5/MUX2_Blink/MUX4411/XLXI_152
+AND2 		M5/MUX2_Blink/MUX4411/XLXI_154
+AND2 		M5/MUX2_Blink/MUX4411/XLXI_156
+AND2 		M5/MUX2_Blink/MUX4411/XLXI_157
+AND2 		M5/MUX2_Blink/MUX4411/XLXI_159
+AND2 		M5/MUX2_Blink/MUX4411/XLXI_3
+AND2 		M5/MUX2_Blink/MUX4411/XLXI_44
+AND2 		M5/MUX2_Blink/MUX4411/XLXI_9
+AND2 		M5/MUX2_Blink/MUX4412/XLXI_128
+AND2 		M5/MUX2_Blink/MUX4412/XLXI_129
+AND2 		M5/MUX2_Blink/MUX4412/XLXI_153
+AND2 		M5/MUX2_Blink/MUX4412/XLXI_154
+AND2 		M5/MUX2_Blink/MUX4412/XLXI_158
+AND2 		M5/MUX2_Blink/MUX4412/XLXI_159
+AND2 		M5/MUX2_Blink/MUX4412/XLXI_43
+AND2 		M5/MUX2_Blink/MUX4412/XLXI_44
+AND2 		M5/MUX2_Blink/MUX4413/XLXI_126
+AND2 		M5/MUX2_Blink/MUX4413/XLXI_127
+AND2 		M5/MUX2_Blink/MUX4413/XLXI_128
+AND2 		M5/MUX2_Blink/MUX4413/XLXI_129
+OR4 		M5/MUX2_Blink/MUX4413/XLXI_130
+AND2 		M5/MUX2_Blink/MUX4413/XLXI_151
+AND2 		M5/MUX2_Blink/MUX4413/XLXI_152
+AND2 		M5/MUX2_Blink/MUX4413/XLXI_153
+AND2 		M5/MUX2_Blink/MUX4413/XLXI_154
+OR4 		M5/MUX2_Blink/MUX4413/XLXI_155
+AND2 		M5/MUX2_Blink/MUX4413/XLXI_156
+AND2 		M5/MUX2_Blink/MUX4413/XLXI_157
+AND2 		M5/MUX2_Blink/MUX4413/XLXI_158
+AND2 		M5/MUX2_Blink/MUX4413/XLXI_159
+OR4 		M5/MUX2_Blink/MUX4413/XLXI_160
+AND2 		M5/MUX2_Blink/MUX4413/XLXI_3
+AND2 		M5/MUX2_Blink/MUX4413/XLXI_43
+AND2 		M5/MUX2_Blink/MUX4413/XLXI_44
+OR4 		M5/MUX2_Blink/MUX4413/XLXI_45
+AND2 		M5/MUX2_Blink/MUX4413/XLXI_9
+AND2 		M5/MUX2_Blink/XLXI_61
+AND2 		M5/MUX2_Blink/XLXI_63
+AND2 		M5/MUX2_Blink/XLXI_65
+AND2 		M5/MUX2_Blink/XLXI_67
+AND2 		M5/MUX3_Point/MUX4411/XLXI_126
+AND2 		M5/MUX3_Point/MUX4411/XLXI_127
+AND2 		M5/MUX3_Point/MUX4411/XLXI_129
+AND2 		M5/MUX3_Point/MUX4411/XLXI_151
+AND2 		M5/MUX3_Point/MUX4411/XLXI_152
+AND2 		M5/MUX3_Point/MUX4411/XLXI_154
+AND2 		M5/MUX3_Point/MUX4411/XLXI_156
+AND2 		M5/MUX3_Point/MUX4411/XLXI_157
+AND2 		M5/MUX3_Point/MUX4411/XLXI_159
+AND2 		M5/MUX3_Point/MUX4411/XLXI_3
+AND2 		M5/MUX3_Point/MUX4411/XLXI_44
+AND2 		M5/MUX3_Point/MUX4411/XLXI_9
+AND2 		M5/MUX3_Point/MUX4413/XLXI_126
+AND2 		M5/MUX3_Point/MUX4413/XLXI_127
+AND2 		M5/MUX3_Point/MUX4413/XLXI_128
+AND2 		M5/MUX3_Point/MUX4413/XLXI_129
+OR4 		M5/MUX3_Point/MUX4413/XLXI_130
+AND2 		M5/MUX3_Point/MUX4413/XLXI_151
+AND2 		M5/MUX3_Point/MUX4413/XLXI_152
+AND2 		M5/MUX3_Point/MUX4413/XLXI_153
+AND2 		M5/MUX3_Point/MUX4413/XLXI_154
+OR4 		M5/MUX3_Point/MUX4413/XLXI_155
+AND2 		M5/MUX3_Point/MUX4413/XLXI_156
+AND2 		M5/MUX3_Point/MUX4413/XLXI_157
+AND2 		M5/MUX3_Point/MUX4413/XLXI_158
+AND2 		M5/MUX3_Point/MUX4413/XLXI_159
+OR4 		M5/MUX3_Point/MUX4413/XLXI_160
+AND2 		M5/MUX3_Point/MUX4413/XLXI_3
+AND2 		M5/MUX3_Point/MUX4413/XLXI_43
+AND2 		M5/MUX3_Point/MUX4413/XLXI_44
+OR4 		M5/MUX3_Point/MUX4413/XLXI_45
+AND2 		M5/MUX3_Point/MUX4413/XLXI_9
+AND2 		M5/MUX3_Point/XLXI_61
+AND2 		M5/MUX3_Point/XLXI_63
+AND2 		M5/MUX3_Point/XLXI_65
+AND2 		M5/MUX3_Point/XLXI_67
+VCC 		M6/LED_P2S/XST_VCC
+AND2 		M8/ALU_MUX/MUX8180/MUX4411/XLXI_129
+AND2 		M8/ALU_MUX/MUX8180/MUX4411/XLXI_154
+AND2 		M8/ALU_MUX/MUX8180/MUX4411/XLXI_159
+AND2 		M8/ALU_MUX/MUX8180/MUX4413/XLXI_129
+AND2 		M8/ALU_MUX/MUX8180/MUX4413/XLXI_154
+AND2 		M8/ALU_MUX/MUX8180/MUX4413/XLXI_159
+AND2 		M8/ALU_MUX/MUX8180/MUX4413/XLXI_44
+AND2 		M8/ALU_MUX/MUX8181/MUX4411/XLXI_129
+AND2 		M8/ALU_MUX/MUX8181/MUX4411/XLXI_154
+AND2 		M8/ALU_MUX/MUX8181/MUX4411/XLXI_159
+AND2 		M8/ALU_MUX/MUX8181/MUX4411/XLXI_44
+AND2 		M8/ALU_MUX/MUX8181/MUX4413/XLXI_129
+AND2 		M8/ALU_MUX/MUX8181/MUX4413/XLXI_154
+AND2 		M8/ALU_MUX/MUX8181/MUX4413/XLXI_159
+AND2 		M8/ALU_MUX/MUX8181/MUX4413/XLXI_44
+AND2 		M8/ALU_MUX/MUX8182/MUX4411/XLXI_129
+AND2 		M8/ALU_MUX/MUX8182/MUX4411/XLXI_154
+AND2 		M8/ALU_MUX/MUX8182/MUX4411/XLXI_159
+AND2 		M8/ALU_MUX/MUX8182/MUX4411/XLXI_44
+AND2 		M8/ALU_MUX/MUX8182/MUX4413/XLXI_129
+AND2 		M8/ALU_MUX/MUX8182/MUX4413/XLXI_154
+AND2 		M8/ALU_MUX/MUX8182/MUX4413/XLXI_159
+AND2 		M8/ALU_MUX/MUX8182/MUX4413/XLXI_44
+AND2 		M8/ALU_MUX/MUX8183/MUX4411/XLXI_129
+AND2 		M8/ALU_MUX/MUX8183/MUX4411/XLXI_154
+AND2 		M8/ALU_MUX/MUX8183/MUX4411/XLXI_159
+AND2 		M8/ALU_MUX/MUX8183/MUX4411/XLXI_44
+AND2 		M8/ALU_MUX/MUX8183/MUX4413/XLXI_129
+AND2 		M8/ALU_MUX/MUX8183/MUX4413/XLXI_154
+AND2 		M8/ALU_MUX/MUX8183/MUX4413/XLXI_157
+AND2 		M8/ALU_MUX/MUX8183/MUX4413/XLXI_159
+AND2 		M8/ALU_MUX/MUX8183/MUX4413/XLXI_44
+AND2 		MS/CT0/XLXI_314
+NAND2 		MS/CT0/XLXI_317
+AND2 		MS/CT0/XLXI_329
+AND2 		MS/CT0/XLXI_330
+AND2 		MS/CT0/XLXI_332
+AND2 		MS/CT0/XLXI_334
+AND2 		MS/CT0/XLXI_335
+AND2 		MS/CT0/XLXI_337
+AND2 		MS/CT0/XLXI_338
+AND2 		MS/CT0/XLXI_340
+AND2 		MS/CT1/XLXI_330
+AND2 		MS/CT1/XLXI_332
+AND2 		MS/CT1/XLXI_335
+AND2 		MS/CT1/XLXI_338
+AND2 		MS/CT2/XLXI_330
+AND2 		MS/CT2/XLXI_332
+AND2 		MS/CT2/XLXI_335
+AND2 		MS/CT2/XLXI_338
+AND2 		MS/CT3/XLXI_330
+AND2 		MS/CT3/XLXI_332
+AND2 		MS/CT3/XLXI_335
+AND2 		MS/CT3/XLXI_338
+VCC 		MS/XLXI_37
+GND 		MS/XLXI_40
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| AN<0>                              | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| AN<1>                              | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| AN<2>                              | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| AN<3>                              | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| BTN_x<0>                           | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| BTN_x<1>                           | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| BTN_x<2>                           | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| BTN_x<3>                           | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| BTN_x<4>                           | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| BTN_y<0>                           | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| BTN_y<1>                           | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| BTN_y<2>                           | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| BTN_y<3>                           | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| Buzzer                             | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| CR                                 | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| LED<0>                             | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| LED<1>                             | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| LED<2>                             | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| LED<3>                             | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| LED<4>                             | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| LED<5>                             | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| LED<6>                             | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| LED<7>                             | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| LED_PEN                            | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| RDY                                | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| RSTN                               | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| SEGMENT<0>                         | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| SEGMENT<1>                         | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| SEGMENT<2>                         | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| SEGMENT<3>                         | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| SEGMENT<4>                         | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| SEGMENT<5>                         | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| SEGMENT<6>                         | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| SEGMENT<7>                         | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| SEG_PEN                            | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| SW<0>                              | IOB              | INPUT     | LVCMOS15             |       |          |      |              |          |          |
+| SW<1>                              | IOB              | INPUT     | LVCMOS15             |       |          |      |              |          |          |
+| SW<2>                              | IOB              | INPUT     | LVCMOS15             |       |          |      |              |          |          |
+| SW<3>                              | IOB              | INPUT     | LVCMOS15             |       |          |      |              |          |          |
+| SW<4>                              | IOB              | INPUT     | LVCMOS15             |       |          |      |              |          |          |
+| SW<5>                              | IOB              | INPUT     | LVCMOS15             |       |          |      |              |          |          |
+| SW<6>                              | IOB              | INPUT     | LVCMOS15             |       |          |      |              |          |          |
+| SW<7>                              | IOB              | INPUT     | LVCMOS15             |       |          |      |              |          |          |
+| SW<8>                              | IOB              | INPUT     | LVCMOS15             |       |          |      |              |          |          |
+| SW<9>                              | IOB              | INPUT     | LVCMOS15             |       |          |      |              |          |          |
+| SW<10>                             | IOB              | INPUT     | LVCMOS15             |       |          |      |              |          |          |
+| SW<11>                             | IOB              | INPUT     | LVCMOS15             |       |          |      |              |          |          |
+| SW<12>                             | IOB              | INPUT     | LVCMOS15             |       |          |      |              |          |          |
+| SW<13>                             | IOB              | INPUT     | LVCMOS15             |       |          |      |              |          |          |
+| SW<14>                             | IOB              | INPUT     | LVCMOS15             |       |          |      |              |          |          |
+| SW<15>                             | IOB              | INPUT     | LVCMOS15             |       |          |      |              |          |          |
+| clk_100mhz                         | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| led_clk                            | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| led_clrn                           | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| led_sout                           | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| readn                              | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| seg_clk                            | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| seg_clrn                           | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| seg_sout                           | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+Use the "-detail" map option to print out Control Set Information.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

@@ -1,0 +1,198 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : SN74LS194.vf
+// /___/   /\     Timestamp : 06/08/2017 23:57:40
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -sympath D:/FPGA_work/SWord-DLD/Exp50-WallClock/Code -intstyle ise -family kintex7 -verilog D:/FPGA_work/SWord-DLD/Exp50-WallClock/SN74LS194.vf -w D:/FPGA_work/SWord-DLD/Exp50-WallClock/Code/SN74LS194.sch
+//Design Name: SN74LS194
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module SN74LS194(A, 
+                 B, 
+                 C, 
+                 clk, 
+                 CR, 
+                 D, 
+                 SL, 
+                 SR, 
+                 S0, 
+                 S1, 
+                 QA, 
+                 QB, 
+                 QC, 
+                 QD);
+
+    input A;
+    input B;
+    input C;
+    input clk;
+    input CR;
+    input D;
+    input SL;
+    input SR;
+    input S0;
+    input S1;
+   output QA;
+   output QB;
+   output QC;
+   output QD;
+   
+   wire D0;
+   wire HD0;
+   wire LD0;
+   wire nS0;
+   wire nS1;
+   wire PD0;
+   wire RD0;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_43;
+   wire XLXN_44;
+   wire XLXN_45;
+   wire XLXN_46;
+   wire XLXN_92;
+   wire XLXN_93;
+   wire XLXN_94;
+   wire XLXN_95;
+   wire XLXN_106;
+   wire XLXN_107;
+   wire XLXN_108;
+   wire XLXN_109;
+   wire XLXN_263;
+   wire QA_DUMMY;
+   wire QB_DUMMY;
+   wire QC_DUMMY;
+   wire QD_DUMMY;
+   
+   assign QA = QA_DUMMY;
+   assign QB = QB_DUMMY;
+   assign QC = QC_DUMMY;
+   assign QD = QD_DUMMY;
+   MB_DFF  DFF0 (.Cp(clk), 
+                .D(D0), 
+                .Rn(CR), 
+                .Sn(XLXN_263), 
+                .Q(QA_DUMMY), 
+                .Qn());
+   MB_DFF  DFF1 (.Cp(clk), 
+                .D(XLXN_2), 
+                .Rn(CR), 
+                .Sn(XLXN_263), 
+                .Q(QB_DUMMY), 
+                .Qn());
+   MB_DFF  DFF2 (.Cp(clk), 
+                .D(XLXN_3), 
+                .Rn(CR), 
+                .Sn(XLXN_263), 
+                .Q(QC_DUMMY), 
+                .Qn());
+   MB_DFF  DFF3 (.Cp(clk), 
+                .D(XLXN_4), 
+                .Rn(CR), 
+                .Sn(XLXN_263), 
+                .Q(QD_DUMMY), 
+                .Qn());
+   OR4  XLXI_5 (.I0(RD0), 
+               .I1(PD0), 
+               .I2(LD0), 
+               .I3(HD0), 
+               .O(D0));
+   OR4  XLXI_6 (.I0(XLXN_43), 
+               .I1(XLXN_44), 
+               .I2(XLXN_45), 
+               .I3(XLXN_46), 
+               .O(XLXN_2));
+   OR4  XLXI_7 (.I0(XLXN_106), 
+               .I1(XLXN_107), 
+               .I2(XLXN_108), 
+               .I3(XLXN_109), 
+               .O(XLXN_4));
+   OR4  XLXI_8 (.I0(XLXN_92), 
+               .I1(XLXN_93), 
+               .I2(XLXN_94), 
+               .I3(XLXN_95), 
+               .O(XLXN_3));
+   AND3  XLXI_9 (.I0(SR), 
+                .I1(S0), 
+                .I2(nS1), 
+                .O(RD0));
+   AND3  XLXI_18 (.I0(S0), 
+                 .I1(S1), 
+                 .I2(A), 
+                 .O(PD0));
+   AND3  XLXI_19 (.I0(nS0), 
+                 .I1(S1), 
+                 .I2(QB_DUMMY), 
+                 .O(LD0));
+   AND3  XLXI_20 (.I0(nS0), 
+                 .I1(nS1), 
+                 .I2(QA_DUMMY), 
+                 .O(HD0));
+   AND3  XLXI_21 (.I0(QA_DUMMY), 
+                 .I1(S0), 
+                 .I2(nS1), 
+                 .O(XLXN_43));
+   AND3  XLXI_22 (.I0(S0), 
+                 .I1(S1), 
+                 .I2(B), 
+                 .O(XLXN_44));
+   AND3  XLXI_23 (.I0(nS0), 
+                 .I1(S1), 
+                 .I2(QC_DUMMY), 
+                 .O(XLXN_45));
+   AND3  XLXI_24 (.I0(nS0), 
+                 .I1(nS1), 
+                 .I2(QB_DUMMY), 
+                 .O(XLXN_46));
+   AND3  XLXI_50 (.I0(QB_DUMMY), 
+                 .I1(S0), 
+                 .I2(nS1), 
+                 .O(XLXN_92));
+   AND3  XLXI_51 (.I0(S0), 
+                 .I1(S1), 
+                 .I2(C), 
+                 .O(XLXN_93));
+   AND3  XLXI_52 (.I0(nS0), 
+                 .I1(S1), 
+                 .I2(QD_DUMMY), 
+                 .O(XLXN_94));
+   AND3  XLXI_53 (.I0(nS0), 
+                 .I1(nS1), 
+                 .I2(QC_DUMMY), 
+                 .O(XLXN_95));
+   AND3  XLXI_54 (.I0(QC_DUMMY), 
+                 .I1(S0), 
+                 .I2(nS1), 
+                 .O(XLXN_106));
+   AND3  XLXI_55 (.I0(S0), 
+                 .I1(S1), 
+                 .I2(D), 
+                 .O(XLXN_107));
+   AND3  XLXI_56 (.I0(nS0), 
+                 .I1(S1), 
+                 .I2(SL), 
+                 .O(XLXN_108));
+   AND3  XLXI_57 (.I0(nS0), 
+                 .I1(nS1), 
+                 .I2(QD_DUMMY), 
+                 .O(XLXN_109));
+   INV  XLXI_156 (.I(S1), 
+                 .O(nS1));
+   INV  XLXI_157 (.I(S0), 
+                 .O(nS0));
+   VCC  XLXI_270 (.P(XLXN_263));
+endmodule

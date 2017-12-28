@@ -1,0 +1,327 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : ms1.vf
+// /___/   /\     Timestamp : 06/08/2017 23:57:39
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -sympath D:/FPGA_work/SWord-DLD/Exp50-WallClock/Code -intstyle ise -family kintex7 -verilog D:/FPGA_work/SWord-DLD/Exp50-WallClock/ms1.vf -w D:/FPGA_work/SWord-DLD/Exp50-WallClock/Code/ms1.sch
+//Design Name: ms1
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale  100 ps / 10 ps
+
+module NAND9_HXILINX_ms1 (O, I0, I1, I2, I3, I4, I5, I6, I7, I8);
+    
+
+   output O;
+
+   input I0;
+   input I1;
+   input I2;
+   input I3;
+   input I4;
+   input I5;
+   input I6;
+   input I7;
+   input I8;
+
+assign O = !(I0 && I1 && I2 && I3 && I4 && I5 && I6 && I7 && I8);
+
+endmodule
+`timescale 1ns / 1ps
+
+module CT74LS161_MUSER_ms1(CP, 
+                           CR, 
+                           CT_P, 
+                           CT_T, 
+                           D0, 
+                           D1, 
+                           D2, 
+                           D3, 
+                           LD, 
+                           CO, 
+                           Q0, 
+                           Q1, 
+                           Q2, 
+                           Q3);
+
+    input CP;
+    input CR;
+    input CT_P;
+    input CT_T;
+    input D0;
+    input D1;
+    input D2;
+    input D3;
+    input LD;
+   output CO;
+   output Q0;
+   output Q1;
+   output Q2;
+   output Q3;
+   
+   wire ADD1;
+   wire CD1;
+   wire CD2;
+   wire CD3;
+   wire Count;
+   wire DD3;
+   wire HD0;
+   wire Hold;
+   wire nQ0;
+   wire nQ1;
+   wire nQ2;
+   wire nQ3;
+   wire PD;
+   wire PD0;
+   wire VV;
+   wire XLXN_2;
+   wire XLXN_4;
+   wire XLXN_44;
+   wire XLXN_45;
+   wire XLXN_46;
+   wire XLXN_93;
+   wire XLXN_94;
+   wire XLXN_95;
+   wire XLXN_107;
+   wire XLXN_109;
+   wire XLXN_183;
+   wire XLXN_186;
+   wire XLXN_628;
+   wire XLXN_818;
+   wire XLXN_912;
+   wire XLXN_921;
+   wire Q0_DUMMY;
+   wire Q1_DUMMY;
+   wire Q2_DUMMY;
+   wire Q3_DUMMY;
+   
+   assign Q0 = Q0_DUMMY;
+   assign Q1 = Q1_DUMMY;
+   assign Q2 = Q2_DUMMY;
+   assign Q3 = Q3_DUMMY;
+   MB_DFF  DFF0 (.Cp(CP), 
+                .D(DD3), 
+                .Rn(CR), 
+                .Sn(VV), 
+                .Q(Q3_DUMMY), 
+                .Qn(nQ3));
+   MB_DFF  DFF1 (.Cp(CP), 
+                .D(XLXN_2), 
+                .Rn(CR), 
+                .Sn(VV), 
+                .Q(Q2_DUMMY), 
+                .Qn(nQ2));
+   MB_DFF  DFF2 (.Cp(CP), 
+                .D(XLXN_921), 
+                .Rn(CR), 
+                .Sn(VV), 
+                .Q(Q1_DUMMY), 
+                .Qn(nQ1));
+   MB_DFF  DFF3 (.Cp(CP), 
+                .D(XLXN_4), 
+                .Rn(CR), 
+                .Sn(VV), 
+                .Q(Q0_DUMMY), 
+                .Qn(nQ0));
+   XNOR2  XLXI_12 (.I0(nQ1), 
+                  .I1(Q0_DUMMY), 
+                  .O(CD1));
+   XNOR2  XLXI_13 (.I0(nQ2), 
+                  .I1(XLXN_186), 
+                  .O(CD2));
+   XNOR2  XLXI_14 (.I0(nQ3), 
+                  .I1(XLXN_183), 
+                  .O(CD3));
+   NOR3  XLXI_24 (.I0(nQ0), 
+                 .I1(nQ1), 
+                 .I2(nQ2), 
+                 .O(XLXN_183));
+   NOR2  XLXI_25 (.I0(nQ0), 
+                 .I1(nQ1), 
+                 .O(XLXN_186));
+   NOR4  XLXI_40 (.I0(nQ0), 
+                 .I1(nQ1), 
+                 .I2(nQ2), 
+                 .I3(nQ3), 
+                 .O(XLXN_628));
+   VCC  XLXI_270 (.P(VV));
+   INV  XLXI_307 (.I(LD), 
+                 .O(PD));
+   AND2  XLXI_309 (.I0(CT_T), 
+                  .I1(XLXN_628), 
+                  .O(CO));
+   OR3  XLXI_310 (.I0(PD0), 
+                 .I1(ADD1), 
+                 .I2(HD0), 
+                 .O(DD3));
+   OR3  XLXI_311 (.I0(XLXN_44), 
+                 .I1(XLXN_45), 
+                 .I2(XLXN_46), 
+                 .O(XLXN_2));
+   OR3  XLXI_312 (.I0(XLXN_93), 
+                 .I1(XLXN_94), 
+                 .I2(XLXN_95), 
+                 .O(XLXN_921));
+   OR3  XLXI_313 (.I0(XLXN_107), 
+                 .I1(XLXN_912), 
+                 .I2(XLXN_109), 
+                 .O(XLXN_4));
+   AND2  XLXI_314 (.I0(LD), 
+                  .I1(XLXN_818), 
+                  .O(Hold));
+   AND3  XLXI_315 (.I0(LD), 
+                  .I1(CT_T), 
+                  .I2(CT_P), 
+                  .O(Count));
+   NAND2  XLXI_317 (.I0(CT_T), 
+                   .I1(CT_P), 
+                   .O(XLXN_818));
+   AND2  XLXI_329 (.I0(Hold), 
+                  .I1(Q3_DUMMY), 
+                  .O(HD0));
+   AND2  XLXI_330 (.I0(PD), 
+                  .I1(D3), 
+                  .O(PD0));
+   AND2  XLXI_331 (.I0(Count), 
+                  .I1(CD3), 
+                  .O(ADD1));
+   AND2  XLXI_332 (.I0(PD), 
+                  .I1(D2), 
+                  .O(XLXN_44));
+   AND2  XLXI_333 (.I0(Count), 
+                  .I1(CD2), 
+                  .O(XLXN_45));
+   AND2  XLXI_334 (.I0(Hold), 
+                  .I1(Q2_DUMMY), 
+                  .O(XLXN_46));
+   AND2  XLXI_335 (.I0(PD), 
+                  .I1(D1), 
+                  .O(XLXN_93));
+   AND2  XLXI_336 (.I0(Count), 
+                  .I1(CD1), 
+                  .O(XLXN_94));
+   AND2  XLXI_337 (.I0(Hold), 
+                  .I1(Q1_DUMMY), 
+                  .O(XLXN_95));
+   AND2  XLXI_338 (.I0(PD), 
+                  .I1(D0), 
+                  .O(XLXN_107));
+   AND2  XLXI_339 (.I0(Count), 
+                  .I1(nQ0), 
+                  .O(XLXN_912));
+   AND2  XLXI_340 (.I0(Hold), 
+                  .I1(Q0_DUMMY), 
+                  .O(XLXN_109));
+endmodule
+`timescale 1ns / 1ps
+
+module ms1(clk, 
+           rst, 
+           ms1);
+
+    input clk;
+    input rst;
+   output ms1;
+   
+   wire LD;
+   wire N0;
+   wire rstn;
+   wire V5;
+   wire XLXN_47;
+   wire XLXN_48;
+   wire XLXN_50;
+   wire XLXN_51;
+   wire XLXN_52;
+   wire XLXN_53;
+   wire XLXN_54;
+   wire XLXN_55;
+   wire XLXN_58;
+   wire XLXN_61;
+   wire XLXN_62;
+   wire XLXN_77;
+   
+   CT74LS161_MUSER_ms1  CT0 (.CP(clk), 
+                            .CR(rstn), 
+                            .CT_P(V5), 
+                            .CT_T(V5), 
+                            .D0(N0), 
+                            .D1(N0), 
+                            .D2(N0), 
+                            .D3(N0), 
+                            .LD(LD), 
+                            .CO(XLXN_61), 
+                            .Q0(XLXN_55), 
+                            .Q1(XLXN_54), 
+                            .Q2(XLXN_53), 
+                            .Q3(XLXN_52));
+   CT74LS161_MUSER_ms1  CT1 (.CP(clk), 
+                            .CR(rstn), 
+                            .CT_P(V5), 
+                            .CT_T(XLXN_61), 
+                            .D0(N0), 
+                            .D1(N0), 
+                            .D2(N0), 
+                            .D3(N0), 
+                            .LD(LD), 
+                            .CO(XLXN_58), 
+                            .Q0(), 
+                            .Q1(), 
+                            .Q2(XLXN_51), 
+                            .Q3());
+   CT74LS161_MUSER_ms1  CT2 (.CP(clk), 
+                            .CR(rstn), 
+                            .CT_P(V5), 
+                            .CT_T(XLXN_58), 
+                            .D0(N0), 
+                            .D1(N0), 
+                            .D2(N0), 
+                            .D3(N0), 
+                            .LD(LD), 
+                            .CO(XLXN_62), 
+                            .Q0(XLXN_50), 
+                            .Q1(XLXN_48), 
+                            .Q2(), 
+                            .Q3());
+   CT74LS161_MUSER_ms1  CT3 (.CP(clk), 
+                            .CR(rstn), 
+                            .CT_P(V5), 
+                            .CT_T(XLXN_62), 
+                            .D0(N0), 
+                            .D1(N0), 
+                            .D2(N0), 
+                            .D3(N0), 
+                            .LD(LD), 
+                            .CO(), 
+                            .Q0(), 
+                            .Q1(), 
+                            .Q2(XLXN_77), 
+                            .Q3(XLXN_47));
+   (* HU_SET = "XLXI_36_0" *) 
+   NAND9_HXILINX_ms1  XLXI_36 (.I0(XLXN_55), 
+                              .I1(XLXN_54), 
+                              .I2(XLXN_53), 
+                              .I3(XLXN_52), 
+                              .I4(XLXN_51), 
+                              .I5(XLXN_50), 
+                              .I6(XLXN_48), 
+                              .I7(XLXN_77), 
+                              .I8(XLXN_47), 
+                              .O(LD));
+   VCC  XLXI_37 (.P(V5));
+   GND  XLXI_40 (.G(N0));
+   INV  XLXI_41 (.I(LD), 
+                .O(ms1));
+   INV  XLXI_42 (.I(rst), 
+                .O(rstn));
+endmodule

@@ -1,0 +1,70 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : MB_DFF.vf
+// /___/   /\     Timestamp : 09/14/2016 22:53:34
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -sympath D:/FPGA_work/SWord-DLD/Exp45-Shift/Code -intstyle ise -family kintex7 -verilog D:/FPGA_work/SWord-DLD/Exp45-Shift/MB_DFF.vf -w D:/FPGA_work/SWord-DLD/Exp45-Shift/Code/MB_DFF.sch
+//Design Name: MB_DFF
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module MB_DFF(Cp, 
+              D, 
+              Rn, 
+              Sn, 
+              Q, 
+              Qn);
+
+    input Cp;
+    input D;
+    input Rn;
+    input Sn;
+   output Q;
+   output Qn;
+   
+   wire XLXN_5;
+   wire XLXN_15;
+   wire XLXN_50;
+   wire XLXN_111;
+   wire Q_DUMMY;
+   wire Qn_DUMMY;
+   
+   assign Q = Q_DUMMY;
+   assign Qn = Qn_DUMMY;
+   NAND3  NA1 (.I0(XLXN_5), 
+              .I1(Rn), 
+              .I2(D), 
+              .O(XLXN_15));
+   NAND3  NA2 (.I0(XLXN_15), 
+              .I1(Sn), 
+              .I2(XLXN_111), 
+              .O(XLXN_50));
+   NAND3  NA3 (.I0(Cp), 
+              .I1(XLXN_15), 
+              .I2(XLXN_111), 
+              .O(XLXN_5));
+   NAND3  NA4 (.I0(Rn), 
+              .I1(Cp), 
+              .I2(XLXN_50), 
+              .O(XLXN_111));
+   NAND3  NA5 (.I0(Rn), 
+              .I1(XLXN_5), 
+              .I2(Q_DUMMY), 
+              .O(Qn_DUMMY));
+   NAND3  NA6 (.I0(Qn_DUMMY), 
+              .I1(XLXN_111), 
+              .I2(Sn), 
+              .O(Q_DUMMY));
+endmodule

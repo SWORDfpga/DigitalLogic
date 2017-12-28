@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="Exp45-Shift" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/ALU D:|FPGA_work|SWord-DLD|Exp45-Shift|Code|ALU-BK.v</ClosedNode>
+         <ClosedNode>/Regs_8_32 D:|FPGA_work|SWord-DLD|Exp45-Shift|Code|register_file_8_32.v</ClosedNode>
+         <ClosedNode>/Regs_Test D:|FPGA_work|SWord-DLD|Exp45-Shift|Code|Regs_Test.v</ClosedNode>
+         <ClosedNode>/Shift_32 D:|FPGA_work|SWord-DLD|Exp45-Shift|Code|Shift_32.sch</ClosedNode>
+         <ClosedNode>/Top_Shift D:|FPGA_work|SWord-DLD|Exp45-Shift|Code|Top_Shift.sch/M10 - Regs_8_32</ClosedNode>
+         <ClosedNode>/Top_Shift D:|FPGA_work|SWord-DLD|Exp45-Shift|Code|Top_Shift.sch/M12 - Shift_32/SH0 - SN74LS194</ClosedNode>
+         <ClosedNode>/Top_Shift D:|FPGA_work|SWord-DLD|Exp45-Shift|Code|Top_Shift.sch/M12 - Shift_32/SH1 - SN74LS194</ClosedNode>
+         <ClosedNode>/Top_Shift D:|FPGA_work|SWord-DLD|Exp45-Shift|Code|Top_Shift.sch/M12 - Shift_32/SH2 - SN74LS194</ClosedNode>
+         <ClosedNode>/Top_Shift D:|FPGA_work|SWord-DLD|Exp45-Shift|Code|Top_Shift.sch/M12 - Shift_32/SH3 - SN74LS194</ClosedNode>
+         <ClosedNode>/Top_Shift D:|FPGA_work|SWord-DLD|Exp45-Shift|Code|Top_Shift.sch/M12 - Shift_32/SH4 - SN74LS194</ClosedNode>
+         <ClosedNode>/Top_Shift D:|FPGA_work|SWord-DLD|Exp45-Shift|Code|Top_Shift.sch/M12 - Shift_32/SH5 - SN74LS194</ClosedNode>
+         <ClosedNode>/Top_Shift D:|FPGA_work|SWord-DLD|Exp45-Shift|Code|Top_Shift.sch/M12 - Shift_32/SH6 - SN74LS194</ClosedNode>
+         <ClosedNode>/Top_Shift D:|FPGA_work|SWord-DLD|Exp45-Shift|Code|Top_Shift.sch/M12 - Shift_32/SH7 - SN74LS194</ClosedNode>
+         <ClosedNode>/Top_Shift D:|FPGA_work|SWord-DLD|Exp45-Shift|Code|Top_Shift.sch/M3 - Display</ClosedNode>
+         <ClosedNode>/Top_Shift D:|FPGA_work|SWord-DLD|Exp45-Shift|Code|Top_Shift.sch/M31 - Seg7_Dev</ClosedNode>
+         <ClosedNode>/Top_Shift D:|FPGA_work|SWord-DLD|Exp45-Shift|Code|Top_Shift.sch/M5 - Multi_8CH32</ClosedNode>
+         <ClosedNode>/Top_Shift D:|FPGA_work|SWord-DLD|Exp45-Shift|Code|Top_Shift.sch/M6 - GPIO</ClosedNode>
+         <ClosedNode>/Top_Shift D:|FPGA_work|SWord-DLD|Exp45-Shift|Code|Top_Shift.sch/M8 - ALU</ClosedNode>
+         <ClosedNode>/Top_Shift D:|FPGA_work|SWord-DLD|Exp45-Shift|Code|Top_Shift.sch/M8 - ALU/ALU_ADD - ADC32</ClosedNode>
+         <ClosedNode>/Top_Shift D:|FPGA_work|SWord-DLD|Exp45-Shift|Code|Top_Shift.sch/M8 - ALU/XLXI_15 - MUX8T1_32/MUX8180 - MUX8T1_8</ClosedNode>
+         <ClosedNode>/Top_Shift D:|FPGA_work|SWord-DLD|Exp45-Shift|Code|Top_Shift.sch/M8 - ALU/XLXI_15 - MUX8T1_32/MUX8181 - MUX8T1_8</ClosedNode>
+         <ClosedNode>/Top_Shift D:|FPGA_work|SWord-DLD|Exp45-Shift|Code|Top_Shift.sch/M8 - ALU/XLXI_15 - MUX8T1_32/MUX8182 - MUX8T1_8</ClosedNode>
+         <ClosedNode>/Top_Shift D:|FPGA_work|SWord-DLD|Exp45-Shift|Code|Top_Shift.sch/M8 - ALU/XLXI_15 - MUX8T1_32/MUX8183 - MUX8T1_8</ClosedNode>
+         <ClosedNode>/Top_Shift D:|FPGA_work|SWord-DLD|Exp45-Shift|Code|Top_Shift.sch/MS - ms1/CT1 - CT74LS161</ClosedNode>
+         <ClosedNode>/Top_Shift D:|FPGA_work|SWord-DLD|Exp45-Shift|Code|Top_Shift.sch/MS - ms1/CT2 - CT74LS161</ClosedNode>
+         <ClosedNode>/Top_Shift D:|FPGA_work|SWord-DLD|Exp45-Shift|Code|Top_Shift.sch/MS - ms1/CT3 - CT74LS161</ClosedNode>
+         <ClosedNode>/Top_Shift D:|FPGA_work|SWord-DLD|Exp45-Shift|Code|Top_Shift.sch/XLXI_45 - Shift_32</ClosedNode>
+         <ClosedNode>/ms_ms_sch_tb D:|FPGA_work|SWord-DLD|Exp45-Shift|Code|ms_test.v</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Top_Shift (D:/FPGA_work/SWord-DLD/Exp45-Shift/Code/Top_Shift.sch)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000018d000000020000000000000000000000000200000064ffffffff0000008100000003000000020000018d0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>Top_Shift (D:/FPGA_work/SWord-DLD/Exp45-Shift/Code/Top_Shift.sch)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001b8000000010000000100000000000000000000000064ffffffff000000810000000000000001000001b80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000252000000040101000100000000000000000000000064ffffffff0000008100000000000000040000003d0000000100000000000000240000000100000000000000780000000100000000000001790000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Code\ACLA4.sch</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>work</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000121000000010001000100000000000000000000000064ffffffff000000810000000000000001000001210000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>Synthesize - XST</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Design Utilities</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001b8000000010000000100000000000000000000000064ffffffff000000810000000000000001000001b80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Design Utilities</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_SCHEMATIC" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>Synthesize - XST</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001b8000000010000000100000000000000000000000064ffffffff000000810000000000000001000001b80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff00000000000000020000010c000000e601000000050100000002</SourceProcessView>
+   <CurrentView>Implementation</CurrentView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000199000000010000000100000000000000000000000064ffffffff000000810000000000000001000001990000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/Top_Shift D:|FPGA_work|SWord-DLD|Exp45-Shift|Code|Top_Shift.sch/M10 - Regs_8_32</ClosedNode>
+         <ClosedNode>/Top_Shift D:|FPGA_work|SWord-DLD|Exp45-Shift|Code|Top_Shift.sch/M12 - Shift_32</ClosedNode>
+         <ClosedNode>/Top_Shift D:|FPGA_work|SWord-DLD|Exp45-Shift|Code|Top_Shift.sch/M3 - Display</ClosedNode>
+         <ClosedNode>/Top_Shift D:|FPGA_work|SWord-DLD|Exp45-Shift|Code|Top_Shift.sch/M31 - Seg7_Dev</ClosedNode>
+         <ClosedNode>/Top_Shift D:|FPGA_work|SWord-DLD|Exp45-Shift|Code|Top_Shift.sch/M5 - Multi_8CH32</ClosedNode>
+         <ClosedNode>/Top_Shift D:|FPGA_work|SWord-DLD|Exp45-Shift|Code|Top_Shift.sch/M6 - GPIO</ClosedNode>
+         <ClosedNode>/Top_Shift D:|FPGA_work|SWord-DLD|Exp45-Shift|Code|Top_Shift.sch/M8 - ALU</ClosedNode>
+         <ClosedNode>/Top_Shift D:|FPGA_work|SWord-DLD|Exp45-Shift|Code|Top_Shift.sch/MS - ms1</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>SN74LS194_SN74LS194_sch_tb (D:/FPGA_work/SWord-DLD/Exp45-Shift/Code/LS194_Test.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >1</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000162000000020000000000000000000000000200000064ffffffff000000810000000300000002000001620000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>SN74LS194_SN74LS194_sch_tb (D:/FPGA_work/SWord-DLD/Exp45-Shift/Code/LS194_Test.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001b8000000010000000100000000000000000000000064ffffffff000000810000000000000001000001b80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_SCHEMATIC" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>ISim Simulator</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001b8000000010000000100000000000000000000000064ffffffff000000810000000000000001000001b80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001b8000000010000000100000000000000000000000064ffffffff000000810000000000000001000001b80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
+   </ItemView>
+</Project>

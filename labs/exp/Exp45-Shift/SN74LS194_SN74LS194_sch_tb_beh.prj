@@ -1,0 +1,4 @@
+verilog work "MB_DFF.vf"
+verilog work "SN74LS194.vf"
+verilog work "Code/LS194_Test.v"
+verilog work "d:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

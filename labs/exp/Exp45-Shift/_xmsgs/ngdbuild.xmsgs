@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;clk_100mhz&quot; LOC = T9&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;clk_100mhz&quot; LOC = T9&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">clk_100mhz</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;clk_100mhz&quot;		LOC = AC18      |&gt; [Code/Top-Shift.ucf(3)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="478" delta="old" >clock net <arg fmt="%s" index="1">M10/R0/clk1</arg> with clock driver <arg fmt="%s" index="2">M10/R0/cc</arg> drives no clock pins
+</msg>
+
+<msg type="warning" file="NgdBuild" num="478" delta="old" >clock net <arg fmt="%s" index="1">M10/R1/clk1</arg> with clock driver <arg fmt="%s" index="2">M10/R1/cc</arg> drives no clock pins
+</msg>
+
+<msg type="warning" file="NgdBuild" num="478" delta="old" >clock net <arg fmt="%s" index="1">M10/R2/clk1</arg> with clock driver <arg fmt="%s" index="2">M10/R2/cc</arg> drives no clock pins
+</msg>
+
+<msg type="warning" file="NgdBuild" num="478" delta="old" >clock net <arg fmt="%s" index="1">M10/R3/clk1</arg> with clock driver <arg fmt="%s" index="2">M10/R3/cc</arg> drives no clock pins
+</msg>
+
+<msg type="warning" file="NgdBuild" num="478" delta="old" >clock net <arg fmt="%s" index="1">M10/R4/clk1</arg> with clock driver <arg fmt="%s" index="2">M10/R4/cc</arg> drives no clock pins
+</msg>
+
+<msg type="warning" file="NgdBuild" num="478" delta="old" >clock net <arg fmt="%s" index="1">M10/R5/clk1</arg> with clock driver <arg fmt="%s" index="2">M10/R5/cc</arg> drives no clock pins
+</msg>
+
+<msg type="warning" file="NgdBuild" num="478" delta="old" >clock net <arg fmt="%s" index="1">M10/R6/clk1</arg> with clock driver <arg fmt="%s" index="2">M10/R6/cc</arg> drives no clock pins
+</msg>
+
+<msg type="warning" file="NgdBuild" num="478" delta="old" >clock net <arg fmt="%s" index="1">M10/R7/clk1</arg> with clock driver <arg fmt="%s" index="2">M10/R7/cc</arg> drives no clock pins
+</msg>
+
+</messages>
+

@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="Exp44-RTL" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/ALU D:|FPGA_work|SWord-DLD|Exp44-RTL|Code|ALU-BK.v</ClosedNode>
+         <ClosedNode>/ALU D:|FPGA_work|SWord-DLD|Exp44-RTL|Code|ALU.sch</ClosedNode>
+         <ClosedNode>/CT74LS161_CT74LS161_sch_tb D:|FPGA_work|SWord-DLD|Exp44-RTL|Code|CT74ls161_Test.v</ClosedNode>
+         <ClosedNode>/Display D:|FPGA_work|SWord-DLD|Exp44-RTL|Code|Display.sch</ClosedNode>
+         <ClosedNode>/GPIO D:|FPGA_work|SWord-DLD|Exp44-RTL|Code|SPIO.v</ClosedNode>
+         <ClosedNode>/Multi_8CH32 D:|FPGA_work|SWord-DLD|Exp44-RTL|Code|Multi_8CH32.v</ClosedNode>
+         <ClosedNode>/Regs_Test D:|FPGA_work|SWord-DLD|Exp44-RTL|Code|Regs_Test.v</ClosedNode>
+         <ClosedNode>/Seg7_Dev D:|FPGA_work|SWord-DLD|Exp44-RTL|Code|Seg7_Dev.sch</ClosedNode>
+         <ClosedNode>/Top_RTL D:|FPGA_work|SWord-DLD|Exp44-RTL|Code|Top_RTL.sch/M10 - Regs_8_32</ClosedNode>
+         <ClosedNode>/Top_RTL D:|FPGA_work|SWord-DLD|Exp44-RTL|Code|Top_RTL.sch/M3 - Display</ClosedNode>
+         <ClosedNode>/Top_RTL D:|FPGA_work|SWord-DLD|Exp44-RTL|Code|Top_RTL.sch/M31 - Seg7_Dev</ClosedNode>
+         <ClosedNode>/Top_RTL D:|FPGA_work|SWord-DLD|Exp44-RTL|Code|Top_RTL.sch/M5 - Multi_8CH32</ClosedNode>
+         <ClosedNode>/Top_RTL D:|FPGA_work|SWord-DLD|Exp44-RTL|Code|Top_RTL.sch/M6 - GPIO</ClosedNode>
+         <ClosedNode>/Top_RTL D:|FPGA_work|SWord-DLD|Exp44-RTL|Code|Top_RTL.sch/M8 - ALU/ALU_ADD - ADC32</ClosedNode>
+         <ClosedNode>/Top_RTL D:|FPGA_work|SWord-DLD|Exp44-RTL|Code|Top_RTL.sch/M8 - ALU/XLXI_15 - MUX8T1_32</ClosedNode>
+         <ClosedNode>/Top_RTL D:|FPGA_work|SWord-DLD|Exp44-RTL|Code|Top_RTL.sch/MS - ms1</ClosedNode>
+         <ClosedNode>/Top_RTL D:|FPGA_work|SWord-DLD|Exp44-RTL|Code|Top_RTL.sch/MS - ms1/CT0 - CT74LS161</ClosedNode>
+         <ClosedNode>/Top_RTL D:|FPGA_work|SWord-DLD|Exp44-RTL|Code|Top_RTL.sch/MS - ms1/CT1 - CT74LS161</ClosedNode>
+         <ClosedNode>/Top_RTL D:|FPGA_work|SWord-DLD|Exp44-RTL|Code|Top_RTL.sch/MS - ms1/CT2 - CT74LS161</ClosedNode>
+         <ClosedNode>/Top_RTL D:|FPGA_work|SWord-DLD|Exp44-RTL|Code|Top_RTL.sch/MS - ms1/CT3 - CT74LS161</ClosedNode>
+         <ClosedNode>/ms D:|FPGA_work|SWord-DLD|Exp44-RTL|Code|ms.sch</ClosedNode>
+         <ClosedNode>/ms D:|FPGA_work|SWord-DLD|Exp44-RTL|Code|ms.sch/CT0 - CT74LS161</ClosedNode>
+         <ClosedNode>/ms D:|FPGA_work|SWord-DLD|Exp44-RTL|Code|ms.sch/CT1 - CT74LS161</ClosedNode>
+         <ClosedNode>/ms D:|FPGA_work|SWord-DLD|Exp44-RTL|Code|ms.sch/CT2 - CT74LS161</ClosedNode>
+         <ClosedNode>/ms D:|FPGA_work|SWord-DLD|Exp44-RTL|Code|ms.sch/CT3 - CT74LS161</ClosedNode>
+         <ClosedNode>/ms_ms_sch_tb D:|FPGA_work|SWord-DLD|Exp44-RTL|Code|ms_test.v</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>ALU_U7 - xor32 (D:/FPGA_work/SWord-DLD/Exp44-RTL/Code/common/xor32.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >9</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000162000000020000000000000000000000000200000064ffffffff000000810000000300000002000001620000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>ALU_U7 - xor32 (D:/FPGA_work/SWord-DLD/Exp44-RTL/Code/common/xor32.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000199000000010000000100000000000000000000000064ffffffff000000810000000000000001000001990000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000252000000040101000100000000000000000000000064ffffffff0000008100000000000000040000003d0000000100000000000000240000000100000000000000780000000100000000000001790000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>ACLA4.sch</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>work</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000121000000010001000100000000000000000000000064ffffffff000000810000000000000001000001210000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_SCHEMATIC" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>Synthesize - XST</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000199000000010000000100000000000000000000000064ffffffff000000810000000000000001000001990000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>Synthesize - XST</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001c2000000010000000100000000000000000000000064ffffffff000000810000000000000001000001c20000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff000000000000000200000114000000ff01000000050100000002</SourceProcessView>
+   <CurrentView>Behavioral Simulation</CurrentView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_NGC" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000199000000010000000100000000000000000000000064ffffffff000000810000000000000001000001990000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/Top_RTL D:|FPGA_work|SWord-DLD|Exp44-RTL|Code|Top_RTL.sch/M10 - Regs_8_32/D - HCT138</ClosedNode>
+         <ClosedNode>/Top_RTL D:|FPGA_work|SWord-DLD|Exp44-RTL|Code|Top_RTL.sch/M10 - Regs_8_32/MUX_REGA - MUX8T1_32</ClosedNode>
+         <ClosedNode>/Top_RTL D:|FPGA_work|SWord-DLD|Exp44-RTL|Code|Top_RTL.sch/M10 - Regs_8_32/MUX_REGB - MUX8T1_32</ClosedNode>
+         <ClosedNode>/Top_RTL D:|FPGA_work|SWord-DLD|Exp44-RTL|Code|Top_RTL.sch/M10 - Regs_8_32/R0 - Reg_32/Reg82 - Reg_8bit</ClosedNode>
+         <ClosedNode>/Top_RTL D:|FPGA_work|SWord-DLD|Exp44-RTL|Code|Top_RTL.sch/M10 - Regs_8_32/R0 - Reg_32/Reg83 - Reg_8bit</ClosedNode>
+         <ClosedNode>/Top_RTL D:|FPGA_work|SWord-DLD|Exp44-RTL|Code|Top_RTL.sch/M10 - Regs_8_32/R0 - Reg_32/Reg84 - Reg_8bit</ClosedNode>
+         <ClosedNode>/Top_RTL D:|FPGA_work|SWord-DLD|Exp44-RTL|Code|Top_RTL.sch/M10 - Regs_8_32/R1 - Reg_32</ClosedNode>
+         <ClosedNode>/Top_RTL D:|FPGA_work|SWord-DLD|Exp44-RTL|Code|Top_RTL.sch/M10 - Regs_8_32/R2 - Reg_32</ClosedNode>
+         <ClosedNode>/Top_RTL D:|FPGA_work|SWord-DLD|Exp44-RTL|Code|Top_RTL.sch/M10 - Regs_8_32/R3 - Reg_32</ClosedNode>
+         <ClosedNode>/Top_RTL D:|FPGA_work|SWord-DLD|Exp44-RTL|Code|Top_RTL.sch/M10 - Regs_8_32/R4 - Reg_32</ClosedNode>
+         <ClosedNode>/Top_RTL D:|FPGA_work|SWord-DLD|Exp44-RTL|Code|Top_RTL.sch/M10 - Regs_8_32/R5 - Reg_32</ClosedNode>
+         <ClosedNode>/Top_RTL D:|FPGA_work|SWord-DLD|Exp44-RTL|Code|Top_RTL.sch/M10 - Regs_8_32/R6 - Reg_32</ClosedNode>
+         <ClosedNode>/Top_RTL D:|FPGA_work|SWord-DLD|Exp44-RTL|Code|Top_RTL.sch/M10 - Regs_8_32/R7 - Reg_32</ClosedNode>
+         <ClosedNode>/Top_RTL D:|FPGA_work|SWord-DLD|Exp44-RTL|Code|Top_RTL.sch/M3 - Display</ClosedNode>
+         <ClosedNode>/Top_RTL D:|FPGA_work|SWord-DLD|Exp44-RTL|Code|Top_RTL.sch/M31 - Seg7_Dev</ClosedNode>
+         <ClosedNode>/Top_RTL D:|FPGA_work|SWord-DLD|Exp44-RTL|Code|Top_RTL.sch/M5 - Multi_8CH32</ClosedNode>
+         <ClosedNode>/Top_RTL D:|FPGA_work|SWord-DLD|Exp44-RTL|Code|Top_RTL.sch/M6 - GPIO</ClosedNode>
+         <ClosedNode>/Top_RTL D:|FPGA_work|SWord-DLD|Exp44-RTL|Code|Top_RTL.sch/M8 - ALU</ClosedNode>
+         <ClosedNode>/Top_RTL D:|FPGA_work|SWord-DLD|Exp44-RTL|Code|Top_RTL.sch/M8 - ALU/ALU_ADD - ADC32</ClosedNode>
+         <ClosedNode>/Top_RTL D:|FPGA_work|SWord-DLD|Exp44-RTL|Code|Top_RTL.sch/M8 - ALU/XLXI_15 - MUX8T1_32</ClosedNode>
+         <ClosedNode>/Top_RTL D:|FPGA_work|SWord-DLD|Exp44-RTL|Code|Top_RTL.sch/MS - ms1</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>R0 - Reg_32 (D:/FPGA_work/SWord-DLD/Exp44-RTL/Code/register_32bit.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >12</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000167000000020000000000000000000000000200000064ffffffff000000810000000300000002000001670000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>R0 - Reg_32 (D:/FPGA_work/SWord-DLD/Exp44-RTL/Code/register_32bit.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001c2000000010000000100000000000000000000000064ffffffff000000810000000000000001000001c20000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_SCHEMATIC" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>ISim Simulator</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001c2000000010000000100000000000000000000000064ffffffff000000810000000000000001000001c20000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>ISim Simulator</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001c2000000010000000100000000000000000000000064ffffffff000000810000000000000001000001c20000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+</Project>

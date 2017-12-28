@@ -1,0 +1,363 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : ADC32.vf
+// /___/   /\     Timestamp : 06/08/2017 23:57:36
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -sympath D:/FPGA_work/SWord-DLD/Exp50-WallClock/Code -intstyle ise -family kintex7 -verilog D:/FPGA_work/SWord-DLD/Exp50-WallClock/ADC32.vf -w D:/FPGA_work/SWord-DLD/Exp50-WallClock/Code/ADC32.sch
+//Design Name: ADC32
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module add_MUSER_ADC32(ai, 
+                       bi, 
+                       ci, 
+                       co, 
+                       Gi, 
+                       Pi, 
+                       si);
+
+    input ai;
+    input bi;
+    input ci;
+   output co;
+   output Gi;
+   output Pi;
+   output si;
+   
+   wire XLXN_10;
+   wire Pi_DUMMY;
+   wire Gi_DUMMY;
+   
+   assign Gi = Gi_DUMMY;
+   assign Pi = Pi_DUMMY;
+   XOR2  XLXI_1 (.I0(bi), 
+                .I1(ai), 
+                .O(Pi_DUMMY));
+   XOR2  XLXI_2 (.I0(ci), 
+                .I1(Pi_DUMMY), 
+                .O(si));
+   AND2  XLXI_3 (.I0(ci), 
+                .I1(Pi_DUMMY), 
+                .O(XLXN_10));
+   AND2  XLXI_4 (.I0(ai), 
+                .I1(bi), 
+                .O(Gi_DUMMY));
+   OR2  XLXI_5 (.I0(Gi_DUMMY), 
+               .I1(XLXN_10), 
+               .O(co));
+endmodule
+`timescale 1ns / 1ps
+
+module CLA_MUSER_ADC32(Ci, 
+                       G0, 
+                       G1, 
+                       G2, 
+                       G3, 
+                       P0, 
+                       P1, 
+                       P2, 
+                       P3, 
+                       C1, 
+                       C2, 
+                       C3, 
+                       GG, 
+                       GP);
+
+    input Ci;
+    input G0;
+    input G1;
+    input G2;
+    input G3;
+    input P0;
+    input P1;
+    input P2;
+    input P3;
+   output C1;
+   output C2;
+   output C3;
+   output GG;
+   output GP;
+   
+   wire XLXN_3;
+   wire XLXN_36;
+   wire XLXN_59;
+   wire XLXN_100;
+   wire XLXN_105;
+   wire XLXN_108;
+   wire XLXN_163;
+   wire XLXN_164;
+   wire XLXN_165;
+   
+   AND2  XLXI_1 (.I0(P0), 
+                .I1(Ci), 
+                .O(XLXN_3));
+   AND2  XLXI_2 (.I0(G0), 
+                .I1(P1), 
+                .O(XLXN_59));
+   OR2  XLXI_3 (.I0(G0), 
+               .I1(XLXN_3), 
+               .O(C1));
+   OR3  XLXI_4 (.I0(G1), 
+               .I1(XLXN_59), 
+               .I2(XLXN_36), 
+               .O(C2));
+   AND3  XLXI_5 (.I0(P1), 
+                .I1(P0), 
+                .I2(Ci), 
+                .O(XLXN_36));
+   AND2  XLXI_18 (.I0(P2), 
+                 .I1(G1), 
+                 .O(XLXN_108));
+   AND3  XLXI_19 (.I0(P2), 
+                 .I1(P1), 
+                 .I2(G0), 
+                 .O(XLXN_105));
+   AND4  XLXI_20 (.I0(P2), 
+                 .I1(P1), 
+                 .I2(P0), 
+                 .I3(Ci), 
+                 .O(XLXN_100));
+   OR4  XLXI_21 (.I0(G2), 
+                .I1(XLXN_108), 
+                .I2(XLXN_105), 
+                .I3(XLXN_100), 
+                .O(C3));
+   AND4  XLXI_22 (.I0(P3), 
+                 .I1(P2), 
+                 .I2(P1), 
+                 .I3(P0), 
+                 .O(GP));
+   AND4  XLXI_23 (.I0(P3), 
+                 .I1(P2), 
+                 .I2(P1), 
+                 .I3(G0), 
+                 .O(XLXN_163));
+   AND3  XLXI_24 (.I0(P3), 
+                 .I1(P2), 
+                 .I2(G1), 
+                 .O(XLXN_164));
+   AND2  XLXI_25 (.I0(P3), 
+                 .I1(G2), 
+                 .O(XLXN_165));
+   OR4  XLXI_26 (.I0(G3), 
+                .I1(XLXN_165), 
+                .I2(XLXN_164), 
+                .I3(XLXN_163), 
+                .O(GG));
+endmodule
+`timescale 1ns / 1ps
+
+module ACLA4_MUSER_ADC32(ai, 
+                         bi, 
+                         C0, 
+                         GG, 
+                         GP, 
+                         s);
+
+    input [3:0] ai;
+    input [3:0] bi;
+    input C0;
+   output GG;
+   output GP;
+   output [3:0] s;
+   
+   wire XLXN_7;
+   wire XLXN_8;
+   wire XLXN_9;
+   wire XLXN_10;
+   wire XLXN_11;
+   wire XLXN_12;
+   wire XLXN_13;
+   wire XLXN_14;
+   wire XLXN_180;
+   wire XLXN_217;
+   wire XLXN_218;
+   
+   add_MUSER_ADC32  A0 (.ai(ai[0]), 
+                       .bi(bi[0]), 
+                       .ci(C0), 
+                       .co(), 
+                       .Gi(XLXN_218), 
+                       .Pi(XLXN_180), 
+                       .si(s[0]));
+   add_MUSER_ADC32  A1 (.ai(ai[1]), 
+                       .bi(bi[1]), 
+                       .ci(XLXN_8), 
+                       .co(), 
+                       .Gi(XLXN_7), 
+                       .Pi(XLXN_217), 
+                       .si(s[1]));
+   add_MUSER_ADC32  A2 (.ai(ai[2]), 
+                       .bi(bi[2]), 
+                       .ci(XLXN_13), 
+                       .co(), 
+                       .Gi(XLXN_10), 
+                       .Pi(XLXN_9), 
+                       .si(s[2]));
+   add_MUSER_ADC32  A3 (.ai(ai[3]), 
+                       .bi(bi[3]), 
+                       .ci(XLXN_14), 
+                       .co(), 
+                       .Gi(XLXN_12), 
+                       .Pi(XLXN_11), 
+                       .si(s[3]));
+   CLA_MUSER_ADC32  CLA0 (.Ci(C0), 
+                         .G0(XLXN_218), 
+                         .G1(XLXN_7), 
+                         .G2(XLXN_10), 
+                         .G3(XLXN_12), 
+                         .P0(XLXN_180), 
+                         .P1(XLXN_217), 
+                         .P2(XLXN_9), 
+                         .P3(XLXN_11), 
+                         .C1(XLXN_8), 
+                         .C2(XLXN_13), 
+                         .C3(XLXN_14), 
+                         .GG(GG), 
+                         .GP(GP));
+endmodule
+`timescale 1ns / 1ps
+
+module ADC32(a, 
+             b, 
+             C0, 
+             Co, 
+             s);
+
+    input [31:0] a;
+    input [31:0] b;
+    input C0;
+   output Co;
+   output [31:0] s;
+   
+   wire XLXN_190;
+   wire XLXN_222;
+   wire XLXN_255;
+   wire XLXN_256;
+   wire XLXN_308;
+   wire XLXN_323;
+   wire XLXN_324;
+   wire XLXN_325;
+   wire XLXN_326;
+   wire XLXN_327;
+   wire XLXN_328;
+   wire XLXN_329;
+   wire XLXN_344;
+   wire XLXN_345;
+   wire XLXN_348;
+   wire XLXN_349;
+   wire XLXN_358;
+   wire XLXN_362;
+   wire XLXN_363;
+   wire XLXN_364;
+   wire XLXN_365;
+   wire XLXN_366;
+   wire XLXN_367;
+   wire XLXN_370;
+   wire XLXN_371;
+   wire XLXN_372;
+   wire XLXN_377;
+   wire XLXN_378;
+   wire XLXN_379;
+   
+   CLA_MUSER_ADC32  CLA1 (.Ci(XLXN_358), 
+                         .G0(XLXN_255), 
+                         .G1(XLXN_363), 
+                         .G2(XLXN_365), 
+                         .G3(XLXN_190), 
+                         .P0(XLXN_256), 
+                         .P1(XLXN_362), 
+                         .P2(XLXN_364), 
+                         .P3(XLXN_371), 
+                         .C1(XLXN_366), 
+                         .C2(XLXN_367), 
+                         .C3(XLXN_370), 
+                         .GG(XLXN_308), 
+                         .GP(XLXN_378));
+   CLA_MUSER_ADC32  CLA2 (.Ci(C0), 
+                         .G0(XLXN_323), 
+                         .G1(XLXN_325), 
+                         .G2(XLXN_327), 
+                         .G3(XLXN_329), 
+                         .P0(XLXN_222), 
+                         .P1(XLXN_324), 
+                         .P2(XLXN_326), 
+                         .P3(XLXN_328), 
+                         .C1(XLXN_344), 
+                         .C2(XLXN_345), 
+                         .C3(XLXN_348), 
+                         .GG(XLXN_349), 
+                         .GP(XLXN_372));
+   OR2  XLXI_34 (.I0(XLXN_379), 
+                .I1(XLXN_308), 
+                .O(Co));
+   OR2  XLXI_36 (.I0(XLXN_377), 
+                .I1(XLXN_349), 
+                .O(XLXN_358));
+   AND2  XLXI_37 (.I0(C0), 
+                 .I1(XLXN_372), 
+                 .O(XLXN_377));
+   AND2  XLXI_38 (.I0(XLXN_358), 
+                 .I1(XLXN_378), 
+                 .O(XLXN_379));
+   ACLA4_MUSER_ADC32  XLXI_39 (.ai(a[31:28]), 
+                              .bi(b[31:28]), 
+                              .C0(XLXN_370), 
+                              .GG(XLXN_190), 
+                              .GP(XLXN_371), 
+                              .s(s[31:28]));
+   ACLA4_MUSER_ADC32  XLXI_40 (.ai(a[27:24]), 
+                              .bi(b[27:24]), 
+                              .C0(XLXN_367), 
+                              .GG(XLXN_365), 
+                              .GP(XLXN_364), 
+                              .s(s[27:24]));
+   ACLA4_MUSER_ADC32  XLXI_41 (.ai(a[23:20]), 
+                              .bi(b[23:20]), 
+                              .C0(XLXN_366), 
+                              .GG(XLXN_363), 
+                              .GP(XLXN_362), 
+                              .s(s[23:20]));
+   ACLA4_MUSER_ADC32  XLXI_42 (.ai(a[19:16]), 
+                              .bi(b[19:16]), 
+                              .C0(XLXN_358), 
+                              .GG(XLXN_255), 
+                              .GP(XLXN_256), 
+                              .s(s[19:16]));
+   ACLA4_MUSER_ADC32  XLXI_43 (.ai(a[15:12]), 
+                              .bi(b[15:12]), 
+                              .C0(XLXN_348), 
+                              .GG(XLXN_329), 
+                              .GP(XLXN_328), 
+                              .s(s[15:12]));
+   ACLA4_MUSER_ADC32  XLXI_44 (.ai(a[11:8]), 
+                              .bi(b[11:8]), 
+                              .C0(XLXN_345), 
+                              .GG(XLXN_327), 
+                              .GP(XLXN_326), 
+                              .s(s[11:8]));
+   ACLA4_MUSER_ADC32  XLXI_45 (.ai(a[7:4]), 
+                              .bi(b[7:4]), 
+                              .C0(XLXN_344), 
+                              .GG(XLXN_325), 
+                              .GP(XLXN_324), 
+                              .s(s[7:4]));
+   ACLA4_MUSER_ADC32  XLXI_46 (.ai(a[3:0]), 
+                              .bi(b[3:0]), 
+                              .C0(C0), 
+                              .GG(XLXN_323), 
+                              .GP(XLXN_222), 
+                              .s(s[3:0]));
+endmodule

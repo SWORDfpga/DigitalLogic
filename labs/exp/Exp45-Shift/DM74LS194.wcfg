@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/FPGA_work/Logic-2015/Exp120-Shift/SN74LS194_SN74LS194_sch_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="SN74LS194_SN74LS194_sch_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="8" />
+   <wvobject fp_name="/SN74LS194_SN74LS194_sch_tb/CR" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">CR</obj_property>
+      <obj_property name="ObjectShortName">CR</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SN74LS194_SN74LS194_sch_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SN74LS194_SN74LS194_sch_tb/S1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">S1</obj_property>
+      <obj_property name="ObjectShortName">S1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SN74LS194_SN74LS194_sch_tb/S0" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">S0</obj_property>
+      <obj_property name="ObjectShortName">S0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SN74LS194_SN74LS194_sch_tb/SR" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">SR</obj_property>
+      <obj_property name="ObjectShortName">SR</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SN74LS194_SN74LS194_sch_tb/SL" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">SL</obj_property>
+      <obj_property name="ObjectShortName">SL</obj_property>
+   </wvobject>
+   <wvobject fp_name="vbus16" type="vbus" db_ref_id="1">
+      <obj_property name="label">PData</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/SN74LS194_SN74LS194_sch_tb/A" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">A</obj_property>
+         <obj_property name="ObjectShortName">A</obj_property>
+      </wvobject>
+      <wvobject fp_name="/SN74LS194_SN74LS194_sch_tb/B" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">B</obj_property>
+         <obj_property name="ObjectShortName">B</obj_property>
+      </wvobject>
+      <wvobject fp_name="/SN74LS194_SN74LS194_sch_tb/C" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">C</obj_property>
+         <obj_property name="ObjectShortName">C</obj_property>
+      </wvobject>
+      <wvobject fp_name="/SN74LS194_SN74LS194_sch_tb/D" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">D</obj_property>
+         <obj_property name="ObjectShortName">D</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="vbus15" type="vbus" db_ref_id="1">
+      <obj_property name="label">Q</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/SN74LS194_SN74LS194_sch_tb/QA" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">QA</obj_property>
+         <obj_property name="ObjectShortName">QA</obj_property>
+      </wvobject>
+      <wvobject fp_name="/SN74LS194_SN74LS194_sch_tb/QB" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">QB</obj_property>
+         <obj_property name="ObjectShortName">QB</obj_property>
+      </wvobject>
+      <wvobject fp_name="/SN74LS194_SN74LS194_sch_tb/QC" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">QC</obj_property>
+         <obj_property name="ObjectShortName">QC</obj_property>
+      </wvobject>
+      <wvobject fp_name="/SN74LS194_SN74LS194_sch_tb/QD" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">QD</obj_property>
+         <obj_property name="ObjectShortName">QD</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

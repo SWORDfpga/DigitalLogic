@@ -1,0 +1,30 @@
+xst -intstyle ise -ifn "D:/FPGA_work/SWord-DLD/Exp45-Shift/Top_Shift.xst" -ofn "D:/FPGA_work/SWord-DLD/Exp45-Shift/Top_Shift.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd Code -nt timestamp -uc Code/Top-Shift.ucf -p xc7k160t-ffg676-2L Top_Shift.ngc Top_Shift.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_Shift_map.ncd Top_Shift.ngd Top_Shift.pcf 
+par -w -intstyle ise -ol high -mt off Top_Shift_map.ncd Top_Shift.ncd Top_Shift.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Top_Shift.twx Top_Shift.ncd -o Top_Shift.twr Top_Shift.pcf 
+bitgen -intstyle ise -f Top_Shift.ut Top_Shift.ncd 
+xst -intstyle ise -ifn "D:/FPGA_work/SWord-DLD/Exp45-Shift/Top_Shift.xst" -ofn "D:/FPGA_work/SWord-DLD/Exp45-Shift/Top_Shift.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd Code -nt timestamp -uc Code/Top-Shift.ucf -p xc7k160t-ffg676-2L Top_Shift.ngc Top_Shift.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_Shift_map.ncd Top_Shift.ngd Top_Shift.pcf 
+par -w -intstyle ise -ol high -mt off Top_Shift_map.ncd Top_Shift.ncd Top_Shift.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Top_Shift.twx Top_Shift.ncd -o Top_Shift.twr Top_Shift.pcf 
+bitgen -intstyle ise -f Top_Shift.ut Top_Shift.ncd 
+xst -intstyle ise -ifn "D:/FPGA_work/SWord-DLD/Exp45-Shift/Top_Shift.xst" -ofn "D:/FPGA_work/SWord-DLD/Exp45-Shift/Top_Shift.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd Code -nt timestamp -uc Code/Top-Shift.ucf -p xc7k160t-ffg676-2L Top_Shift.ngc Top_Shift.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_Shift_map.ncd Top_Shift.ngd Top_Shift.pcf 
+par -w -intstyle ise -ol high -mt off Top_Shift_map.ncd Top_Shift.ncd Top_Shift.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Top_Shift.twx Top_Shift.ncd -o Top_Shift.twr Top_Shift.pcf 
+bitgen -intstyle ise -f Top_Shift.ut Top_Shift.ncd 
+xst -intstyle ise -ifn "D:/FPGA_work/SWord-DLD/Exp45-Shift/Top_Shift.xst" -ofn "D:/FPGA_work/SWord-DLD/Exp45-Shift/Top_Shift.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd Code -nt timestamp -uc Code/Top-Shift.ucf -p xc7k160t-ffg676-2L Top_Shift.ngc Top_Shift.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_Shift_map.ncd Top_Shift.ngd Top_Shift.pcf 
+par -w -intstyle ise -ol high -mt off Top_Shift_map.ncd Top_Shift.ncd Top_Shift.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Top_Shift.twx Top_Shift.ncd -o Top_Shift.twr Top_Shift.pcf 
+bitgen -intstyle ise -f Top_Shift.ut Top_Shift.ncd 
+xst -intstyle ise -ifn "D:/FPGA_work/SWord-DLD/Exp45-Shift/Top_Shift.xst" -ofn "D:/FPGA_work/SWord-DLD/Exp45-Shift/Top_Shift.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd Code -nt timestamp -uc Code/Top-Shift.ucf -p xc7k160t-ffg676-2L Top_Shift.ngc Top_Shift.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_Shift_map.ncd Top_Shift.ngd Top_Shift.pcf 
+par -w -intstyle ise -ol high -mt off Top_Shift_map.ncd Top_Shift.ncd Top_Shift.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Top_Shift.twx Top_Shift.ncd -o Top_Shift.twr Top_Shift.pcf 
+bitgen -intstyle ise -f Top_Shift.ut Top_Shift.ncd 

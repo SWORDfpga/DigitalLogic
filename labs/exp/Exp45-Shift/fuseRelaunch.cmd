@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/FPGA_work/SWord-DLD/Exp45-Shift/SN74LS194_SN74LS194_sch_tb_isim_beh.exe" -prj "D:/FPGA_work/SWord-DLD/Exp45-Shift/SN74LS194_SN74LS194_sch_tb_beh.prj" "work.SN74LS194_SN74LS194_sch_tb" "work.glbl" 

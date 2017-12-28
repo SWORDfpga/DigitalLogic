@@ -1,0 +1,22 @@
+// Verilog instantiation template created from schematic D:\FPGA_work\SWord-DLD\Exp45-Shift\Code\SN74LS194.sch - Sun Jun 11 13:39:09 2017
+//
+// Notes: 
+// To use this template to instantiate this component,cut-and-paste and then edit
+//
+// Instantiate the UUT
+   SN74LS194 UUT (
+		.QA(    ), 
+		.QB(    ), 
+		.SR(    ), 
+		.A(    ), 
+		.S1(    ), 
+		.B(    ), 
+		.C(    ), 
+		.D(    ), 
+		.QC(    ), 
+		.S0(    ), 
+		.QD(    ), 
+		.SL(    ), 
+		.CR(    ), 
+		.clk(    )
+   );
