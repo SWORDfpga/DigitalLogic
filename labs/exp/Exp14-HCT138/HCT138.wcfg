@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/FPGA_work/SWord-DLD/Exp12-HCT138/HCT138_HCT138_sch_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="HCT138_HCT138_sch_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="8" />
+   <wvobject fp_name="/HCT138_HCT138_sch_tb/G" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">G</obj_property>
+      <obj_property name="ObjectShortName">G</obj_property>
+   </wvobject>
+   <wvobject fp_name="/HCT138_HCT138_sch_tb/G_2A" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">G_2A</obj_property>
+      <obj_property name="ObjectShortName">G_2A</obj_property>
+   </wvobject>
+   <wvobject fp_name="/HCT138_HCT138_sch_tb/G_2B" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">G_2B</obj_property>
+      <obj_property name="ObjectShortName">G_2B</obj_property>
+   </wvobject>
+   <wvobject fp_name="/HCT138_HCT138_sch_tb/A" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">A</obj_property>
+      <obj_property name="ObjectShortName">A</obj_property>
+   </wvobject>
+   <wvobject fp_name="/HCT138_HCT138_sch_tb/B" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">B</obj_property>
+      <obj_property name="ObjectShortName">B</obj_property>
+   </wvobject>
+   <wvobject fp_name="/HCT138_HCT138_sch_tb/C" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">C</obj_property>
+      <obj_property name="ObjectShortName">C</obj_property>
+   </wvobject>
+   <wvobject fp_name="vbus16" type="vbus" db_ref_id="1">
+      <obj_property name="label">Y</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/HCT138_HCT138_sch_tb/nY0" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">nY0</obj_property>
+         <obj_property name="ObjectShortName">nY0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/HCT138_HCT138_sch_tb/nY1" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">nY1</obj_property>
+         <obj_property name="ObjectShortName">nY1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/HCT138_HCT138_sch_tb/nY2" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">nY2</obj_property>
+         <obj_property name="ObjectShortName">nY2</obj_property>
+      </wvobject>
+      <wvobject fp_name="/HCT138_HCT138_sch_tb/nY3" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">nY3</obj_property>
+         <obj_property name="ObjectShortName">nY3</obj_property>
+      </wvobject>
+      <wvobject fp_name="/HCT138_HCT138_sch_tb/nY4" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">nY4</obj_property>
+         <obj_property name="ObjectShortName">nY4</obj_property>
+      </wvobject>
+      <wvobject fp_name="/HCT138_HCT138_sch_tb/nY5" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">nY5</obj_property>
+         <obj_property name="ObjectShortName">nY5</obj_property>
+      </wvobject>
+      <wvobject fp_name="/HCT138_HCT138_sch_tb/nY6" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">nY6</obj_property>
+         <obj_property name="ObjectShortName">nY6</obj_property>
+      </wvobject>
+      <wvobject fp_name="/HCT138_HCT138_sch_tb/nY7" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">nY7</obj_property>
+         <obj_property name="ObjectShortName">nY7</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/HCT138_HCT138_sch_tb/i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

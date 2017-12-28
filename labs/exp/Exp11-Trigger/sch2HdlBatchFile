@@ -1,0 +1,10 @@
+sch2hdl,-sympath,D:/FPGA_work/SWord-DLD/Exp11-Trigger/Code/ngc,-intstyle,ise,-family,kintex7,-verilog,D:/FPGA_work/SWord-DLD/Exp11-Trigger/RS_Trig.vf,-w,D:/FPGA_work/SWord-DLD/Exp11-Trigger/Code/RS_Trig.sch
+sch2hdl,-sympath,D:/FPGA_work/SWord-DLD/Exp11-Trigger/Code/ngc,-intstyle,ise,-family,kintex7,-verilog,D:/FPGA_work/SWord-DLD/Exp11-Trigger/RS_NAND.vf,-w,D:/FPGA_work/SWord-DLD/Exp11-Trigger/Code/RS_NAND.sch
+sch2hdl,-sympath,D:/FPGA_work/SWord-DLD/Exp11-Trigger/Code/ngc,-intstyle,ise,-family,kintex7,-verilog,D:/FPGA_work/SWord-DLD/Exp11-Trigger/MB_DFF.vf,-w,D:/FPGA_work/SWord-DLD/Exp11-Trigger/Code/MB_DFF.sch
+sch2hdl,-sympath,D:/FPGA_work/SWord-DLD/Exp11-Trigger/Code/ngc,-intstyle,ise,-family,kintex7,-verilog,D:/FPGA_work/SWord-DLD/Exp11-Trigger/RS_EN.vf,-w,D:/FPGA_work/SWord-DLD/Exp11-Trigger/Code/RS_EN.sch
+sch2hdl,-sympath,D:/FPGA_work/SWord-DLD/Exp11-Trigger/Code/ngc,-intstyle,ise,-family,kintex7,-verilog,D:/FPGA_work/SWord-DLD/Exp11-Trigger/D_Trig.vf,-w,D:/FPGA_work/SWord-DLD/Exp11-Trigger/Code/D_Trig.sch
+sch2hdl,-sympath,D:/FPGA_work/SWord-DLD/Exp11-Trigger/Code/ngc,-intstyle,ise,-family,kintex7,-verilog,D:/FPGA_work/SWord-DLD/Exp11-Trigger/D_CN.vf,-w,D:/FPGA_work/SWord-DLD/Exp11-Trigger/Code/D_CN.sch
+sch2hdl,-sympath,D:/FPGA_work/SWord-DLD/Exp11-Trigger/Code/ngc,-intstyle,ise,-family,kintex7,-verilog,D:/FPGA_work/SWord-DLD/Exp11-Trigger/RS_Trig.vf,-w,D:/FPGA_work/SWord-DLD/Exp11-Trigger/Code/RS_Trig.sch
+sch2hdl,-sympath,D:/FPGA_work/SWord-DLD/Exp11-Trigger/Code/ngc,-intstyle,ise,-family,kintex7,-verilog,D:/FPGA_work/SWord-DLD/Exp11-Trigger/RS_EN.vf,-w,D:/FPGA_work/SWord-DLD/Exp11-Trigger/Code/RS_EN.sch
+sch2hdl,-sympath,D:/FPGA_work/SWord-DLD/Exp11-Trigger/Code/ngc,-intstyle,ise,-family,kintex7,-verilog,D:/FPGA_work/SWord-DLD/Exp11-Trigger/D_Trig.vf,-w,D:/FPGA_work/SWord-DLD/Exp11-Trigger/Code/D_Trig.sch
+sch2hdl,-sympath,D:/FPGA_work/SWord-DLD/Exp11-Trigger/Code/ngc,-intstyle,ise,-family,kintex7,-verilog,D:/FPGA_work/SWord-DLD/Exp11-Trigger/D_CN.vf,-w,D:/FPGA_work/SWord-DLD/Exp11-Trigger/Code/D_CN.sch
