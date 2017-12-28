@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="751" delta="old" >"D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Code\VGADEMO.v" Line 39: Redeclaration of ansi port <arg fmt="%s" index="1">vga_data</arg> is not allowed
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Code\SAnti_jitter_IO.v" Line 21: Empty module &lt;<arg fmt="%s" index="1">SAnti_jitter</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Exp_FrameVGA.vf" Line 456: Assignment to <arg fmt="%s" index="1">Pulse</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Code\P2S_IO.v" Line 21: Empty module &lt;<arg fmt="%s" index="1">P2S</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Code\SEnter_2_32_IO.v" Line 21: Empty module &lt;<arg fmt="%s" index="1">SEnter_2_32</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Code\LED_P2S_IO.v" Line 21: Empty module &lt;<arg fmt="%s" index="1">LED_P2S(DATA_BITS=16,DATA_COUNT_BITS=4)</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Exp_FrameVGA.vf" Line 300: Assignment to <arg fmt="%s" index="1">V5</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Exp_FrameVGA.vf" Line 301: Assignment to <arg fmt="%s" index="1">G0</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Exp_FrameVGA.vf" Line 546: Assignment to <arg fmt="%s" index="1">G0</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Exp_FrameVGA.vf" Line 422: Net &lt;<arg fmt="%s" index="1">N0</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Exp_FrameVGA.vf" Line 428: Net &lt;<arg fmt="%s" index="1">XLXN_240[31]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Exp_FrameVGA.vf" Line 429: Net &lt;<arg fmt="%s" index="1">XLXN_280[31]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Exp_FrameVGA.vf" Line 431: Net &lt;<arg fmt="%s" index="1">XLXN_449[31]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Exp_FrameVGA.vf" Line 432: Net &lt;<arg fmt="%s" index="1">XLXN_469[31]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Exp_FrameVGA.vf</arg>&quot; line <arg fmt="%s" index="2">446</arg>: Output port &lt;<arg fmt="%s" index="3">pulse_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">M2</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Exp_FrameVGA.vf</arg>&quot; line <arg fmt="%s" index="2">500</arg>: Output port &lt;<arg fmt="%s" index="3">GPIOf0</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">M6</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Exp_FrameVGA.vf</arg>&quot; line <arg fmt="%s" index="2">510</arg>: Output port &lt;<arg fmt="%s" index="3">rdn</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">M7</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Exp_FrameVGA.vf</arg>&quot; line <arg fmt="%s" index="2">529</arg>: Output port &lt;<arg fmt="%s" index="3">GPIOf0</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">M61</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXN_240</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXN_280</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXN_449</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXN_469</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">N0</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">Disp_num&lt;63:32&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">rst</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">SW&lt;0:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">SW&lt;13:13&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">SW&lt;15:15&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">GPIOf0_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">M6</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">GPIOf0_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">M6</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">GPIOf0_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">M6</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">GPIOf0_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">M6</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">GPIOf0_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">M6</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">GPIOf0_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">M6</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">GPIOf0_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">M6</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">GPIOf0_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">M6</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">GPIOf0_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">M6</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">GPIOf0_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">M6</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">GPIOf0_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">M6</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">GPIOf0_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">M6</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">GPIOf0_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">M6</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">GPIOf0_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">M6</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">GPIOf0_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">M6</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">GPIOf0_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">M6</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">GPIOf0_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">M61</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">GPIOf0_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">M61</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">GPIOf0_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">M61</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">GPIOf0_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">M61</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">GPIOf0_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">M61</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">GPIOf0_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">M61</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">GPIOf0_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">M61</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">GPIOf0_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">M61</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">GPIOf0_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">M61</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">GPIOf0_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">M61</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">GPIOf0_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">M61</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">GPIOf0_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">M61</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">GPIOf0_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">M61</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">GPIOf0_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">M61</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">GPIOf0_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">M61</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">GPIOf0_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">M61</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">GPIOf0_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">M61</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">GPIOf0_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">M61</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">GPIOf0_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">M61</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">GPIOf0_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">M61</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">GPIOf0_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">M61</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">GPIOf0_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">M61</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">GPIOf0_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">M61</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">GPIOf0_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">M61</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_AN</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">y_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">VGADEMO</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">y_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">VGADEMO</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">x_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">VGADEMO</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">x_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">VGADEMO</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">M6/GPIOf0_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Exp_FrameVGA</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">M6/GPIOf0_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Exp_FrameVGA</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">M6/GPIOf0_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Exp_FrameVGA</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">M6/GPIOf0_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Exp_FrameVGA</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">M6/GPIOf0_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Exp_FrameVGA</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">M6/GPIOf0_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Exp_FrameVGA</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">M6/GPIOf0_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Exp_FrameVGA</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">M6/GPIOf0_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Exp_FrameVGA</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">M6/GPIOf0_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Exp_FrameVGA</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">M6/GPIOf0_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Exp_FrameVGA</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">M6/GPIOf0_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Exp_FrameVGA</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">M6/GPIOf0_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Exp_FrameVGA</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">M6/GPIOf0_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Exp_FrameVGA</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">M6/GPIOf0_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Exp_FrameVGA</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">M6/GPIOf0_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Exp_FrameVGA</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">M6/GPIOf0_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Exp_FrameVGA</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">M61/GPIOf0_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Exp_FrameVGA</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">M61/GPIOf0_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Exp_FrameVGA</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">M61/GPIOf0_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Exp_FrameVGA</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">M61/GPIOf0_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Exp_FrameVGA</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">M61/GPIOf0_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Exp_FrameVGA</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">M61/GPIOf0_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Exp_FrameVGA</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">M61/GPIOf0_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Exp_FrameVGA</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">M61/GPIOf0_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Exp_FrameVGA</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">M61/GPIOf0_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Exp_FrameVGA</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">M61/GPIOf0_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Exp_FrameVGA</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">M61/GPIOf0_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Exp_FrameVGA</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">M61/GPIOf0_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Exp_FrameVGA</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">M61/GPIOf0_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Exp_FrameVGA</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">M61/GPIOf0_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Exp_FrameVGA</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">M61/GPIOf0_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Exp_FrameVGA</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">M61/GPIOf0_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Exp_FrameVGA</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">M61/GPIOf0_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Exp_FrameVGA</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">M61/GPIOf0_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Exp_FrameVGA</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">M61/GPIOf0_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Exp_FrameVGA</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">M61/GPIOf0_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Exp_FrameVGA</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">M61/GPIOf0_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Exp_FrameVGA</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">M61/GPIOf0_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Exp_FrameVGA</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">M61/GPIOf0_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Exp_FrameVGA</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">M61/GPIOf0_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Exp_FrameVGA</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>

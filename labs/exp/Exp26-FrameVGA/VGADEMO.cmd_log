@@ -1,0 +1,2 @@
+vhdtdtfi -lib work D:/FPGA_work/SWord-DLD/Exp26-FrameVGA/Code/VGADEMO.v -lang verilog -prj Exp26-FrameVGA -o VGADEMO.spl -module VGADEMO -template d:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 VGADEMO.spl D:/FPGA_work/SWord-DLD/Exp26-FrameVGA/VGADEMO.sym 

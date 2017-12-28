@@ -1,0 +1,15 @@
+[Inputs]
+clk
+rstn
+keyReady
+=keyCode[4:0]=
+=SW[15:0]=
+=row[8:0]=
+=col[9:0]=
+[Outputs]
+=vga_data[11:0]=
+=Ccircle[31:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel VGADEMO
+

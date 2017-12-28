@@ -1,0 +1,552 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Exp_FrameVGA.vf
+// /___/   /\     Timestamp : 12/07/2016 20:28:05
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -sympath D:/FPGA_work/SWord-DLD/Exp26-FrameVGA/Code -intstyle ise -family kintex7 -verilog D:/FPGA_work/SWord-DLD/Exp26-FrameVGA/Exp_FrameVGA.vf -w D:/FPGA_work/SWord-DLD/Exp26-FrameVGA/Code/Exp_FrameVGA.sch
+//Design Name: Exp_FrameVGA
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module MC14495_ZJU_MUSER_Exp_FrameVGA(D0, 
+                                      D1, 
+                                      D2, 
+                                      D3, 
+                                      LE, 
+                                      point, 
+                                      a, 
+                                      b, 
+                                      c, 
+                                      d, 
+                                      e, 
+                                      f, 
+                                      g, 
+                                      p);
+
+    input D0;
+    input D1;
+    input D2;
+    input D3;
+    input LE;
+    input point;
+   output a;
+   output b;
+   output c;
+   output d;
+   output e;
+   output f;
+   output g;
+   output p;
+   
+   wire XLXN_14;
+   wire XLXN_24;
+   wire XLXN_26;
+   wire XLXN_27;
+   wire XLXN_28;
+   wire XLXN_61;
+   wire XLXN_62;
+   wire XLXN_72;
+   wire XLXN_73;
+   wire XLXN_74;
+   wire XLXN_75;
+   wire XLXN_111;
+   wire XLXN_115;
+   wire XLXN_119;
+   wire XLXN_140;
+   wire XLXN_141;
+   wire XLXN_170;
+   wire XLXN_171;
+   wire XLXN_172;
+   wire XLXN_184;
+   wire XLXN_185;
+   wire XLXN_186;
+   wire XLXN_200;
+   wire XLXN_201;
+   wire XLXN_202;
+   wire XLXN_208;
+   wire XLXN_209;
+   wire XLXN_210;
+   wire XLXN_211;
+   wire XLXN_212;
+   wire XLXN_213;
+   wire XLXN_214;
+   
+   INV  XLXI_1 (.I(D3), 
+               .O(XLXN_14));
+   INV  XLXI_2 (.I(D2), 
+               .O(XLXN_61));
+   INV  XLXI_3 (.I(D1), 
+               .O(XLXN_62));
+   INV  XLXI_4 (.I(D0), 
+               .O(XLXN_24));
+   AND4  XLXI_5 (.I0(D0), 
+                .I1(XLXN_61), 
+                .I2(XLXN_62), 
+                .I3(XLXN_14), 
+                .O(XLXN_119));
+   AND4  XLXI_6 (.I0(XLXN_24), 
+                .I1(XLXN_62), 
+                .I2(D2), 
+                .I3(XLXN_14), 
+                .O(XLXN_26));
+   AND4  XLXI_7 (.I0(D0), 
+                .I1(XLXN_62), 
+                .I2(D2), 
+                .I3(D3), 
+                .O(XLXN_27));
+   AND4  XLXI_8 (.I0(D0), 
+                .I1(D1), 
+                .I2(XLXN_61), 
+                .I3(D3), 
+                .O(XLXN_28));
+   OR4  XLXI_17 (.I0(XLXN_28), 
+                .I1(XLXN_27), 
+                .I2(XLXN_26), 
+                .I3(XLXN_119), 
+                .O(XLXN_208));
+   AND4  XLXI_18 (.I0(D0), 
+                 .I1(XLXN_62), 
+                 .I2(D2), 
+                 .I3(XLXN_14), 
+                 .O(XLXN_72));
+   AND3  XLXI_19 (.I0(XLXN_24), 
+                 .I1(D1), 
+                 .I2(D2), 
+                 .O(XLXN_73));
+   AND3  XLXI_20 (.I0(XLXN_24), 
+                 .I1(D2), 
+                 .I2(D3), 
+                 .O(XLXN_74));
+   AND3  XLXI_21 (.I0(D0), 
+                 .I1(D1), 
+                 .I2(D3), 
+                 .O(XLXN_75));
+   OR4  XLXI_22 (.I0(XLXN_75), 
+                .I1(XLXN_74), 
+                .I2(XLXN_73), 
+                .I3(XLXN_72), 
+                .O(XLXN_209));
+   AND4  XLXI_23 (.I0(XLXN_24), 
+                 .I1(D1), 
+                 .I2(XLXN_61), 
+                 .I3(XLXN_14), 
+                 .O(XLXN_111));
+   AND3  XLXI_24 (.I0(D1), 
+                 .I1(D2), 
+                 .I2(D3), 
+                 .O(XLXN_115));
+   OR3  XLXI_26 (.I0(XLXN_115), 
+                .I1(XLXN_111), 
+                .I2(XLXN_74), 
+                .O(XLXN_210));
+   AND3  XLXI_27 (.I0(D0), 
+                 .I1(D1), 
+                 .I2(D2), 
+                 .O(XLXN_140));
+   AND4  XLXI_28 (.I0(XLXN_24), 
+                 .I1(D1), 
+                 .I2(XLXN_61), 
+                 .I3(D3), 
+                 .O(XLXN_141));
+   OR4  XLXI_29 (.I0(XLXN_141), 
+                .I1(XLXN_140), 
+                .I2(XLXN_26), 
+                .I3(XLXN_119), 
+                .O(XLXN_211));
+   AND3  XLXI_30 (.I0(XLXN_62), 
+                 .I1(D2), 
+                 .I2(XLXN_14), 
+                 .O(XLXN_171));
+   AND2  XLXI_32 (.I0(D0), 
+                 .I1(XLXN_14), 
+                 .O(XLXN_170));
+   AND3  XLXI_35 (.I0(D0), 
+                 .I1(XLXN_62), 
+                 .I2(XLXN_61), 
+                 .O(XLXN_172));
+   OR3  XLXI_36 (.I0(XLXN_172), 
+                .I1(XLXN_171), 
+                .I2(XLXN_170), 
+                .O(XLXN_212));
+   AND3  XLXI_37 (.I0(D0), 
+                 .I1(XLXN_61), 
+                 .I2(XLXN_14), 
+                 .O(XLXN_184));
+   AND3  XLXI_38 (.I0(D1), 
+                 .I1(XLXN_61), 
+                 .I2(XLXN_14), 
+                 .O(XLXN_185));
+   AND3  XLXI_39 (.I0(D0), 
+                 .I1(D1), 
+                 .I2(XLXN_14), 
+                 .O(XLXN_186));
+   OR4  XLXI_41 (.I0(XLXN_186), 
+                .I1(XLXN_185), 
+                .I2(XLXN_184), 
+                .I3(XLXN_27), 
+                .O(XLXN_213));
+   AND3  XLXI_42 (.I0(XLXN_62), 
+                 .I1(XLXN_61), 
+                 .I2(XLXN_14), 
+                 .O(XLXN_200));
+   AND4  XLXI_43 (.I0(D0), 
+                 .I1(D1), 
+                 .I2(D2), 
+                 .I3(XLXN_14), 
+                 .O(XLXN_201));
+   AND4  XLXI_44 (.I0(XLXN_24), 
+                 .I1(XLXN_62), 
+                 .I2(D2), 
+                 .I3(D3), 
+                 .O(XLXN_202));
+   OR3  XLXI_46 (.I0(XLXN_202), 
+                .I1(XLXN_201), 
+                .I2(XLXN_200), 
+                .O(XLXN_214));
+   OR2  XLXI_47 (.I0(LE), 
+                .I1(XLXN_208), 
+                .O(a));
+   OR2  XLXI_48 (.I0(LE), 
+                .I1(XLXN_209), 
+                .O(b));
+   OR2  XLXI_49 (.I0(LE), 
+                .I1(XLXN_210), 
+                .O(c));
+   OR2  XLXI_50 (.I0(LE), 
+                .I1(XLXN_211), 
+                .O(d));
+   OR2  XLXI_51 (.I0(LE), 
+                .I1(XLXN_212), 
+                .O(e));
+   OR2  XLXI_52 (.I0(LE), 
+                .I1(XLXN_213), 
+                .O(f));
+   OR2  XLXI_53 (.I0(LE), 
+                .I1(XLXN_214), 
+                .O(g));
+   INV  XLXI_57 (.I(point), 
+                .O(p));
+endmodule
+`timescale 1ns / 1ps
+
+module Seg7_Dev_MUSER_Exp_FrameVGA(flash, 
+                                   Hexs, 
+                                   LES, 
+                                   point, 
+                                   Scan, 
+                                   SW0, 
+                                   AN, 
+                                   SEGMENT);
+
+    input flash;
+    input [31:0] Hexs;
+    input [7:0] LES;
+    input [7:0] point;
+    input [2:0] Scan;
+    input SW0;
+   output [3:0] AN;
+   output [7:0] SEGMENT;
+   
+   wire G0;
+   wire [3:0] Hex;
+   wire [7:0] SEG_MAP;
+   wire [7:0] SEG_TXT;
+   wire V5;
+   wire XLXN_271;
+   wire XLXN_382;
+   wire XLXN_385;
+   
+   MUX2T1_8  MUXHM (.I0(SEG_MAP[7:0]), 
+                   .I1(SEG_TXT[7:0]), 
+                   .s(SW0), 
+                   .o(SEGMENT[7:0]));
+   MC14495_ZJU_MUSER_Exp_FrameVGA  M1 (.D0(Hex[0]), 
+                                      .D1(Hex[1]), 
+                                      .D2(Hex[2]), 
+                                      .D3(Hex[3]), 
+                                      .LE(XLXN_385), 
+                                      .point(XLXN_271), 
+                                      .a(SEG_TXT[0]), 
+                                      .b(SEG_TXT[1]), 
+                                      .c(SEG_TXT[2]), 
+                                      .d(SEG_TXT[3]), 
+                                      .e(SEG_TXT[4]), 
+                                      .f(SEG_TXT[5]), 
+                                      .g(SEG_TXT[6]), 
+                                      .p(SEG_TXT[7]));
+   ScanSync  M2 (.Hexs(Hexs[31:0]), 
+                .LES(LES[7:0]), 
+                .point(point[7:0]), 
+                .Scan(Scan[2:0]), 
+                .AN(AN[3:0]), 
+                .Hexo(Hex[3:0]), 
+                .LE(XLXN_382), 
+                .p(XLXN_271));
+   Seg_map  M3 (.Hexs(Hexs[31:0]), 
+               .Scan(Scan[2:0]), 
+               .Seg_map(SEG_MAP[7:0]));
+   VCC  XLXI_23 (.P(V5));
+   GND  XLXI_24 (.G(G0));
+   AND2  XLXI_44 (.I0(XLXN_382), 
+                 .I1(flash), 
+                 .O(XLXN_385));
+endmodule
+`timescale 1ns / 1ps
+
+module Display_MUSER_Exp_FrameVGA(clk, 
+                                  flash, 
+                                  Hexs, 
+                                  LES, 
+                                  point, 
+                                  rst, 
+                                  Start, 
+                                  SW0, 
+                                  seg_clk, 
+                                  seg_clrn, 
+                                  SEG_PEN, 
+                                  seg_sout);
+
+    input clk;
+    input flash;
+    input [31:0] Hexs;
+    input [7:0] LES;
+    input [7:0] point;
+    input rst;
+    input Start;
+    input SW0;
+   output seg_clk;
+   output seg_clrn;
+   output SEG_PEN;
+   output seg_sout;
+   
+   wire [63:0] SEGMENT;
+   wire [63:0] SEG_MAP;
+   wire [63:0] XLXN_390;
+   
+   MUX2T1_64  MUXSH2M (.a(XLXN_390[63:0]), 
+                      .b(SEG_MAP[63:0]), 
+                      .sel(SW0), 
+                      .o(SEGMENT[63:0]));
+   P2S  M2 (.clk(clk), 
+           .P_Data(SEGMENT[63:0]), 
+           .rst(rst), 
+           .Serial(Start), 
+           .EN(SEG_PEN), 
+           .sout(seg_sout), 
+           .s_clk(seg_clk), 
+           .s_clrn(seg_clrn));
+   HexTo8SEG  SM1 (.flash(flash), 
+                  .Hexs(Hexs[31:0]), 
+                  .LES(LES[7:0]), 
+                  .points(point[7:0]), 
+                  .SEG_TXT(XLXN_390[63:0]));
+   SSeg_map  SM3 (.Disp_num({Hexs[31:0], Hexs[31:0]}), 
+                 .Seg_map(SEG_MAP[63:0]));
+endmodule
+`timescale 1ns / 1ps
+
+module Exp_FrameVGA(clk_100mhz, 
+                    K_COL, 
+                    RSTN, 
+                    SW, 
+                    AN, 
+                    B, 
+                    Buzzer, 
+                    CR, 
+                    G, 
+                    HS, 
+                    K_ROW, 
+                    LED, 
+                    LEDCLK, 
+                    LEDCLR, 
+                    LEDDT, 
+                    LEDEN, 
+                    R, 
+                    RDY, 
+                    readn, 
+                    SEGCLK, 
+                    SEGCLR, 
+                    SEGDT, 
+                    SEGEN, 
+                    SEGMENT, 
+                    VS);
+
+   (* LOC = "t9" *) 
+    input clk_100mhz;
+    input [3:0] K_COL;
+    input RSTN;
+    input [15:0] SW;
+   output [3:0] AN;
+   output [3:0] B;
+   output Buzzer;
+   output CR;
+   output [3:0] G;
+   output HS;
+   output [4:0] K_ROW;
+   output [7:0] LED;
+   output LEDCLK;
+   output LEDCLR;
+   output LEDDT;
+   output LEDEN;
+   output [3:0] R;
+   output RDY;
+   output readn;
+   output SEGCLK;
+   output SEGCLR;
+   output SEGDT;
+   output SEGEN;
+   output [7:0] SEGMENT;
+   output VS;
+   
+   wire [31:0] Ai;
+   wire [31:0] Bi;
+   wire [7:0] blink;
+   wire [3:0] BTN_OK;
+   wire [31:0] CNT;
+   wire [31:0] Disp_num;
+   wire [31:0] Div;
+   wire G0;
+   wire [7:0] LE_out;
+   wire N0;
+   wire [7:0] point_out;
+   wire [3:0] Pulse;
+   wire rst;
+   wire [15:0] SW_OK;
+   wire V5;
+   wire [31:0] XLXN_240;
+   wire [31:0] XLXN_280;
+   wire [4:0] XLXN_444;
+   wire [31:0] XLXN_449;
+   wire [31:0] XLXN_469;
+   wire [9:0] XLXN_470;
+   wire [8:0] XLXN_471;
+   wire [11:0] XLXN_472;
+   wire XLXN_543;
+   wire XLXN_544;
+   wire RDY_DUMMY;
+   wire readn_DUMMY;
+   
+   assign RDY = RDY_DUMMY;
+   assign readn = readn_DUMMY;
+   clkdiv  M1 (.clk(clk_100mhz), 
+              .rst(rst), 
+              .clkdiv(Div[31:0]));
+   SAnti_jitter  M2 (.clk(clk_100mhz), 
+                    .Key_y(K_COL[3:0]), 
+                    .readn(XLXN_543), 
+                    .RSTN(RSTN), 
+                    .SW(SW[15:0]), 
+                    .BTN_OK(BTN_OK[3:0]), 
+                    .CR(CR), 
+                    .Key_out(XLXN_444[4:0]), 
+                    .Key_ready(RDY_DUMMY), 
+                    .Key_x(K_ROW[4:0]), 
+                    .pulse_out(Pulse[3:0]), 
+                    .rst(rst), 
+                    .SW_OK(SW_OK[15:0]));
+   Display_MUSER_Exp_FrameVGA  M3 (.clk(clk_100mhz), 
+                                  .flash(Div[25]), 
+                                  .Hexs(Disp_num[31:0]), 
+                                  .LES(LE_out[7:0]), 
+                                  .point(point_out[7:0]), 
+                                  .rst(rst), 
+                                  .Start(Div[20]), 
+                                  .SW0(SW_OK[0]), 
+                                  .seg_clk(SEGCLK), 
+                                  .seg_clrn(SEGCLR), 
+                                  .SEG_PEN(SEGEN), 
+                                  .seg_sout(SEGDT));
+   SEnter_2_32  M4 (.BTN(BTN_OK[2:0]), 
+                   .clk(clk_100mhz), 
+                   .Ctrl({SW_OK[7:5], SW_OK[15], SW_OK[0]}), 
+                   .Din(XLXN_444[4:0]), 
+                   .D_ready(RDY_DUMMY), 
+                   .Ai(Ai[31:0]), 
+                   .Bi(Bi[31:0]), 
+                   .blink(blink[7:0]), 
+                   .readn(readn_DUMMY));
+   Multi_8CH32  M5 (.clk(clk_100mhz), 
+                   .Data0(Ai[31:0]), 
+                   .data1(Bi[31:0]), 
+                   .data2(Div[31:0]), 
+                   .data3(CNT[31:0]), 
+                   .data4(XLXN_240[31:0]), 
+                   .data5(XLXN_280[31:0]), 
+                   .data6(XLXN_449[31:0]), 
+                   .data7(XLXN_469[31:0]), 
+                   .EN(V5), 
+                   .LES({N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, 
+         blink[3:0], N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, 
+         N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, 
+         N0, blink[7:0], blink[7:0]}), 
+                   .point_in({Div[31:0], Div[31:0]}), 
+                   .rst(rst), 
+                   .Test({N0, V5, V5}), 
+                   .Disp_num(Disp_num[31:0]), 
+                   .LE_out(LE_out[7:0]), 
+                   .point_out(point_out[7:0]));
+   GPIO  M6 (.clk(clk_100mhz), 
+            .EN(V5), 
+            .P_Data({SW[15:0], SW_OK[15:0]}), 
+            .rst(rst), 
+            .Start(Div[20]), 
+            .GPIOf0(), 
+            .led_clk(LEDCLK), 
+            .led_clrn(LEDCLR), 
+            .LED_PEN(LEDEN), 
+            .led_sout(LEDDT));
+   VGA  M7 (.clk(Div[1]), 
+           .Din(XLXN_472[11:0]), 
+           .rst(rst), 
+           .B(B[3:0]), 
+           .col(XLXN_470[9:0]), 
+           .G(G[3:0]), 
+           .HS(HS), 
+           .R(R[3:0]), 
+           .rdn(), 
+           .row(XLXN_471[8:0]), 
+           .VS(VS));
+   Seg7_Dev_MUSER_Exp_FrameVGA  M31 (.flash(Div[25]), 
+                                    .Hexs(Disp_num[31:0]), 
+                                    .LES(LE_out[7:0]), 
+                                    .point(point_out[7:0]), 
+                                    .Scan({SW_OK[1], Div[19:18]}), 
+                                    .SW0(SW_OK[0]), 
+                                    .AN(AN[3:0]), 
+                                    .SEGMENT(SEGMENT[7:0]));
+   PIO  M61 (.clk(clk_100mhz), 
+            .EN(V5), 
+            .PData_in({SW[15:0], SW_OK[15:0]}), 
+            .rst(N0), 
+            .GPIOf0(), 
+            .LED(LED[7:0]));
+   VGADEMO  VGATEST (.clk(clk_100mhz), 
+                    .col(XLXN_470[9:0]), 
+                    .keyCode(XLXN_444[4:0]), 
+                    .keyReady(RDY_DUMMY), 
+                    .row(XLXN_471[8:0]), 
+                    .rst(rst), 
+                    .SW(SW_OK[15:0]), 
+                    .Ccircle(CNT[31:0]), 
+                    .rdn(XLXN_544), 
+                    .vga_data(XLXN_472[11:0]));
+   VCC  XLXI_1 (.P(V5));
+   GND  XLXI_2 (.G(G0));
+   BUF  XLXI_41 (.I(V5), 
+                .O(Buzzer));
+   AND2  XLXI_42 (.I0(readn_DUMMY), 
+                 .I1(XLXN_544), 
+                 .O(XLXN_543));
+endmodule

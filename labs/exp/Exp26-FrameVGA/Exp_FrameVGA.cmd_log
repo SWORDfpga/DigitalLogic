@@ -1,0 +1,59 @@
+xst -intstyle ise -ifn "D:/FPGA_work/SWord-DLD/Exp26-FrameVGA/Exp_FrameVGA.xst" -ofn "D:/FPGA_work/SWord-DLD/Exp26-FrameVGA/Exp_FrameVGA.syr" 
+xst -intstyle ise -ifn "D:/FPGA_work/SWord-DLD/Exp26-FrameVGA/Exp_FrameVGA.xst" -ofn "D:/FPGA_work/SWord-DLD/Exp26-FrameVGA/Exp_FrameVGA.syr" 
+xst -intstyle ise -ifn "D:/FPGA_work/SWord-DLD/Exp26-FrameVGA/Exp_FrameVGA.xst" -ofn "D:/FPGA_work/SWord-DLD/Exp26-FrameVGA/Exp_FrameVGA.syr" 
+xst -intstyle ise -ifn "D:/FPGA_work/SWord-DLD/Exp26-FrameVGA/Exp_FrameVGA.xst" -ofn "D:/FPGA_work/SWord-DLD/Exp26-FrameVGA/Exp_FrameVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd Code -nt timestamp -uc Code/Disp_32.ucf -p xc7k160t-ffg676-2L Exp_FrameVGA.ngc Exp_FrameVGA.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Exp_FrameVGA_map.ncd Exp_FrameVGA.ngd Exp_FrameVGA.pcf 
+par -w -intstyle ise -ol high -mt off Exp_FrameVGA_map.ncd Exp_FrameVGA.ncd Exp_FrameVGA.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Exp_FrameVGA.twx Exp_FrameVGA.ncd -o Exp_FrameVGA.twr Exp_FrameVGA.pcf 
+bitgen -intstyle ise -f Exp_FrameVGA.ut Exp_FrameVGA.ncd 
+xst -intstyle ise -ifn "D:/FPGA_work/SWord-DLD/Exp26-FrameVGA/Exp_FrameVGA.xst" -ofn "D:/FPGA_work/SWord-DLD/Exp26-FrameVGA/Exp_FrameVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd Code -nt timestamp -uc Code/Disp_32.ucf -p xc7k160t-ffg676-2L Exp_FrameVGA.ngc Exp_FrameVGA.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Exp_FrameVGA_map.ncd Exp_FrameVGA.ngd Exp_FrameVGA.pcf 
+par -w -intstyle ise -ol high -mt off Exp_FrameVGA_map.ncd Exp_FrameVGA.ncd Exp_FrameVGA.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Exp_FrameVGA.twx Exp_FrameVGA.ncd -o Exp_FrameVGA.twr Exp_FrameVGA.pcf 
+bitgen -intstyle ise -f Exp_FrameVGA.ut Exp_FrameVGA.ncd 
+xst -intstyle ise -ifn "D:/FPGA_work/SWord-DLD/Exp26-FrameVGA/Exp_FrameVGA.xst" -ofn "D:/FPGA_work/SWord-DLD/Exp26-FrameVGA/Exp_FrameVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd Code -nt timestamp -uc Code/Disp_32.ucf -p xc7k160t-ffg676-2L Exp_FrameVGA.ngc Exp_FrameVGA.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Exp_FrameVGA_map.ncd Exp_FrameVGA.ngd Exp_FrameVGA.pcf 
+par -w -intstyle ise -ol high -mt off Exp_FrameVGA_map.ncd Exp_FrameVGA.ncd Exp_FrameVGA.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Exp_FrameVGA.twx Exp_FrameVGA.ncd -o Exp_FrameVGA.twr Exp_FrameVGA.pcf 
+bitgen -intstyle ise -f Exp_FrameVGA.ut Exp_FrameVGA.ncd 
+xst -intstyle ise -ifn "D:/FPGA_work/SWord-DLD/Exp26-FrameVGA/Exp_FrameVGA.xst" -ofn "D:/FPGA_work/SWord-DLD/Exp26-FrameVGA/Exp_FrameVGA.syr" 
+xst -intstyle ise -ifn "D:/FPGA_work/SWord-DLD/Exp26-FrameVGA/Exp_FrameVGA.xst" -ofn "D:/FPGA_work/SWord-DLD/Exp26-FrameVGA/Exp_FrameVGA.syr" 
+xst -intstyle ise -ifn "D:/FPGA_work/SWord-DLD/Exp26-FrameVGA/Exp_FrameVGA.xst" -ofn "D:/FPGA_work/SWord-DLD/Exp26-FrameVGA/Exp_FrameVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd Code -nt timestamp -uc Code/Disp_32.ucf -p xc7k160t-ffg676-2L Exp_FrameVGA.ngc Exp_FrameVGA.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Exp_FrameVGA_map.ncd Exp_FrameVGA.ngd Exp_FrameVGA.pcf 
+par -w -intstyle ise -ol high -mt off Exp_FrameVGA_map.ncd Exp_FrameVGA.ncd Exp_FrameVGA.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Exp_FrameVGA.twx Exp_FrameVGA.ncd -o Exp_FrameVGA.twr Exp_FrameVGA.pcf 
+bitgen -intstyle ise -f Exp_FrameVGA.ut Exp_FrameVGA.ncd 
+xst -intstyle ise -ifn "D:/FPGA_work/SWord-DLD/Exp26-FrameVGA/Exp_FrameVGA.xst" -ofn "D:/FPGA_work/SWord-DLD/Exp26-FrameVGA/Exp_FrameVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd Code -nt timestamp -uc Code/Disp_32.ucf -p xc7k160t-ffg676-2L Exp_FrameVGA.ngc Exp_FrameVGA.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Exp_FrameVGA_map.ncd Exp_FrameVGA.ngd Exp_FrameVGA.pcf 
+par -w -intstyle ise -ol high -mt off Exp_FrameVGA_map.ncd Exp_FrameVGA.ncd Exp_FrameVGA.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Exp_FrameVGA.twx Exp_FrameVGA.ncd -o Exp_FrameVGA.twr Exp_FrameVGA.pcf 
+bitgen -intstyle ise -f Exp_FrameVGA.ut Exp_FrameVGA.ncd 
+xst -intstyle ise -ifn "D:/FPGA_work/SWord-DLD/Exp26-FrameVGA/Exp_FrameVGA.xst" -ofn "D:/FPGA_work/SWord-DLD/Exp26-FrameVGA/Exp_FrameVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd Code -nt timestamp -uc Code/Disp_32.ucf -p xc7k160t-ffg676-2L Exp_FrameVGA.ngc Exp_FrameVGA.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Exp_FrameVGA_map.ncd Exp_FrameVGA.ngd Exp_FrameVGA.pcf 
+par -w -intstyle ise -ol high -mt off Exp_FrameVGA_map.ncd Exp_FrameVGA.ncd Exp_FrameVGA.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Exp_FrameVGA.twx Exp_FrameVGA.ncd -o Exp_FrameVGA.twr Exp_FrameVGA.pcf 
+bitgen -intstyle ise -f Exp_FrameVGA.ut Exp_FrameVGA.ncd 
+xst -intstyle ise -ifn "D:/FPGA_work/SWord-DLD/Exp26-FrameVGA/Exp_FrameVGA.xst" -ofn "D:/FPGA_work/SWord-DLD/Exp26-FrameVGA/Exp_FrameVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd Code -nt timestamp -uc Code/Disp_32.ucf -p xc7k160t-ffg676-2L Exp_FrameVGA.ngc Exp_FrameVGA.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Exp_FrameVGA_map.ncd Exp_FrameVGA.ngd Exp_FrameVGA.pcf 
+par -w -intstyle ise -ol high -mt off Exp_FrameVGA_map.ncd Exp_FrameVGA.ncd Exp_FrameVGA.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Exp_FrameVGA.twx Exp_FrameVGA.ncd -o Exp_FrameVGA.twr Exp_FrameVGA.pcf 
+bitgen -intstyle ise -f Exp_FrameVGA.ut Exp_FrameVGA.ncd 
+xst -intstyle ise -ifn "D:/FPGA_work/SWord-DLD/Exp26-FrameVGA/Exp_FrameVGA.xst" -ofn "D:/FPGA_work/SWord-DLD/Exp26-FrameVGA/Exp_FrameVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd Code -nt timestamp -uc Code/Disp_32.ucf -p xc7k160t-ffg676-2L Exp_FrameVGA.ngc Exp_FrameVGA.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Exp_FrameVGA_map.ncd Exp_FrameVGA.ngd Exp_FrameVGA.pcf 
+par -w -intstyle ise -ol high -mt off Exp_FrameVGA_map.ncd Exp_FrameVGA.ncd Exp_FrameVGA.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Exp_FrameVGA.twx Exp_FrameVGA.ncd -o Exp_FrameVGA.twr Exp_FrameVGA.pcf 
+bitgen -intstyle ise -f Exp_FrameVGA.ut Exp_FrameVGA.ncd 
+xst -intstyle ise -ifn "D:/FPGA_work/SWord-DLD/Exp26-FrameVGA/Exp_FrameVGA.xst" -ofn "D:/FPGA_work/SWord-DLD/Exp26-FrameVGA/Exp_FrameVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd Code -nt timestamp -uc Code/Disp_32.ucf -p xc7k160t-ffg676-2L Exp_FrameVGA.ngc Exp_FrameVGA.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Exp_FrameVGA_map.ncd Exp_FrameVGA.ngd Exp_FrameVGA.pcf 
+par -w -intstyle ise -ol high -mt off Exp_FrameVGA_map.ncd Exp_FrameVGA.ncd Exp_FrameVGA.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Exp_FrameVGA.twx Exp_FrameVGA.ncd -o Exp_FrameVGA.twr Exp_FrameVGA.pcf 
+bitgen -intstyle ise -f Exp_FrameVGA.ut Exp_FrameVGA.ncd 

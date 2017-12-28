@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Exp26-FrameVGA.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="Display.vf"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="Exp_FrameVGA.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Exp_FrameVGA.cmd_log"/>
+    <file xil_pn:fileType="FILE_JHD" xil_pn:name="Exp_FrameVGA.jhd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Exp_FrameVGA.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="Exp_FrameVGA.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Exp_FrameVGA.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="Exp_FrameVGA.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Exp_FrameVGA.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="Exp_FrameVGA.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="Exp_FrameVGA.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="Exp_FrameVGA.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Exp_FrameVGA.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="Exp_FrameVGA.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Exp_FrameVGA.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Exp_FrameVGA.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="Exp_FrameVGA.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="Exp_FrameVGA.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="Exp_FrameVGA.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="Exp_FrameVGA.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="Exp_FrameVGA.vf"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="Exp_FrameVGA.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Exp_FrameVGA.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Exp_FrameVGA_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="Exp_FrameVGA_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Exp_FrameVGA_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Exp_FrameVGA_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="Exp_FrameVGA_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="Exp_FrameVGA_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Exp_FrameVGA_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Exp_FrameVGA_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="Exp_FrameVGA_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="Exp_FrameVGA_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Exp_FrameVGA_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Exp_FrameVGA_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Exp_FrameVGA_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="Exp_FrameVGA_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Exp_FrameVGA_xst.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="MC14495_ZJU.vf"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="MUX4T1_4.vf"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="MUX8T1_32.vf"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="MUX8T1_8.vf"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="Seg7_Dev.vf"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="VGADEMO.spl"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="VGADEMO.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="exp_framevga.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="exp_framevga.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="exp_framevga.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1481111421" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1481111421">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1481113687" xil_pn:in_ck="-3248490636512020297" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-8769374269920693511" xil_pn:start_ts="1481113684">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Display.vf"/>
+      <outfile xil_pn:name="Exp_FrameVGA.vf"/>
+      <outfile xil_pn:name="MC14495_ZJU.vf"/>
+      <outfile xil_pn:name="MUX4T1_4.vf"/>
+      <outfile xil_pn:name="MUX8T1_32.vf"/>
+      <outfile xil_pn:name="MUX8T1_8.vf"/>
+      <outfile xil_pn:name="Seg7_Dev.vf"/>
+    </transform>
+    <transform xil_pn:end_ts="1481111428" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="9065174475370278552" xil_pn:start_ts="1481111428">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1481111428" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1481111428">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1481111428" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-4159748265864379643" xil_pn:start_ts="1481111428">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1481111428" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-679146238375871736" xil_pn:start_ts="1481111428">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1481111428" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-2608215888907747166" xil_pn:start_ts="1481111428">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1481115700" xil_pn:in_ck="-3046523248523779943" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="3478026386138811449" xil_pn:start_ts="1481115683">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Exp_FrameVGA.jhd"/>
+      <outfile xil_pn:name="Exp_FrameVGA.lso"/>
+      <outfile xil_pn:name="Exp_FrameVGA.ngc"/>
+      <outfile xil_pn:name="Exp_FrameVGA.ngr"/>
+      <outfile xil_pn:name="Exp_FrameVGA.prj"/>
+      <outfile xil_pn:name="Exp_FrameVGA.stx"/>
+      <outfile xil_pn:name="Exp_FrameVGA.syr"/>
+      <outfile xil_pn:name="Exp_FrameVGA.xst"/>
+      <outfile xil_pn:name="Exp_FrameVGA_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1481111438" xil_pn:in_ck="-446226506591101174" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="9013006946339211991" xil_pn:start_ts="1481111438">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1481115710" xil_pn:in_ck="2352824990125917017" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-4321661321402419532" xil_pn:start_ts="1481115700">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="Exp_FrameVGA.bld"/>
+      <outfile xil_pn:name="Exp_FrameVGA.ngd"/>
+      <outfile xil_pn:name="Exp_FrameVGA_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1481115755" xil_pn:in_ck="-1023942434058424090" xil_pn:name="TRANEXT_map_virtex7" xil_pn:prop_ck="-1239519347495594584" xil_pn:start_ts="1481115710">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Exp_FrameVGA.pcf"/>
+      <outfile xil_pn:name="Exp_FrameVGA_map.map"/>
+      <outfile xil_pn:name="Exp_FrameVGA_map.mrp"/>
+      <outfile xil_pn:name="Exp_FrameVGA_map.ncd"/>
+      <outfile xil_pn:name="Exp_FrameVGA_map.ngm"/>
+      <outfile xil_pn:name="Exp_FrameVGA_map.xrpt"/>
+      <outfile xil_pn:name="Exp_FrameVGA_summary.xml"/>
+      <outfile xil_pn:name="Exp_FrameVGA_usage.xml"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1481115804" xil_pn:in_ck="-2566454761198025985" xil_pn:name="TRANEXT_par_virtex5" xil_pn:prop_ck="-8808472733522092617" xil_pn:start_ts="1481115755">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="Exp_FrameVGA.ncd"/>
+      <outfile xil_pn:name="Exp_FrameVGA.pad"/>
+      <outfile xil_pn:name="Exp_FrameVGA.par"/>
+      <outfile xil_pn:name="Exp_FrameVGA.ptwx"/>
+      <outfile xil_pn:name="Exp_FrameVGA.unroutes"/>
+      <outfile xil_pn:name="Exp_FrameVGA.xpi"/>
+      <outfile xil_pn:name="Exp_FrameVGA_pad.csv"/>
+      <outfile xil_pn:name="Exp_FrameVGA_pad.txt"/>
+      <outfile xil_pn:name="Exp_FrameVGA_par.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1481115859" xil_pn:in_ck="1298332058432093528" xil_pn:name="TRANEXT_bitFile_virtex7" xil_pn:prop_ck="3160107541638749219" xil_pn:start_ts="1481115804">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="Exp_FrameVGA.ut"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="exp_framevga.bgn"/>
+      <outfile xil_pn:name="exp_framevga.bit"/>
+      <outfile xil_pn:name="exp_framevga.drc"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1481111853" xil_pn:in_ck="-6383652968811941950" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="7801172297726357142" xil_pn:start_ts="1481111850">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
+    </transform>
+    <transform xil_pn:end_ts="1481115804" xil_pn:in_ck="-1023942434058424222" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="-3742689831323817468" xil_pn:start_ts="1481115787">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="Exp_FrameVGA.twr"/>
+      <outfile xil_pn:name="Exp_FrameVGA.twx"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+    </transform>
+  </transforms>
+
+</generated_project>

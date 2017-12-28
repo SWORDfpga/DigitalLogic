@@ -1,0 +1,1182 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: Exp_FrameVGA.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Exp_FrameVGA.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Exp_FrameVGA"
+Output Format                      : NGC
+Target Device                      : xc7k160t-2L-ffg676
+
+---- Source Options
+Top Module Name                    : Exp_FrameVGA
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"Code"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\MUX4T1_4.vf" into library work
+Parsing module <MUX4T1_4>.
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\MUX8T1_8.vf" into library work
+Parsing module <MUX4T1_4_MUSER_MUX8T1_8>.
+Parsing module <MUX8T1_8>.
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\MC14495_ZJU.vf" into library work
+Parsing module <MC14495_ZJU>.
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Code\SSeg_map.v" into library work
+Parsing module <SSeg_map>.
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Code\Seg_map.v" into library work
+Parsing module <Seg_map>.
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Code\ScanSync.v" into library work
+Parsing module <ScanSync>.
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Code\P2S_IO.v" into library work
+Parsing module <P2S>.
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\MUX8T1_32.vf" into library work
+Parsing module <MUX4T1_4_MUSER_MUX8T1_32>.
+Parsing module <MUX8T1_8_MUSER_MUX8T1_32>.
+Parsing module <MUX8T1_32>.
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Code\MUX2T1_8.v" into library work
+Parsing module <MUX2T1_8>.
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Code\MUX2T1_64.v" into library work
+Parsing module <MUX2T1_64>.
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Code\LED_P2S_IO.v" into library work
+Parsing module <LED_P2S>.
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Code\HexTo8SEG.v" into library work
+Parsing module <HexTo8SEG>.
+Parsing module <Hex2Seg>.
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\VGADEMO\VGAdemo\vga.v" into library work
+Parsing module <VGA>.
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Code\VGADEMO.v" into library work
+Parsing module <VGADEMO>.
+WARNING:HDLCompiler:751 - "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Code\VGADEMO.v" Line 39: Redeclaration of ansi port vga_data is not allowed
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Code\SPIO.v" into library work
+Parsing module <GPIO>.
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Code\SEnter_2_32_IO.v" into library work
+Parsing module <SEnter_2_32>.
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Seg7_Dev.vf" into library work
+Parsing module <MC14495_ZJU_MUSER_Seg7_Dev>.
+Parsing module <Seg7_Dev>.
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Code\SAnti_jitter_IO.v" into library work
+Parsing module <SAnti_jitter>.
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Code\PIO.v" into library work
+Parsing module <PIO>.
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Code\Multi_8CH32.v" into library work
+Parsing module <Multi_8CH32>.
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Display.vf" into library work
+Parsing module <Display>.
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Code\clkdiv.v" into library work
+Parsing module <clkdiv>.
+Analyzing Verilog file "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Exp_FrameVGA.vf" into library work
+Parsing module <MC14495_ZJU_MUSER_Exp_FrameVGA>.
+Parsing module <Seg7_Dev_MUSER_Exp_FrameVGA>.
+Parsing module <Display_MUSER_Exp_FrameVGA>.
+Parsing module <Exp_FrameVGA>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <Exp_FrameVGA>.
+
+Elaborating module <clkdiv>.
+
+Elaborating module <SAnti_jitter>.
+WARNING:HDLCompiler:1499 - "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Code\SAnti_jitter_IO.v" Line 21: Empty module <SAnti_jitter> remains a black box.
+WARNING:HDLCompiler:1127 - "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Exp_FrameVGA.vf" Line 456: Assignment to Pulse ignored, since the identifier is never used
+
+Elaborating module <Display_MUSER_Exp_FrameVGA>.
+
+Elaborating module <MUX2T1_64>.
+
+Elaborating module <P2S>.
+WARNING:HDLCompiler:1499 - "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Code\P2S_IO.v" Line 21: Empty module <P2S> remains a black box.
+
+Elaborating module <HexTo8SEG>.
+
+Elaborating module <Hex2Seg>.
+
+Elaborating module <MC14495_ZJU>.
+
+Elaborating module <INV>.
+
+Elaborating module <AND4>.
+
+Elaborating module <OR4>.
+
+Elaborating module <AND3>.
+
+Elaborating module <OR3>.
+
+Elaborating module <AND2>.
+
+Elaborating module <OR2>.
+
+Elaborating module <SSeg_map>.
+
+Elaborating module <SEnter_2_32>.
+WARNING:HDLCompiler:1499 - "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Code\SEnter_2_32_IO.v" Line 21: Empty module <SEnter_2_32> remains a black box.
+
+Elaborating module <Multi_8CH32>.
+
+Elaborating module <MUX8T1_32>.
+
+Elaborating module <MUX8T1_8_MUSER_MUX8T1_32>.
+
+Elaborating module <MUX4T1_4_MUSER_MUX8T1_32>.
+
+Elaborating module <MUX8T1_8>.
+
+Elaborating module <MUX4T1_4_MUSER_MUX8T1_8>.
+
+Elaborating module <GPIO>.
+
+Elaborating module <LED_P2S(DATA_BITS=16,DATA_COUNT_BITS=4)>.
+WARNING:HDLCompiler:1499 - "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Code\LED_P2S_IO.v" Line 21: Empty module <LED_P2S(DATA_BITS=16,DATA_COUNT_BITS=4)> remains a black box.
+
+Elaborating module <VGA>.
+
+Elaborating module <Seg7_Dev_MUSER_Exp_FrameVGA>.
+
+Elaborating module <MUX2T1_8>.
+
+Elaborating module <MC14495_ZJU_MUSER_Exp_FrameVGA>.
+
+Elaborating module <ScanSync>.
+
+Elaborating module <Seg_map>.
+
+Elaborating module <VCC>.
+WARNING:HDLCompiler:1127 - "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Exp_FrameVGA.vf" Line 300: Assignment to V5 ignored, since the identifier is never used
+
+Elaborating module <GND>.
+WARNING:HDLCompiler:1127 - "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Exp_FrameVGA.vf" Line 301: Assignment to G0 ignored, since the identifier is never used
+
+Elaborating module <PIO>.
+
+Elaborating module <VGADEMO>.
+WARNING:HDLCompiler:1127 - "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Exp_FrameVGA.vf" Line 546: Assignment to G0 ignored, since the identifier is never used
+
+Elaborating module <BUF>.
+WARNING:HDLCompiler:634 - "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Exp_FrameVGA.vf" Line 422: Net <N0> does not have a driver.
+WARNING:HDLCompiler:634 - "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Exp_FrameVGA.vf" Line 428: Net <XLXN_240[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Exp_FrameVGA.vf" Line 429: Net <XLXN_280[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Exp_FrameVGA.vf" Line 431: Net <XLXN_449[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Exp_FrameVGA.vf" Line 432: Net <XLXN_469[31]> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Exp_FrameVGA>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Exp_FrameVGA.vf".
+    Set property "LOC = T9" for signal <clk_100mhz>.
+INFO:Xst:3210 - "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Exp_FrameVGA.vf" line 446: Output port <pulse_out> of the instance <M2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Exp_FrameVGA.vf" line 500: Output port <GPIOf0> of the instance <M6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Exp_FrameVGA.vf" line 510: Output port <rdn> of the instance <M7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Exp_FrameVGA.vf" line 529: Output port <GPIOf0> of the instance <M61> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <XLXN_240> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_280> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_449> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_469> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <N0> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	no macro.
+Unit <Exp_FrameVGA> synthesized.
+
+Synthesizing Unit <clkdiv>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Code\clkdiv.v".
+    Found 32-bit register for signal <clkdiv>.
+    Found 32-bit adder for signal <clkdiv[31]_GND_2_o_add_0_OUT> created at line 30.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 D-type flip-flop(s).
+Unit <clkdiv> synthesized.
+
+Synthesizing Unit <Display_MUSER_Exp_FrameVGA>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Exp_FrameVGA.vf".
+    Summary:
+	no macro.
+Unit <Display_MUSER_Exp_FrameVGA> synthesized.
+
+Synthesizing Unit <MUX2T1_64>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Code\MUX2T1_64.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <MUX2T1_64> synthesized.
+
+Synthesizing Unit <HexTo8SEG>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Code\HexTo8SEG.v".
+    Summary:
+	no macro.
+Unit <HexTo8SEG> synthesized.
+
+Synthesizing Unit <Hex2Seg>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Code\HexTo8SEG.v".
+    Summary:
+	no macro.
+Unit <Hex2Seg> synthesized.
+
+Synthesizing Unit <MC14495_ZJU>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\MC14495_ZJU.vf".
+    Summary:
+	no macro.
+Unit <MC14495_ZJU> synthesized.
+
+Synthesizing Unit <SSeg_map>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Code\SSeg_map.v".
+WARNING:Xst:647 - Input <Disp_num<63:32>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <SSeg_map> synthesized.
+
+Synthesizing Unit <Multi_8CH32>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Code\Multi_8CH32.v".
+WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 8-bit register for signal <cpu_blink>.
+    Found 8-bit register for signal <cpu_point>.
+    Found 32-bit register for signal <disp_data>.
+    Summary:
+	inferred  48 D-type flip-flop(s).
+Unit <Multi_8CH32> synthesized.
+
+Synthesizing Unit <MUX8T1_32>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\MUX8T1_32.vf".
+    Summary:
+	no macro.
+Unit <MUX8T1_32> synthesized.
+
+Synthesizing Unit <MUX8T1_8_MUSER_MUX8T1_32>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\MUX8T1_32.vf".
+    Summary:
+	no macro.
+Unit <MUX8T1_8_MUSER_MUX8T1_32> synthesized.
+
+Synthesizing Unit <MUX4T1_4_MUSER_MUX8T1_32>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\MUX8T1_32.vf".
+    Summary:
+	no macro.
+Unit <MUX4T1_4_MUSER_MUX8T1_32> synthesized.
+
+Synthesizing Unit <MUX8T1_8>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\MUX8T1_8.vf".
+    Summary:
+	no macro.
+Unit <MUX8T1_8> synthesized.
+
+Synthesizing Unit <MUX4T1_4_MUSER_MUX8T1_8>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\MUX8T1_8.vf".
+    Summary:
+	no macro.
+Unit <MUX4T1_4_MUSER_MUX8T1_8> synthesized.
+
+Synthesizing Unit <GPIO>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Code\SPIO.v".
+    Found 32-bit register for signal <GPIOf0>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <GPIO> synthesized.
+
+Synthesizing Unit <VGA>.
+    Related source file is "D:\FPGA_work\SWord-DLD\VGADEMO\VGAdemo\vga.v".
+    Found 10-bit register for signal <v_count>.
+    Found 9-bit register for signal <row>.
+    Found 10-bit register for signal <col>.
+    Found 1-bit register for signal <rdn>.
+    Found 1-bit register for signal <HS>.
+    Found 1-bit register for signal <VS>.
+    Found 4-bit register for signal <R>.
+    Found 4-bit register for signal <G>.
+    Found 4-bit register for signal <B>.
+    Found 10-bit register for signal <h_count>.
+    Found 10-bit subtractor for signal <col_addr> created at line 56.
+    Found 10-bit adder for signal <h_count[9]_GND_27_o_add_2_OUT> created at line 38.
+    Found 10-bit adder for signal <v_count[9]_GND_27_o_add_8_OUT> created at line 50.
+    Found 9-bit subtractor for signal <row_addr<8:0>> created at line 55.
+    Found 10-bit comparator greater for signal <h_sync> created at line 57
+    Found 10-bit comparator greater for signal <v_sync> created at line 58
+    Found 10-bit comparator greater for signal <GND_27_o_h_count[9]_LessThan_17_o> created at line 59
+    Found 10-bit comparator greater for signal <h_count[9]_PWR_27_o_LessThan_18_o> created at line 60
+    Found 10-bit comparator greater for signal <GND_27_o_v_count[9]_LessThan_19_o> created at line 61
+    Found 10-bit comparator greater for signal <v_count[9]_PWR_27_o_LessThan_20_o> created at line 62
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred  54 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <VGA> synthesized.
+
+Synthesizing Unit <Seg7_Dev_MUSER_Exp_FrameVGA>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Exp_FrameVGA.vf".
+    Summary:
+	no macro.
+Unit <Seg7_Dev_MUSER_Exp_FrameVGA> synthesized.
+
+Synthesizing Unit <MUX2T1_8>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Code\MUX2T1_8.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <MUX2T1_8> synthesized.
+
+Synthesizing Unit <MC14495_ZJU_MUSER_Exp_FrameVGA>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Exp_FrameVGA.vf".
+    Summary:
+	no macro.
+Unit <MC14495_ZJU_MUSER_Exp_FrameVGA> synthesized.
+
+Synthesizing Unit <ScanSync>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Code\ScanSync.v".
+    Found 8x4-bit Read Only RAM for signal <AN>
+    Found 4-bit 8-to-1 multiplexer for signal <Hexo> created at line 32.
+    Found 1-bit 8-to-1 multiplexer for signal <p> created at line 32.
+    Found 1-bit 8-to-1 multiplexer for signal <LE> created at line 32.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   3 Multiplexer(s).
+Unit <ScanSync> synthesized.
+
+Synthesizing Unit <Seg_map>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Code\Seg_map.v".
+    Summary:
+	inferred   7 Multiplexer(s).
+Unit <Seg_map> synthesized.
+
+Synthesizing Unit <PIO>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Code\PIO.v".
+    Found 32-bit register for signal <GPIOf0>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <PIO> synthesized.
+
+Synthesizing Unit <VGADEMO>.
+    Related source file is "D:\FPGA_work\SWord-DLD\Exp26-FrameVGA\Code\VGADEMO.v".
+WARNING:Xst:647 - Input <SW<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <SW<13:13>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <SW<15:15>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 9-bit register for signal <y>.
+    Found 10-bit register for signal <radius>.
+    Found 1-bit register for signal <wasReady>.
+    Found 1-bit register for signal <rdn>.
+    Found 10-bit register for signal <x>.
+    Found 10-bit subtractor for signal <radius[9]_GND_36_o_sub_3_OUT> created at line 57.
+    Found 10-bit subtractor for signal <x[9]_GND_36_o_sub_5_OUT> created at line 59.
+    Found 9-bit subtractor for signal <y[8]_GND_36_o_sub_7_OUT> created at line 61.
+    Found 11-bit subtractor for signal <GND_36_o_GND_36_o_sub_28_OUT> created at line 69.
+    Found 10-bit subtractor for signal <GND_36_o_GND_36_o_sub_31_OUT> created at line 70.
+    Found 10-bit adder for signal <radius[9]_GND_36_o_add_3_OUT> created at line 58.
+    Found 10-bit adder for signal <x[9]_GND_36_o_add_5_OUT> created at line 60.
+    Found 9-bit adder for signal <y[8]_GND_36_o_add_7_OUT> created at line 62.
+    Found 20-bit adder for signal <x_sqr[19]_y_sqr[19]_add_34_OUT> created at line 74.
+    Found 20x20-bit multiplier for signal <n0051> created at line 69.
+    Found 20x20-bit multiplier for signal <n0052> created at line 70.
+    Found 10x10-bit multiplier for signal <r_sqr> created at line 71.
+    Found 20-bit comparator greater for signal <x_sqr[19]_r_sqr[19]_LessThan_36_o> created at line 74
+    Summary:
+	inferred   3 Multiplier(s).
+	inferred   9 Adder/Subtractor(s).
+	inferred  31 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   3 Multiplexer(s).
+Unit <VGADEMO> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 8x4-bit single-port Read Only RAM                     : 1
+# Multipliers                                          : 3
+ 10x10-bit multiplier                                  : 1
+ 20x20-bit multiplier                                  : 2
+# Adders/Subtractors                                   : 14
+ 10-bit adder                                          : 4
+ 10-bit subtractor                                     : 4
+ 11-bit subtractor                                     : 1
+ 20-bit adder                                          : 1
+ 32-bit adder                                          : 1
+ 9-bit adder                                           : 1
+ 9-bit subtractor                                      : 2
+# Registers                                            : 21
+ 1-bit register                                        : 5
+ 10-bit register                                       : 5
+ 32-bit register                                       : 4
+ 4-bit register                                        : 3
+ 8-bit register                                        : 2
+ 9-bit register                                        : 2
+# Comparators                                          : 7
+ 10-bit comparator greater                             : 6
+ 20-bit comparator greater                             : 1
+# Multiplexers                                         : 16
+ 1-bit 8-to-1 multiplexer                              : 2
+ 10-bit 2-to-1 multiplexer                             : 2
+ 12-bit 2-to-1 multiplexer                             : 2
+ 4-bit 8-to-1 multiplexer                              : 1
+ 64-bit 2-to-1 multiplexer                             : 1
+ 8-bit 2-to-1 multiplexer                              : 8
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <Code/SAnti_jitter.ngc>.
+Reading core <Code/SEnter_2_32.ngc>.
+Reading core <Code/P2S.ngc>.
+Reading core <Code/LED_P2S.ngc>.
+Loading core <SAnti_jitter> for timing and area information for instance <M2>.
+Loading core <SEnter_2_32> for timing and area information for instance <M4>.
+Loading core <P2S> for timing and area information for instance <M2>.
+Loading core <LED_P2S> for timing and area information for instance <LED_P2S>.
+WARNING:Xst:2677 - Node <GPIOf0_16> of sequential type is unconnected in block <M6>.
+WARNING:Xst:2677 - Node <GPIOf0_17> of sequential type is unconnected in block <M6>.
+WARNING:Xst:2677 - Node <GPIOf0_18> of sequential type is unconnected in block <M6>.
+WARNING:Xst:2677 - Node <GPIOf0_19> of sequential type is unconnected in block <M6>.
+WARNING:Xst:2677 - Node <GPIOf0_20> of sequential type is unconnected in block <M6>.
+WARNING:Xst:2677 - Node <GPIOf0_21> of sequential type is unconnected in block <M6>.
+WARNING:Xst:2677 - Node <GPIOf0_22> of sequential type is unconnected in block <M6>.
+WARNING:Xst:2677 - Node <GPIOf0_23> of sequential type is unconnected in block <M6>.
+WARNING:Xst:2677 - Node <GPIOf0_24> of sequential type is unconnected in block <M6>.
+WARNING:Xst:2677 - Node <GPIOf0_25> of sequential type is unconnected in block <M6>.
+WARNING:Xst:2677 - Node <GPIOf0_26> of sequential type is unconnected in block <M6>.
+WARNING:Xst:2677 - Node <GPIOf0_27> of sequential type is unconnected in block <M6>.
+WARNING:Xst:2677 - Node <GPIOf0_28> of sequential type is unconnected in block <M6>.
+WARNING:Xst:2677 - Node <GPIOf0_29> of sequential type is unconnected in block <M6>.
+WARNING:Xst:2677 - Node <GPIOf0_30> of sequential type is unconnected in block <M6>.
+WARNING:Xst:2677 - Node <GPIOf0_31> of sequential type is unconnected in block <M6>.
+WARNING:Xst:2677 - Node <GPIOf0_8> of sequential type is unconnected in block <M61>.
+WARNING:Xst:2677 - Node <GPIOf0_9> of sequential type is unconnected in block <M61>.
+WARNING:Xst:2677 - Node <GPIOf0_10> of sequential type is unconnected in block <M61>.
+WARNING:Xst:2677 - Node <GPIOf0_11> of sequential type is unconnected in block <M61>.
+WARNING:Xst:2677 - Node <GPIOf0_12> of sequential type is unconnected in block <M61>.
+WARNING:Xst:2677 - Node <GPIOf0_13> of sequential type is unconnected in block <M61>.
+WARNING:Xst:2677 - Node <GPIOf0_14> of sequential type is unconnected in block <M61>.
+WARNING:Xst:2677 - Node <GPIOf0_15> of sequential type is unconnected in block <M61>.
+WARNING:Xst:2677 - Node <GPIOf0_16> of sequential type is unconnected in block <M61>.
+WARNING:Xst:2677 - Node <GPIOf0_17> of sequential type is unconnected in block <M61>.
+WARNING:Xst:2677 - Node <GPIOf0_18> of sequential type is unconnected in block <M61>.
+WARNING:Xst:2677 - Node <GPIOf0_19> of sequential type is unconnected in block <M61>.
+WARNING:Xst:2677 - Node <GPIOf0_20> of sequential type is unconnected in block <M61>.
+WARNING:Xst:2677 - Node <GPIOf0_21> of sequential type is unconnected in block <M61>.
+WARNING:Xst:2677 - Node <GPIOf0_22> of sequential type is unconnected in block <M61>.
+WARNING:Xst:2677 - Node <GPIOf0_23> of sequential type is unconnected in block <M61>.
+WARNING:Xst:2677 - Node <GPIOf0_24> of sequential type is unconnected in block <M61>.
+WARNING:Xst:2677 - Node <GPIOf0_25> of sequential type is unconnected in block <M61>.
+WARNING:Xst:2677 - Node <GPIOf0_26> of sequential type is unconnected in block <M61>.
+WARNING:Xst:2677 - Node <GPIOf0_27> of sequential type is unconnected in block <M61>.
+WARNING:Xst:2677 - Node <GPIOf0_28> of sequential type is unconnected in block <M61>.
+WARNING:Xst:2677 - Node <GPIOf0_29> of sequential type is unconnected in block <M61>.
+WARNING:Xst:2677 - Node <GPIOf0_30> of sequential type is unconnected in block <M61>.
+WARNING:Xst:2677 - Node <GPIOf0_31> of sequential type is unconnected in block <M61>.
+
+Synthesizing (advanced) Unit <ScanSync>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_AN> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 4-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <Scan>          |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <AN>            |          |
+    -----------------------------------------------------------------------
+Unit <ScanSync> synthesized (advanced).
+
+Synthesizing (advanced) Unit <VGA>.
+The following registers are absorbed into counter <h_count>: 1 register on signal <h_count>.
+The following registers are absorbed into counter <v_count>: 1 register on signal <v_count>.
+Unit <VGA> synthesized (advanced).
+
+Synthesizing (advanced) Unit <VGADEMO>.
+	Multiplier <Mmult_n0051> in block <VGADEMO> and adder/subtractor <Madd_x_sqr[19]_y_sqr[19]_add_34_OUT> in block <VGADEMO> are combined into a MAC<Maddsub_n0051>.
+Unit <VGADEMO> synthesized (advanced).
+
+Synthesizing (advanced) Unit <clkdiv>.
+The following registers are absorbed into counter <clkdiv>: 1 register on signal <clkdiv>.
+Unit <clkdiv> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 8x4-bit single-port distributed Read Only RAM         : 1
+# MACs                                                 : 1
+ 11x11-to-20-bit MAC                                   : 1
+# Multipliers                                          : 2
+ 10x10-bit multiplier                                  : 2
+# Adders/Subtractors                                   : 10
+ 10-bit adder                                          : 2
+ 10-bit subtractor                                     : 4
+ 11-bit subtractor                                     : 1
+ 9-bit adder                                           : 1
+ 9-bit subtractor                                      : 2
+# Counters                                             : 3
+ 10-bit up counter                                     : 2
+ 32-bit up counter                                     : 1
+# Registers                                            : 177
+ Flip-Flops                                            : 177
+# Comparators                                          : 7
+ 10-bit comparator greater                             : 6
+ 20-bit comparator greater                             : 1
+# Multiplexers                                         : 15
+ 1-bit 8-to-1 multiplexer                              : 2
+ 10-bit 2-to-1 multiplexer                             : 1
+ 12-bit 2-to-1 multiplexer                             : 2
+ 4-bit 8-to-1 multiplexer                              : 1
+ 64-bit 2-to-1 multiplexer                             : 1
+ 8-bit 2-to-1 multiplexer                              : 8
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <y_0> (without init value) has a constant value of 0 in block <VGADEMO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_1> (without init value) has a constant value of 0 in block <VGADEMO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <x_0> (without init value) has a constant value of 0 in block <VGADEMO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <x_1> (without init value) has a constant value of 0 in block <VGADEMO>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <MC14495_ZJU> ...
+
+Optimizing unit <Multi_8CH32> ...
+
+Optimizing unit <MUX8T1_8_MUSER_MUX8T1_32> ...
+
+Optimizing unit <MUX4T1_4_MUSER_MUX8T1_32> ...
+
+Optimizing unit <MUX8T1_8> ...
+
+Optimizing unit <MUX4T1_4_MUSER_MUX8T1_8> ...
+
+Optimizing unit <MC14495_ZJU_MUSER_Exp_FrameVGA> ...
+
+Optimizing unit <Exp_FrameVGA> ...
+
+Optimizing unit <HexTo8SEG> ...
+
+Optimizing unit <GPIO> ...
+
+Optimizing unit <PIO> ...
+
+Optimizing unit <VGADEMO> ...
+
+Optimizing unit <VGA> ...
+
+Optimizing unit <Seg7_Dev_MUSER_Exp_FrameVGA> ...
+WARNING:Xst:2677 - Node <M6/GPIOf0_31> of sequential type is unconnected in block <Exp_FrameVGA>.
+WARNING:Xst:2677 - Node <M6/GPIOf0_30> of sequential type is unconnected in block <Exp_FrameVGA>.
+WARNING:Xst:2677 - Node <M6/GPIOf0_29> of sequential type is unconnected in block <Exp_FrameVGA>.
+WARNING:Xst:2677 - Node <M6/GPIOf0_28> of sequential type is unconnected in block <Exp_FrameVGA>.
+WARNING:Xst:2677 - Node <M6/GPIOf0_27> of sequential type is unconnected in block <Exp_FrameVGA>.
+WARNING:Xst:2677 - Node <M6/GPIOf0_26> of sequential type is unconnected in block <Exp_FrameVGA>.
+WARNING:Xst:2677 - Node <M6/GPIOf0_25> of sequential type is unconnected in block <Exp_FrameVGA>.
+WARNING:Xst:2677 - Node <M6/GPIOf0_24> of sequential type is unconnected in block <Exp_FrameVGA>.
+WARNING:Xst:2677 - Node <M6/GPIOf0_23> of sequential type is unconnected in block <Exp_FrameVGA>.
+WARNING:Xst:2677 - Node <M6/GPIOf0_22> of sequential type is unconnected in block <Exp_FrameVGA>.
+WARNING:Xst:2677 - Node <M6/GPIOf0_21> of sequential type is unconnected in block <Exp_FrameVGA>.
+WARNING:Xst:2677 - Node <M6/GPIOf0_20> of sequential type is unconnected in block <Exp_FrameVGA>.
+WARNING:Xst:2677 - Node <M6/GPIOf0_19> of sequential type is unconnected in block <Exp_FrameVGA>.
+WARNING:Xst:2677 - Node <M6/GPIOf0_18> of sequential type is unconnected in block <Exp_FrameVGA>.
+WARNING:Xst:2677 - Node <M6/GPIOf0_17> of sequential type is unconnected in block <Exp_FrameVGA>.
+WARNING:Xst:2677 - Node <M6/GPIOf0_16> of sequential type is unconnected in block <Exp_FrameVGA>.
+WARNING:Xst:2677 - Node <M61/GPIOf0_31> of sequential type is unconnected in block <Exp_FrameVGA>.
+WARNING:Xst:2677 - Node <M61/GPIOf0_30> of sequential type is unconnected in block <Exp_FrameVGA>.
+WARNING:Xst:2677 - Node <M61/GPIOf0_29> of sequential type is unconnected in block <Exp_FrameVGA>.
+WARNING:Xst:2677 - Node <M61/GPIOf0_28> of sequential type is unconnected in block <Exp_FrameVGA>.
+WARNING:Xst:2677 - Node <M61/GPIOf0_27> of sequential type is unconnected in block <Exp_FrameVGA>.
+WARNING:Xst:2677 - Node <M61/GPIOf0_26> of sequential type is unconnected in block <Exp_FrameVGA>.
+WARNING:Xst:2677 - Node <M61/GPIOf0_25> of sequential type is unconnected in block <Exp_FrameVGA>.
+WARNING:Xst:2677 - Node <M61/GPIOf0_24> of sequential type is unconnected in block <Exp_FrameVGA>.
+WARNING:Xst:2677 - Node <M61/GPIOf0_23> of sequential type is unconnected in block <Exp_FrameVGA>.
+WARNING:Xst:2677 - Node <M61/GPIOf0_22> of sequential type is unconnected in block <Exp_FrameVGA>.
+WARNING:Xst:2677 - Node <M61/GPIOf0_21> of sequential type is unconnected in block <Exp_FrameVGA>.
+WARNING:Xst:2677 - Node <M61/GPIOf0_20> of sequential type is unconnected in block <Exp_FrameVGA>.
+WARNING:Xst:2677 - Node <M61/GPIOf0_19> of sequential type is unconnected in block <Exp_FrameVGA>.
+WARNING:Xst:2677 - Node <M61/GPIOf0_18> of sequential type is unconnected in block <Exp_FrameVGA>.
+WARNING:Xst:2677 - Node <M61/GPIOf0_17> of sequential type is unconnected in block <Exp_FrameVGA>.
+WARNING:Xst:2677 - Node <M61/GPIOf0_16> of sequential type is unconnected in block <Exp_FrameVGA>.
+WARNING:Xst:2677 - Node <M61/GPIOf0_15> of sequential type is unconnected in block <Exp_FrameVGA>.
+WARNING:Xst:2677 - Node <M61/GPIOf0_14> of sequential type is unconnected in block <Exp_FrameVGA>.
+WARNING:Xst:2677 - Node <M61/GPIOf0_13> of sequential type is unconnected in block <Exp_FrameVGA>.
+WARNING:Xst:2677 - Node <M61/GPIOf0_12> of sequential type is unconnected in block <Exp_FrameVGA>.
+WARNING:Xst:2677 - Node <M61/GPIOf0_11> of sequential type is unconnected in block <Exp_FrameVGA>.
+WARNING:Xst:2677 - Node <M61/GPIOf0_10> of sequential type is unconnected in block <Exp_FrameVGA>.
+WARNING:Xst:2677 - Node <M61/GPIOf0_9> of sequential type is unconnected in block <Exp_FrameVGA>.
+WARNING:Xst:2677 - Node <M61/GPIOf0_8> of sequential type is unconnected in block <Exp_FrameVGA>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Exp_FrameVGA, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 185
+ Flip-Flops                                            : 185
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Exp_FrameVGA.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 2290
+#      AND2                        : 587
+#      AND3                        : 99
+#      AND4                        : 81
+#      BUF                         : 1
+#      GND                         : 2
+#      INV                         : 144
+#      LUT1                        : 106
+#      LUT2                        : 58
+#      LUT3                        : 162
+#      LUT4                        : 115
+#      LUT5                        : 91
+#      LUT6                        : 248
+#      MUXCY                       : 168
+#      MUXF7                       : 12
+#      OR2                         : 111
+#      OR3                         : 27
+#      OR4                         : 132
+#      VCC                         : 4
+#      XORCY                       : 142
+# FlipFlops/Latches                : 484
+#      FD                          : 227
+#      FDC                         : 46
+#      FDC_1                       : 16
+#      FDCE                        : 14
+#      FDE                         : 107
+#      FDE_1                       : 8
+#      FDR                         : 22
+#      FDRE                        : 38
+#      FDSE                        : 6
+# Clock Buffers                    : 3
+#      BUFG                        : 2
+#      BUFGP                       : 1
+# IO Buffers                       : 72
+#      IBUF                        : 21
+#      OBUF                        : 51
+# DSPs                             : 3
+#      DSP48E1                     : 3
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7k160tffg676-2l 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             484  out of  202800     0%  
+ Number of Slice LUTs:                  924  out of  101400     0%  
+    Number used as Logic:               924  out of  101400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1057
+   Number with an unused Flip Flop:     573  out of   1057    54%  
+   Number with an unused LUT:           133  out of   1057    12%  
+   Number of fully used LUT-FF pairs:   351  out of   1057    33%  
+   Number of unique control sets:        25
+
+IO Utilization: 
+ Number of IOs:                          73
+ Number of bonded IOBs:                  73  out of    400    18%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                3  out of     32     9%  
+ Number of DSP48E1s:                      3  out of    600     0%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk_100mhz                         | BUFGP                  | 386   |
+M1/clkdiv_1                        | BUFG                   | 54    |
+M2/clk1                            | BUFG                   | 41    |
+M4/push(M4/push1:O)                | NONE(*)(M4/state_0)    | 3     |
+-----------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 7.177ns (Maximum Frequency: 139.337MHz)
+   Minimum input arrival time before clock: 2.109ns
+   Maximum output required time after clock: 7.207ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_100mhz'
+  Clock period: 6.786ns (frequency: 147.366MHz)
+  Total number of paths / destination ports: 11225 / 527
+-------------------------------------------------------------------------
+Delay:               6.786ns (Levels of Logic = 11)
+  Source:            M1/clkdiv_19 (FF)
+  Destination:       M3/M2/buffer_28 (FF)
+  Source Clock:      clk_100mhz rising
+  Destination Clock: clk_100mhz rising
+
+  Data Path: M1/clkdiv_19 to M3/M2/buffer_28
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             28   0.236   0.742  M1/clkdiv_19 (M1/clkdiv_19)
+     AND2:I0->O            1   0.043   0.603  M5/MUX1_DispData/MUX8182/MUX4410/XLXI_158 (M5/MUX1_DispData/MUX8182/MUX4410/XLXN_456)
+     OR4:I1->O             1   0.053   0.613  M5/MUX1_DispData/MUX8182/MUX4410/XLXI_160 (M5/MUX1_DispData/MUX8182/o0<3>)
+     AND2:I0->O            1   0.043   0.603  M5/MUX1_DispData/MUX8182/XLXI_25 (M5/MUX1_DispData/MUX8182/XLXN_48)
+     OR2:I1->O            12   0.053   0.400  M5/MUX1_DispData/MUX8182/XLXI_71 (Disp_num<19>)
+     INV:I->O             11   0.317   0.551  M3/SM1/HTS3/MSEG/XLXI_1 (M3/SM1/HTS3/MSEG/XLXN_14)
+     AND4:I3->O            2   0.161   0.500  M3/SM1/HTS3/MSEG/XLXI_5 (M3/SM1/HTS3/MSEG/XLXN_119)
+     OR4:I3->O             1   0.161   0.603  M3/SM1/HTS3/MSEG/XLXI_17 (M3/SM1/HTS3/MSEG/XLXN_208)
+     OR2:I1->O             1   0.053   0.350  M3/SM1/HTS3/MSEG/XLXI_47 (M3/XLXN_390<31>)
+     LUT3:I2->O            1   0.043   0.613  M3/MUXSH2M/Mmux_o251 (M3/SEGMENT<31>)
+     begin scope: 'M3/M2:P_Data<31>'
+     LUT6:I0->O            1   0.043   0.000  buffer_31_rstpot (buffer_31_rstpot)
+     FD:D                     -0.000          buffer_31
+    ----------------------------------------
+    Total                      6.786ns (1.206ns logic, 5.580ns route)
+                                       (17.8% logic, 82.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'M1/clkdiv_1'
+  Clock period: 7.177ns (frequency: 139.337MHz)
+  Total number of paths / destination ports: 7421947 / 86
+-------------------------------------------------------------------------
+Delay:               7.177ns (Levels of Logic = 25)
+  Source:            M7/row_0 (FF)
+  Destination:       M7/B_3 (FF)
+  Source Clock:      M1/clkdiv_1 rising
+  Destination Clock: M1/clkdiv_1 rising
+
+  Data Path: M7/row_0 to M7/B_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.236   0.344  M7/row_0 (M7/row_0)
+     INV:I->O              1   0.054   0.000  VGATEST/Msub_GND_36_o_GND_36_o_sub_31_OUT_lut<0>1_INV_0 (VGATEST/Msub_GND_36_o_GND_36_o_sub_31_OUT_lut<0>)
+     MUXCY:S->O            1   0.238   0.000  VGATEST/Msub_GND_36_o_GND_36_o_sub_31_OUT_cy<0> (VGATEST/Msub_GND_36_o_GND_36_o_sub_31_OUT_cy<0>)
+     MUXCY:CI->O           1   0.014   0.000  VGATEST/Msub_GND_36_o_GND_36_o_sub_31_OUT_cy<1> (VGATEST/Msub_GND_36_o_GND_36_o_sub_31_OUT_cy<1>)
+     MUXCY:CI->O           1   0.014   0.000  VGATEST/Msub_GND_36_o_GND_36_o_sub_31_OUT_cy<2> (VGATEST/Msub_GND_36_o_GND_36_o_sub_31_OUT_cy<2>)
+     MUXCY:CI->O           1   0.014   0.000  VGATEST/Msub_GND_36_o_GND_36_o_sub_31_OUT_cy<3> (VGATEST/Msub_GND_36_o_GND_36_o_sub_31_OUT_cy<3>)
+     MUXCY:CI->O           1   0.014   0.000  VGATEST/Msub_GND_36_o_GND_36_o_sub_31_OUT_cy<4> (VGATEST/Msub_GND_36_o_GND_36_o_sub_31_OUT_cy<4>)
+     MUXCY:CI->O           1   0.014   0.000  VGATEST/Msub_GND_36_o_GND_36_o_sub_31_OUT_cy<5> (VGATEST/Msub_GND_36_o_GND_36_o_sub_31_OUT_cy<5>)
+     MUXCY:CI->O           1   0.014   0.000  VGATEST/Msub_GND_36_o_GND_36_o_sub_31_OUT_cy<6> (VGATEST/Msub_GND_36_o_GND_36_o_sub_31_OUT_cy<6>)
+     MUXCY:CI->O           1   0.014   0.000  VGATEST/Msub_GND_36_o_GND_36_o_sub_31_OUT_cy<7> (VGATEST/Msub_GND_36_o_GND_36_o_sub_31_OUT_cy<7>)
+     MUXCY:CI->O           0   0.014   0.000  VGATEST/Msub_GND_36_o_GND_36_o_sub_31_OUT_cy<8> (VGATEST/Msub_GND_36_o_GND_36_o_sub_31_OUT_cy<8>)
+     XORCY:CI->O          25   0.262   0.468  VGATEST/Msub_GND_36_o_GND_36_o_sub_31_OUT_xor<9> (VGATEST/GND_36_o_GND_36_o_sub_31_OUT<9>)
+     DSP48E1:A9->PCOUT47    1   2.879   0.000  VGATEST/Mmult_n0052 (VGATEST/Mmult_n0052_PCOUT_to_Maddsub_n0051_PCIN_47)
+     DSP48E1:PCIN47->P1    2   1.077   0.527  VGATEST/Maddsub_n0051 (VGATEST/x_sqr[19]_y_sqr[19]_add_34_OUT<1>)
+     LUT4:I0->O            0   0.043   0.000  VGATEST/Mcompar_x_sqr[19]_r_sqr[19]_LessThan_36_o_lutdi (VGATEST/Mcompar_x_sqr[19]_r_sqr[19]_LessThan_36_o_lutdi)
+     MUXCY:DI->O           1   0.228   0.000  VGATEST/Mcompar_x_sqr[19]_r_sqr[19]_LessThan_36_o_cy<0> (VGATEST/Mcompar_x_sqr[19]_r_sqr[19]_LessThan_36_o_cy<0>)
+     MUXCY:CI->O           1   0.013   0.000  VGATEST/Mcompar_x_sqr[19]_r_sqr[19]_LessThan_36_o_cy<1> (VGATEST/Mcompar_x_sqr[19]_r_sqr[19]_LessThan_36_o_cy<1>)
+     MUXCY:CI->O           1   0.013   0.000  VGATEST/Mcompar_x_sqr[19]_r_sqr[19]_LessThan_36_o_cy<2> (VGATEST/Mcompar_x_sqr[19]_r_sqr[19]_LessThan_36_o_cy<2>)
+     MUXCY:CI->O           1   0.013   0.000  VGATEST/Mcompar_x_sqr[19]_r_sqr[19]_LessThan_36_o_cy<3> (VGATEST/Mcompar_x_sqr[19]_r_sqr[19]_LessThan_36_o_cy<3>)
+     MUXCY:CI->O           1   0.013   0.000  VGATEST/Mcompar_x_sqr[19]_r_sqr[19]_LessThan_36_o_cy<4> (VGATEST/Mcompar_x_sqr[19]_r_sqr[19]_LessThan_36_o_cy<4>)
+     MUXCY:CI->O           1   0.013   0.000  VGATEST/Mcompar_x_sqr[19]_r_sqr[19]_LessThan_36_o_cy<5> (VGATEST/Mcompar_x_sqr[19]_r_sqr[19]_LessThan_36_o_cy<5>)
+     MUXCY:CI->O           1   0.013   0.000  VGATEST/Mcompar_x_sqr[19]_r_sqr[19]_LessThan_36_o_cy<6> (VGATEST/Mcompar_x_sqr[19]_r_sqr[19]_LessThan_36_o_cy<6>)
+     MUXCY:CI->O           1   0.013   0.000  VGATEST/Mcompar_x_sqr[19]_r_sqr[19]_LessThan_36_o_cy<7> (VGATEST/Mcompar_x_sqr[19]_r_sqr[19]_LessThan_36_o_cy<7>)
+     MUXCY:CI->O           1   0.013   0.000  VGATEST/Mcompar_x_sqr[19]_r_sqr[19]_LessThan_36_o_cy<8> (VGATEST/Mcompar_x_sqr[19]_r_sqr[19]_LessThan_36_o_cy<8>)
+     MUXCY:CI->O          12   0.151   0.411  VGATEST/Mcompar_x_sqr[19]_r_sqr[19]_LessThan_36_o_cy<9> (VGATEST/Mcompar_x_sqr[19]_r_sqr[19]_LessThan_36_o_cy<9>)
+     LUT4:I3->O            1   0.043   0.000  VGATEST/Mmux_vga_data13 (XLXN_472<0>)
+     FDR:D                    -0.000          M7/R_0
+    ----------------------------------------
+    Total                      7.177ns (5.427ns logic, 1.750ns route)
+                                       (75.6% logic, 24.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'M2/clk1'
+  Clock period: 2.152ns (frequency: 464.587MHz)
+  Total number of paths / destination ports: 1454 / 90
+-------------------------------------------------------------------------
+Delay:               2.152ns (Levels of Logic = 7)
+  Source:            M2/counter_8 (FF)
+  Destination:       M2/Key_x_0 (FF)
+  Source Clock:      M2/clk1 rising
+  Destination Clock: M2/clk1 rising
+
+  Data Path: M2/counter_8 to M2/Key_x_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             3   0.236   0.615  counter_8 (counter<8>)
+     LUT5:I0->O            1   0.043   0.000  Mcompar_counter[31]_GND_1_o_LessThan_5_o_lut<0> (Mcompar_counter[31]_GND_1_o_LessThan_5_o_lut<0>)
+     MUXCY:S->O            1   0.238   0.000  Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<0> (Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<0>)
+     MUXCY:CI->O           1   0.013   0.000  Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<1> (Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<1>)
+     MUXCY:CI->O           1   0.013   0.000  Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<2> (Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<2>)
+     MUXCY:CI->O           1   0.013   0.000  Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<3> (Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<3>)
+     MUXCY:CI->O           8   0.013   0.378  Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<4> (Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<4>)
+     INV:I->O              7   0.054   0.373  _n0225_inv1_cepot_INV_0 (_n0225_inv1_cepot)
+     FDE:CE                    0.161          Key_x_0
+    ----------------------------------------
+    Total                      2.152ns (0.786ns logic, 1.366ns route)
+                                       (36.5% logic, 63.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'M4/push'
+  Clock period: 1.069ns (frequency: 935.060MHz)
+  Total number of paths / destination ports: 6 / 3
+-------------------------------------------------------------------------
+Delay:               1.069ns (Levels of Logic = 1)
+  Source:            M4/state_0 (FF)
+  Destination:       M4/state_0 (FF)
+  Source Clock:      M4/push rising
+  Destination Clock: M4/push rising
+
+  Data Path: M4/state_0 to M4/state_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             19   0.236   0.440  state_0 (state<0>)
+     INV:I->O              1   0.054   0.339  Result<0>1_INV_0 (Result<0>)
+     FDE:D                    -0.000          state_0
+    ----------------------------------------
+    Total                      1.069ns (0.290ns logic, 0.779ns route)
+                                       (27.1% logic, 72.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_100mhz'
+  Total number of paths / destination ports: 1195 / 100
+-------------------------------------------------------------------------
+Offset:              2.089ns (Levels of Logic = 10)
+  Source:            SW<2> (PAD)
+  Destination:       M2/SW_OK_0 (FF)
+  Destination Clock: clk_100mhz rising
+
+  Data Path: SW<2> to M2/SW_OK_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   0.000   0.625  SW_2_IBUF (SW_2_IBUF)
+     begin scope: 'M2:SW<2>'
+     LUT6:I0->O            1   0.043   0.000  Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_lut<0> (Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_lut<0>)
+     MUXCY:S->O            1   0.238   0.000  Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<0> (Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<0>)
+     MUXCY:CI->O           1   0.013   0.000  Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<1> (Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<1>)
+     MUXCY:CI->O           1   0.013   0.000  Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<2> (Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<2>)
+     MUXCY:CI->O           1   0.013   0.000  Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<3> (Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<3>)
+     MUXCY:CI->O           1   0.013   0.000  Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<4> (Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<4>)
+     MUXCY:CI->O          43   0.013   0.471  Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<5> (sw_temp[15]_SW[15]_not_equal_100_o)
+     INV:I->O             17   0.054   0.429  _n0243_inv1_cepot_cepot_INV_0 (_n0243_inv1_cepot_cepot)
+     FDE:CE                    0.161          SW_OK_0
+    ----------------------------------------
+    Total                      2.089ns (0.563ns logic, 1.525ns route)
+                                       (27.0% logic, 73.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'M2/clk1'
+  Total number of paths / destination ports: 176 / 41
+-------------------------------------------------------------------------
+Offset:              2.109ns (Levels of Logic = 6)
+  Source:            K_COL<3> (PAD)
+  Destination:       M2/Key_x_1 (FF)
+  Destination Clock: M2/clk1 rising
+
+  Data Path: K_COL<3> to M2/Key_x_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   0.000   0.550  K_COL_3_IBUF (K_COL_3_IBUF)
+     begin scope: 'M2:Key_y<3>'
+     LUT4:I0->O           12   0.043   0.674  out1 (n0016)
+     LUT6:I0->O            3   0.043   0.362  _n0295<0>1 (_n0295<0>)
+     LUT6:I5->O            1   0.043   0.350  Key_x[4]_PWR_1_o_select_74_OUT<1>1 (Key_x[4]_PWR_1_o_select_74_OUT<4>)
+     LUT3:I2->O            1   0.043   0.000  Key_x_4_dpot (Key_x_4_dpot)
+     FDE:D                    -0.000          Key_x_4
+    ----------------------------------------
+    Total                      2.109ns (0.172ns logic, 1.937ns route)
+                                       (8.2% logic, 91.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_100mhz'
+  Total number of paths / destination ports: 3395 / 28
+-------------------------------------------------------------------------
+Offset:              7.207ns (Levels of Logic = 12)
+  Source:            M1/clkdiv_25 (FF)
+  Destination:       SEGMENT<3> (PAD)
+  Source Clock:      clk_100mhz rising
+
+  Data Path: M1/clkdiv_25 to SEGMENT<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             13   0.236   0.681  M1/clkdiv_25 (M1/clkdiv_25)
+     AND2:I0->O            1   0.043   0.603  M5/MUX1_DispData/MUX8183/MUX4410/XLXI_128 (M5/MUX1_DispData/MUX8183/MUX4410/XLXN_396)
+     OR4:I1->O             1   0.053   0.613  M5/MUX1_DispData/MUX8183/MUX4410/XLXI_130 (M5/MUX1_DispData/MUX8183/o0<1>)
+     AND2:I0->O            1   0.043   0.603  M5/MUX1_DispData/MUX8183/XLXI_21 (M5/MUX1_DispData/MUX8183/XLXN_44)
+     OR2:I1->O            15   0.053   0.600  M5/MUX1_DispData/MUX8183/XLXI_69 (Disp_num<25>)
+     LUT6:I2->O            1   0.043   0.000  M31/M2/Mmux_Hexo_31 (M31/M2/Mmux_Hexo_31)
+     MUXF7:I1->O          11   0.178   0.395  M31/M2/Mmux_Hexo_2_f7_0 (M31/Hex<1>)
+     INV:I->O              8   0.317   0.561  M31/M1/XLXI_3 (M31/M1/XLXN_62)
+     AND4:I2->O            2   0.134   0.500  M31/M1/XLXI_5 (M31/M1/XLXN_119)
+     OR4:I3->O             1   0.161   0.603  M31/M1/XLXI_17 (M31/M1/XLXN_208)
+     OR2:I1->O             1   0.053   0.350  M31/M1/XLXI_47 (M31/SEG_TXT<0>)
+     LUT3:I2->O            1   0.043   0.339  M31/MUXHM/Mmux_o1 (SEGMENT_0_OBUF)
+     OBUF:I->O                 0.000          SEGMENT_0_OBUF (SEGMENT<0>)
+    ----------------------------------------
+    Total                      7.207ns (1.357ns logic, 5.850ns route)
+                                       (18.8% logic, 81.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'M1/clkdiv_1'
+  Total number of paths / destination ports: 14 / 14
+-------------------------------------------------------------------------
+Offset:              0.575ns (Levels of Logic = 1)
+  Source:            M7/B_3 (FF)
+  Destination:       B<3> (PAD)
+  Source Clock:      M1/clkdiv_1 rising
+
+  Data Path: M7/B_3 to B<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              1   0.236   0.339  M7/B_3 (M7/B_3)
+     OBUF:I->O                 0.000          B_3_OBUF (B<3>)
+    ----------------------------------------
+    Total                      0.575ns (0.236ns logic, 0.339ns route)
+                                       (41.0% logic, 59.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'M2/clk1'
+  Total number of paths / destination ports: 6 / 6
+-------------------------------------------------------------------------
+Offset:              0.658ns (Levels of Logic = 2)
+  Source:            M2/Key_x_4 (FF)
+  Destination:       K_ROW<4> (PAD)
+  Source Clock:      M2/clk1 rising
+
+  Data Path: M2/Key_x_4 to K_ROW<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             16   0.236   0.422  Key_x_4 (Key_x<4>)
+     end scope: 'M2:Key_x<4>'
+     OBUF:I->O                 0.000          K_ROW_4_OBUF (K_ROW<4>)
+    ----------------------------------------
+    Total                      0.658ns (0.236ns logic, 0.422ns route)
+                                       (35.8% logic, 64.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'M4/push'
+  Total number of paths / destination ports: 252 / 7
+-------------------------------------------------------------------------
+Offset:              6.450ns (Levels of Logic = 12)
+  Source:            M4/state_0 (FF)
+  Destination:       SEGMENT<6> (PAD)
+  Source Clock:      M4/push rising
+
+  Data Path: M4/state_0 to SEGMENT<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             19   0.236   0.714  state_0 (state<0>)
+     LUT6:I0->O            2   0.043   0.618  Mmux_blink71 (blink<6>)
+     end scope: 'M4:blink<6>'
+     AND2:I0->O            1   0.043   0.522  M5/MUX2_Blink/MUX4412/XLXI_152 (M5/MUX2_Blink/MUX4412/XLXN_444)
+     OR4:I2->O             1   0.134   0.613  M5/MUX2_Blink/MUX4412/XLXI_155 (M5/MUX2_Blink/o2<2>)
+     AND2:I0->O            1   0.043   0.603  M5/MUX2_Blink/XLXI_64 (M5/MUX2_Blink/XLXN_155)
+     OR2:I1->O             2   0.053   0.527  M5/MUX2_Blink/XLXI_74 (LE_out<6>)
+     LUT6:I2->O            1   0.043   0.000  M31/M2/Mmux_LE_3 (M31/M2/Mmux_LE_3)
+     MUXF7:I1->O           1   0.178   0.613  M31/M2/Mmux_LE_2_f7 (M31/XLXN_382)
+     AND2:I0->O            7   0.043   0.647  M31/XLXI_44 (M31/XLXN_385)
+     OR2:I0->O             1   0.043   0.350  M31/M1/XLXI_47 (M31/SEG_TXT<0>)
+     LUT3:I2->O            1   0.043   0.339  M31/MUXHM/Mmux_o1 (SEGMENT_0_OBUF)
+     OBUF:I->O                 0.000          SEGMENT_0_OBUF (SEGMENT<0>)
+    ----------------------------------------
+    Total                      6.450ns (0.902ns logic, 5.548ns route)
+                                       (14.0% logic, 86.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock M1/clkdiv_1
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+M1/clkdiv_1    |    7.177|         |         |         |
+clk_100mhz     |    7.245|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock M2/clk1
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+M2/clk1        |    2.152|         |         |         |
+clk_100mhz     |    1.948|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock M4/push
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+M2/clk1        |    0.818|         |         |         |
+M4/push        |    1.069|         |         |         |
+clk_100mhz     |    1.280|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk_100mhz
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+M2/clk1        |    1.589|         |         |         |
+M4/push        |    5.816|         |         |         |
+clk_100mhz     |    6.786|    1.289|    0.983|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 13.74 secs
+ 
+--> 
+
+Total memory usage is 417484 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  108 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
+
