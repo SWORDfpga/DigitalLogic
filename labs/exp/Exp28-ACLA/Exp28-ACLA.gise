@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Exp28-ACLA.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="ACLA4.vf">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="BehavioralSim"/>
+    </file>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ADD4b_ADD4b_sch_tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="ADD4b_ADD4b_sch_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="ADD4b_ADD4b_sch_tb_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="CLA.vf">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="BehavioralSim"/>
+    </file>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="Top_ACLA.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Top_ACLA.cmd_log"/>
+    <file xil_pn:fileType="FILE_JHD" xil_pn:name="Top_ACLA.jhd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Top_ACLA.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="Top_ACLA.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Top_ACLA.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="Top_ACLA.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Top_ACLA.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="Top_ACLA.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="Top_ACLA.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="Top_ACLA.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Top_ACLA.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="Top_ACLA.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Top_ACLA.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Top_ACLA.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="Top_ACLA.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="Top_ACLA.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="Top_ACLA.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="Top_ACLA.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="Top_ACLA.vf"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="Top_ACLA.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Top_ACLA.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Top_ACLA_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="Top_ACLA_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Top_ACLA_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Top_ACLA_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="Top_ACLA_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="Top_ACLA_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Top_ACLA_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Top_ACLA_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="Top_ACLA_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="Top_ACLA_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Top_ACLA_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Top_ACLA_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Top_ACLA_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="Top_ACLA_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Top_ACLA_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="add.vf">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="BehavioralSim"/>
+    </file>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="top_acla.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="top_acla.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="top_acla.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1479641082" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1479641082">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1479641082" xil_pn:in_ck="-452607125426975958" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1479641082">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Code/ADD4_Test.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1479641082" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-4337247234821924481" xil_pn:start_ts="1479641082">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1479641084" xil_pn:in_ck="400279932312758585" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-7349781124074057805" xil_pn:start_ts="1479641082">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="ACLA4.vf"/>
+      <outfile xil_pn:name="CLA.vf"/>
+      <outfile xil_pn:name="add.vf"/>
+    </transform>
+    <transform xil_pn:end_ts="1479641084" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="6313423526316149894" xil_pn:start_ts="1479641084">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1479641084" xil_pn:in_ck="-334254854505389370" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1479641084">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="ACLA4.vf"/>
+      <outfile xil_pn:name="CLA.vf"/>
+      <outfile xil_pn:name="Code/ADD4_Test.v"/>
+      <outfile xil_pn:name="add.vf"/>
+    </transform>
+    <transform xil_pn:end_ts="1479641088" xil_pn:in_ck="-334254854505389370" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="1996543322204670079" xil_pn:start_ts="1479641084">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="ADD4b_ADD4b_sch_tb_beh.prj"/>
+      <outfile xil_pn:name="ADD4b_ADD4b_sch_tb_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1479641088" xil_pn:in_ck="543356519717723966" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-5961906183701958654" xil_pn:start_ts="1479641088">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="ADD4b_ADD4b_sch_tb_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+    </transform>
+    <transform xil_pn:end_ts="1471440360" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1471440360">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1471442342" xil_pn:in_ck="400279932312758585" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="2086209164837732007" xil_pn:start_ts="1471442340">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="ACLA4.vf"/>
+      <outfile xil_pn:name="CLA.vf"/>
+      <outfile xil_pn:name="Top_ACLA.vf"/>
+      <outfile xil_pn:name="add.vf"/>
+    </transform>
+    <transform xil_pn:end_ts="1471440362" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="6313423526316149894" xil_pn:start_ts="1471440362">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1471440362" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1471440362">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1471440362" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-7008886465216042829" xil_pn:start_ts="1471440362">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1471440362" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-679146238375871736" xil_pn:start_ts="1471440362">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+    </transform>
+    <transform xil_pn:end_ts="1471440362" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="8256641641392974224" xil_pn:start_ts="1471440362">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+    </transform>
+    <transform xil_pn:end_ts="1471442354" xil_pn:in_ck="-7343395972607629271" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="8067311164017828455" xil_pn:start_ts="1471442342">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Top_ACLA.jhd"/>
+      <outfile xil_pn:name="Top_ACLA.lso"/>
+      <outfile xil_pn:name="Top_ACLA.ngc"/>
+      <outfile xil_pn:name="Top_ACLA.ngr"/>
+      <outfile xil_pn:name="Top_ACLA.prj"/>
+      <outfile xil_pn:name="Top_ACLA.stx"/>
+      <outfile xil_pn:name="Top_ACLA.syr"/>
+      <outfile xil_pn:name="Top_ACLA.xst"/>
+      <outfile xil_pn:name="Top_ACLA_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1471440372" xil_pn:in_ck="4234374083231206011" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="4784892868570690821" xil_pn:start_ts="1471440372">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+    </transform>
+    <transform xil_pn:end_ts="1471442362" xil_pn:in_ck="-7725871814260204796" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-2783416787778377694" xil_pn:start_ts="1471442354">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="Top_ACLA.bld"/>
+      <outfile xil_pn:name="Top_ACLA.ngd"/>
+      <outfile xil_pn:name="Top_ACLA_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1471442390" xil_pn:in_ck="-7725871814260204795" xil_pn:name="TRANEXT_map_virtex7" xil_pn:prop_ck="-1239519347495594584" xil_pn:start_ts="1471442362">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Top_ACLA.pcf"/>
+      <outfile xil_pn:name="Top_ACLA_map.map"/>
+      <outfile xil_pn:name="Top_ACLA_map.mrp"/>
+      <outfile xil_pn:name="Top_ACLA_map.ncd"/>
+      <outfile xil_pn:name="Top_ACLA_map.ngm"/>
+      <outfile xil_pn:name="Top_ACLA_map.xrpt"/>
+      <outfile xil_pn:name="Top_ACLA_summary.xml"/>
+      <outfile xil_pn:name="Top_ACLA_usage.xml"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1471442433" xil_pn:in_ck="2792645460235789470" xil_pn:name="TRANEXT_par_virtex5" xil_pn:prop_ck="-8808472733522092617" xil_pn:start_ts="1471442390">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="Top_ACLA.ncd"/>
+      <outfile xil_pn:name="Top_ACLA.pad"/>
+      <outfile xil_pn:name="Top_ACLA.par"/>
+      <outfile xil_pn:name="Top_ACLA.ptwx"/>
+      <outfile xil_pn:name="Top_ACLA.unroutes"/>
+      <outfile xil_pn:name="Top_ACLA.xpi"/>
+      <outfile xil_pn:name="Top_ACLA_pad.csv"/>
+      <outfile xil_pn:name="Top_ACLA_pad.txt"/>
+      <outfile xil_pn:name="Top_ACLA_par.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1471442483" xil_pn:in_ck="4420876769369456518" xil_pn:name="TRANEXT_bitFile_virtex7" xil_pn:prop_ck="3160107541638749219" xil_pn:start_ts="1471442433">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="Top_ACLA.ut"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="top_acla.bgn"/>
+      <outfile xil_pn:name="top_acla.bit"/>
+      <outfile xil_pn:name="top_acla.drc"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1471442433" xil_pn:in_ck="-7725871814260204927" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="-3742689831323817468" xil_pn:start_ts="1471442417">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="Top_ACLA.twr"/>
+      <outfile xil_pn:name="Top_ACLA.twx"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+    </transform>
+  </transforms>
+
+</generated_project>

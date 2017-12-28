@@ -1,0 +1,5 @@
+verilog work "add.vf"
+verilog work "Code/SPIO_IO.v"
+verilog work "Code/clk_div.v"
+verilog work "Code/adder4.v"
+verilog work "Code/Top-add4.v"

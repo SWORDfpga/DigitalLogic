@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "D:/FPGA_work/SWord-DLD/Exp27-adder/Top_add4.xst" -ofn "D:/FPGA_work/SWord-DLD/Exp27-adder/Top_add4.syr" 
+xst -intstyle ise -ifn "D:/FPGA_work/SWord-DLD/Exp27-adder/Top_add4.xst" -ofn "D:/FPGA_work/SWord-DLD/Exp27-adder/Top_add4.syr" 
+xst -intstyle ise -ifn "D:/FPGA_work/SWord-DLD/Exp27-adder/Top_add4.xst" -ofn "D:/FPGA_work/SWord-DLD/Exp27-adder/Top_add4.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd Code -nt timestamp -uc Code/adder4.ucf -p xc7k160t-ffg676-2L Top_add4.ngc Top_add4.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_add4_map.ncd Top_add4.ngd Top_add4.pcf 
+par -w -intstyle ise -ol high -mt off Top_add4_map.ncd Top_add4.ncd Top_add4.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Top_add4.twx Top_add4.ncd -o Top_add4.twr Top_add4.pcf 
+bitgen -intstyle ise -f Top_add4.ut Top_add4.ncd 

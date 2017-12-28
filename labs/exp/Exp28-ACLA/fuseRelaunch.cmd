@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/FPGA_work/SWord-DLD/Exp28-ACLA/ADD4b_ADD4b_sch_tb_isim_beh.exe" -prj "D:/FPGA_work/SWord-DLD/Exp28-ACLA/ADD4b_ADD4b_sch_tb_beh.prj" "work.ADD4b_ADD4b_sch_tb" "work.glbl" 

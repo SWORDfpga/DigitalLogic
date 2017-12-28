@@ -1,0 +1,22 @@
+xst -intstyle ise -ifn "D:/FPGA_work/SWord-DLD/Exp28-ACLA/Top_ACLA.xst" -ofn "D:/FPGA_work/SWord-DLD/Exp28-ACLA/Top_ACLA.syr" 
+xst -intstyle ise -ifn "D:/FPGA_work/SWord-DLD/Exp28-ACLA/Top_ACLA.xst" -ofn "D:/FPGA_work/SWord-DLD/Exp28-ACLA/Top_ACLA.syr" 
+xst -intstyle ise -ifn "D:/FPGA_work/SWord-DLD/Exp28-ACLA/Top_ACLA.xst" -ofn "D:/FPGA_work/SWord-DLD/Exp28-ACLA/Top_ACLA.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Code/ACLA4.ucf -p xc7k160t-ffg676-2L Top_ACLA.ngc Top_ACLA.ngd  
+xst -intstyle ise -ifn "D:/FPGA_work/SWord-DLD/Exp28-ACLA/Top_ACLA.xst" -ofn "D:/FPGA_work/SWord-DLD/Exp28-ACLA/Top_ACLA.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Code/ACLA4.ucf -p xc7k160t-ffg676-2L Top_ACLA.ngc Top_ACLA.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_ACLA_map.ncd Top_ACLA.ngd Top_ACLA.pcf 
+par -w -intstyle ise -ol high -mt off Top_ACLA_map.ncd Top_ACLA.ncd Top_ACLA.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Top_ACLA.twx Top_ACLA.ncd -o Top_ACLA.twr Top_ACLA.pcf 
+bitgen -intstyle ise -f Top_ACLA.ut Top_ACLA.ncd 
+xst -intstyle ise -ifn "D:/FPGA_work/SWord-DLD/Exp28-ACLA/Top_ACLA.xst" -ofn "D:/FPGA_work/SWord-DLD/Exp28-ACLA/Top_ACLA.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Code/ACLA4.ucf -p xc7k160t-ffg676-2L Top_ACLA.ngc Top_ACLA.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_ACLA_map.ncd Top_ACLA.ngd Top_ACLA.pcf 
+par -w -intstyle ise -ol high -mt off Top_ACLA_map.ncd Top_ACLA.ncd Top_ACLA.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Top_ACLA.twx Top_ACLA.ncd -o Top_ACLA.twr Top_ACLA.pcf 
+bitgen -intstyle ise -f Top_ACLA.ut Top_ACLA.ncd 
+xst -intstyle ise -ifn "D:/FPGA_work/SWord-DLD/Exp28-ACLA/Top_ACLA.xst" -ofn "D:/FPGA_work/SWord-DLD/Exp28-ACLA/Top_ACLA.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Code/ACLA4.ucf -p xc7k160t-ffg676-2L Top_ACLA.ngc Top_ACLA.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_ACLA_map.ncd Top_ACLA.ngd Top_ACLA.pcf 
+par -w -intstyle ise -ol high -mt off Top_ACLA_map.ncd Top_ACLA.ncd Top_ACLA.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Top_ACLA.twx Top_ACLA.ncd -o Top_ACLA.twr Top_ACLA.pcf 
+bitgen -intstyle ise -f Top_ACLA.ut Top_ACLA.ncd 

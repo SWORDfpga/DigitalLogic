@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/FPGA_work/SWord-DLD/Exp27-adder/ADD4b_ADD4b_sch_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="ADD4b_ADD4b_sch_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="6" />
+   <wvobject fp_name="/ADD4b_ADD4b_sch_tb/C0" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">C0</obj_property>
+      <obj_property name="ObjectShortName">C0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADD4b_ADD4b_sch_tb/ai" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ai[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ai[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADD4b_ADD4b_sch_tb/bi" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">bi[3:0]</obj_property>
+      <obj_property name="ObjectShortName">bi[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="vbus8" type="vbus" db_ref_id="1">
+      <obj_property name="label">SUM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <wvobject fp_name="/ADD4b_ADD4b_sch_tb/co" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">co</obj_property>
+         <obj_property name="ObjectShortName">co</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADD4b_ADD4b_sch_tb/s" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">s[3:0]</obj_property>
+         <obj_property name="ObjectShortName">s[3:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/ADD4b_ADD4b_sch_tb/i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADD4b_ADD4b_sch_tb/j" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">j[31:0]</obj_property>
+      <obj_property name="ObjectShortName">j[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

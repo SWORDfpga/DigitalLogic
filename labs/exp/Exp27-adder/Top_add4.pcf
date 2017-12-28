@@ -1,0 +1,43 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Wed Aug 17 17:42:42 2016
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "led_clrn" LOCATE = SITE "N24" LEVEL 1;
+COMP "RSTN" LOCATE = SITE "W13" LEVEL 1;
+COMP "led_sout" LOCATE = SITE "M26" LEVEL 1;
+COMP "LED_PEN" LOCATE = SITE "P18" LEVEL 1;
+COMP "a<0>" LOCATE = SITE "AA10" LEVEL 1;
+COMP "a<1>" LOCATE = SITE "AB10" LEVEL 1;
+COMP "a<2>" LOCATE = SITE "AA13" LEVEL 1;
+COMP "a<3>" LOCATE = SITE "AA12" LEVEL 1;
+COMP "b<0>" LOCATE = SITE "Y13" LEVEL 1;
+COMP "b<1>" LOCATE = SITE "Y12" LEVEL 1;
+COMP "b<2>" LOCATE = SITE "AD11" LEVEL 1;
+COMP "b<3>" LOCATE = SITE "AD10" LEVEL 1;
+COMP "led_clk" LOCATE = SITE "N26" LEVEL 1;
+COMP "clk_100mhz" LOCATE = SITE "AC18" LEVEL 1;
+TIMEGRP TM_CLK = BEL "M1/clkdiv_0" BEL "M1/clkdiv_1" BEL "M1/clkdiv_2" BEL
+        "M1/clkdiv_3" BEL "M1/clkdiv_4" BEL "M1/clkdiv_5" BEL "M1/clkdiv_6"
+        BEL "M1/clkdiv_7" BEL "M1/clkdiv_8" BEL "M1/clkdiv_9" BEL
+        "M1/clkdiv_10" BEL "M1/clkdiv_11" BEL "M1/clkdiv_12" BEL
+        "M1/clkdiv_13" BEL "M1/clkdiv_14" BEL "M1/clkdiv_15" BEL
+        "M1/clkdiv_16" BEL "M1/clkdiv_17" BEL "M1/clkdiv_18" BEL
+        "M1/clkdiv_19" BEL "M1/clkdiv_20" BEL "clk_100mhz_BUFGP/BUFG" BEL
+        "M6/LED_0" BEL "M6/LED_1" BEL "M6/LED_2" BEL "M6/LED_3" BEL "M6/LED_4"
+        BEL "M6/LED_5" BEL "M6/P2S_led/shift_count_3" BEL
+        "M6/P2S_led/shift_count_2" BEL "M6/P2S_led/shift_count_1" BEL
+        "M6/P2S_led/shift_count_0" BEL "M6/P2S_led/state_FSM_FFd1" BEL
+        "M6/P2S_led/state_FSM_FFd2" BEL "M6/P2S_led/buffer_15" BEL
+        "M6/P2S_led/buffer_14" BEL "M6/P2S_led/buffer_13" BEL
+        "M6/P2S_led/buffer_12" BEL "M6/P2S_led/buffer_11" BEL
+        "M6/P2S_led/buffer_10" BEL "M6/P2S_led/buffer_9" BEL
+        "M6/P2S_led/buffer_8" BEL "M6/P2S_led/buffer_7" BEL
+        "M6/P2S_led/buffer_6" BEL "M6/P2S_led/buffer_5" BEL
+        "M6/P2S_led/buffer_4" BEL "M6/P2S_led/buffer_3" BEL
+        "M6/P2S_led/buffer_2" BEL "M6/P2S_led/buffer_1" BEL
+        "M6/P2S_led/buffer_0" BEL "M6/P2S_led/start_1" BEL
+        "M6/P2S_led/start_0" BEL "M6/P2S_led/s_clk" BEL "M6/P2S_led/EN";
+TS_CLK_100M = PERIOD TIMEGRP "TM_CLK" 10 ns HIGH 50%;
+SCHEMATIC END;
+

@@ -1,0 +1,10 @@
+Command line:
+   ADD4b_ADD4b_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  60908
+
+Sun Nov 20 19:51:56 2016
+
+
+ Elaboration Time: 0.046875 sec
