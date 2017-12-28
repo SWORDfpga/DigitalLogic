@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/FPGA_work/SWord-DLD/Lamp_D/Lamp_DTest_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="Lamp_DTest" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="7" />
+   <wvobject fp_name="/Lamp_DTest/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lamp_DTest/S1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">S1</obj_property>
+      <obj_property name="ObjectShortName">S1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lamp_DTest/S2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">S2</obj_property>
+      <obj_property name="ObjectShortName">S2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lamp_DTest/S3" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">S3</obj_property>
+      <obj_property name="ObjectShortName">S3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lamp_DTest/uut/count" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">count[7:0]</obj_property>
+      <obj_property name="ObjectShortName">count[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lamp_DTest/uut/w" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">w</obj_property>
+      <obj_property name="ObjectShortName">w</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Lamp_DTest/F" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">F</obj_property>
+      <obj_property name="ObjectShortName">F</obj_property>
+   </wvobject>
+</wave_config>
