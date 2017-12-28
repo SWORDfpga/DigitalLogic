@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/FPGA_work/Logic-2015/Exp09/RS_NAND_RS_NAND_sch_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="RS_NAND_RS_NAND_sch_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="3" />
+   <wvobject fp_name="vbus5" type="vbus" db_ref_id="1">
+      <obj_property name="label">SR</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/RS_NAND_RS_NAND_sch_tb/Sn" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">Sn</obj_property>
+         <obj_property name="ObjectShortName">Sn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/RS_NAND_RS_NAND_sch_tb/Rn" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">Rn</obj_property>
+         <obj_property name="ObjectShortName">Rn</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/RS_NAND_RS_NAND_sch_tb/Q" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Q</obj_property>
+      <obj_property name="ObjectShortName">Q</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RS_NAND_RS_NAND_sch_tb/Qn" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Qn</obj_property>
+      <obj_property name="ObjectShortName">Qn</obj_property>
+   </wvobject>
+</wave_config>

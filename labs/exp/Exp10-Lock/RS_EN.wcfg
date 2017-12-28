@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/FPGA_work/Logic-2015/Exp091-Lock/RS_EN_RS_EN_sch_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="RS_EN_RS_EN_sch_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="5" />
+   <wvobject fp_name="/RS_EN_RS_EN_sch_tb/C" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">C</obj_property>
+      <obj_property name="ObjectShortName">C</obj_property>
+   </wvobject>
+   <wvobject fp_name="vbus7" type="vbus" db_ref_id="1">
+      <obj_property name="label">RS</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/RS_EN_RS_EN_sch_tb/S" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">S</obj_property>
+         <obj_property name="ObjectShortName">S</obj_property>
+      </wvobject>
+      <wvobject fp_name="/RS_EN_RS_EN_sch_tb/R" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">R</obj_property>
+         <obj_property name="ObjectShortName">R</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/RS_EN_RS_EN_sch_tb/Q" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Q</obj_property>
+      <obj_property name="ObjectShortName">Q</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RS_EN_RS_EN_sch_tb/Qn" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Qn</obj_property>
+      <obj_property name="ObjectShortName">Qn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RS_EN_RS_EN_sch_tb/i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

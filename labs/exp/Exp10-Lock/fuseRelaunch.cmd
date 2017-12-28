@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "D:/FPGA_work/Logic-2015/Exp091-Lock/D_CN_D_CN_sch_tb_isim_beh.exe" -prj "D:/FPGA_work/Logic-2015/Exp091-Lock/D_CN_D_CN_sch_tb_beh.prj" "work.D_CN_D_CN_sch_tb" "work.glbl" 

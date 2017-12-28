@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3 -refsym RS_NAND D:/FPGA_work/Logic-2015/Exp091-Lock/Code/RS_NAND.sch D:/FPGA_work/Logic-2015/Exp091-Lock/RS_NAND.sym 
