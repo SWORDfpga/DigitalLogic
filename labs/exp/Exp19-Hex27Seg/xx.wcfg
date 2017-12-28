@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/FPGA_work/SWord-DLD/Exp19-Hex27Seg/MC14495_ZJU_MC14495_ZJU_sch_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="MC14495_ZJU_MC14495_ZJU_sch_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="12" />
+   <wvobject fp_name="vbus17" type="vbus" db_ref_id="1">
+      <obj_property name="label">Hex</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <wvobject fp_name="/MC14495_ZJU_MC14495_ZJU_sch_tb/D3" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">D3</obj_property>
+         <obj_property name="ObjectShortName">D3</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MC14495_ZJU_MC14495_ZJU_sch_tb/D2" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">D2</obj_property>
+         <obj_property name="ObjectShortName">D2</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MC14495_ZJU_MC14495_ZJU_sch_tb/D1" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">D1</obj_property>
+         <obj_property name="ObjectShortName">D1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/MC14495_ZJU_MC14495_ZJU_sch_tb/D0" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">D0</obj_property>
+         <obj_property name="ObjectShortName">D0</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/MC14495_ZJU_MC14495_ZJU_sch_tb/LE" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">LE</obj_property>
+      <obj_property name="ObjectShortName">LE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MC14495_ZJU_MC14495_ZJU_sch_tb/a" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">a</obj_property>
+      <obj_property name="ObjectShortName">a</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MC14495_ZJU_MC14495_ZJU_sch_tb/b" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">b</obj_property>
+      <obj_property name="ObjectShortName">b</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MC14495_ZJU_MC14495_ZJU_sch_tb/c" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">c</obj_property>
+      <obj_property name="ObjectShortName">c</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MC14495_ZJU_MC14495_ZJU_sch_tb/d" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">d</obj_property>
+      <obj_property name="ObjectShortName">d</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MC14495_ZJU_MC14495_ZJU_sch_tb/e" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">e</obj_property>
+      <obj_property name="ObjectShortName">e</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MC14495_ZJU_MC14495_ZJU_sch_tb/f" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">f</obj_property>
+      <obj_property name="ObjectShortName">f</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MC14495_ZJU_MC14495_ZJU_sch_tb/g" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">g</obj_property>
+      <obj_property name="ObjectShortName">g</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MC14495_ZJU_MC14495_ZJU_sch_tb/p" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">p</obj_property>
+      <obj_property name="ObjectShortName">p</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MC14495_ZJU_MC14495_ZJU_sch_tb/point" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">point</obj_property>
+      <obj_property name="ObjectShortName">point</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MC14495_ZJU_MC14495_ZJU_sch_tb/i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

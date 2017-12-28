@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=D:\FPGA_work\SWord-DLD\Exp16-MemDecoder\impact.xsl
+OUTFILE=D:\FPGA_work\SWord-DLD\Exp16-MemDecoder\impact.xsl
+FAMILY=None
+PART=None
+WORKINGDIR=D:\FPGA_work\SWord-DLD\Exp16-MemDecoder
+LICENSE=iMPACT
+USER_INFO=iMPACT

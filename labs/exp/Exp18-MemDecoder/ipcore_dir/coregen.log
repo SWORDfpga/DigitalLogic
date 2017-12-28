@@ -1,0 +1,16 @@
+WARNING:coreutil:1006 - Xilinx repository path
+   'C:\Xilinx\14.7\ISE_DS\ISE_XCN14003_patch\coregen' is not a valid directory
+INFO:sim:172 - Generating IP...
+Applying current project options...
+Finished applying current project options.
+ERROR:sim - Unable to find D:\FPGA_work\SWord-DLD\Exp16-MemDecoder\Code\mm00.coe
+ERROR:sim -    Coregen is looking for
+   D:\FPGA_work\SWord-DLD\Exp16-MemDecoder\Code\mm00.coe
+ERROR:sim - Unable to find D:\FPGA_work\SWord-DLD\Exp16-MemDecoder\Code\mm00.coe
+ERROR:sim -    Coregen is looking for
+   D:\FPGA_work\SWord-DLD\Exp16-MemDecoder\Code\mm00.coe
+ERROR:sim - An invalid core configuration has been detected during
+ERROR:sim -    Customization. Core parameters will be reset to their default
+   values.
+Cancelled executing Tcl generator.
+Wrote CGP file for project 'RAM_8_16'.

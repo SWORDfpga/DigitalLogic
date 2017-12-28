@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="coreutil" num="1006" delta="new" >Xilinx repository path &apos;<arg fmt="%s" index="1">C:\Xilinx\14.7\ISE_DS\ISE_XCN14003_patch\coregen</arg>&apos; is not a valid directory
+</msg>
+
+<msg type="info" file="sim" num="172" delta="old" >Generating IP...
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Unable to find D:\FPGA_work\SWord-DLD\Exp16-MemDecoder\Code\mm00.coe</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   Coregen is looking for D:\FPGA_work\SWord-DLD\Exp16-MemDecoder\Code\mm00.coe</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Unable to find D:\FPGA_work\SWord-DLD\Exp16-MemDecoder\Code\mm00.coe</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   Coregen is looking for D:\FPGA_work\SWord-DLD\Exp16-MemDecoder\Code\mm00.coe</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">An invalid core configuration has been detected during</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   Customization. Core parameters will be reset to their default values.</arg>
+</msg>
+
+</messages>
+
